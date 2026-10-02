@@ -154,3 +154,13 @@ npx expo export --platform android
 ```
 
 The backend test suite covers legal analysis plus speech success, empty audio, unsupported audio, malformed transcription, provider failure, and the audio size limit.
+
+app snapshots:- 
+<img width="316" height="716" alt="image" src="https://github.com/user-attachments/assets/1d4e2c08-1949-4898-8e0a-3227fca03a3b" />
+
+<img width="313" height="682" alt="image" src="https://github.com/user-attachments/assets/09be098f-fdfd-492a-881b-cbccabe3008c" />
+
+<img width="317" height="686" alt="image" src="https://github.com/user-attachments/assets/4640e52b-4148-4fdd-a341-09d5ab677190" />
+
+
+
