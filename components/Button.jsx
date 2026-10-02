@@ -1,4 +1,4 @@
-import { ActivityIndicator, Pressable, StyleSheet, Text } from 'react-native';
+import { ActivityIndicator, Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { colors, radii, spacing, typography } from '../constants/theme';
 
@@ -8,11 +8,13 @@ export default function Button({
   disabled = false,
   loading = false,
   variant = 'primary',
+  icon,
   style,
   ...pressableProps
 }) {
   const isDisabled = disabled || loading;
   const isSecondary = variant === 'secondary';
+  const isGhost = variant === 'ghost';
 
   return (
     <Pressable
@@ -22,7 +24,7 @@ export default function Button({
       onPress={onPress}
       style={({ pressed }) => [
         styles.button,
-        isSecondary ? styles.secondary : styles.primary,
+        isSecondary ? styles.secondary : isGhost ? styles.ghost : styles.primary,
         pressed && !isDisabled && styles.pressed,
         isDisabled && styles.disabled,
         style,
@@ -30,9 +32,12 @@ export default function Button({
       {...pressableProps}
     >
       {loading ? (
-        <ActivityIndicator color={isSecondary ? colors.primary : colors.white} />
+        <ActivityIndicator color={isSecondary || isGhost ? colors.primary : colors.white} />
       ) : (
-        <Text style={[styles.label, isSecondary && styles.secondaryLabel]}>{label ?? 'Continue'}</Text>
+        <View style={styles.content}>
+          {icon ? <Text style={[styles.icon, (isSecondary || isGhost) && styles.secondaryLabel]}>{icon}</Text> : null}
+          <Text style={[styles.label, (isSecondary || isGhost) && styles.secondaryLabel]}>{label ?? 'Continue'}</Text>
+        </View>
       )}
     </Pressable>
   );
@@ -46,14 +51,16 @@ const styles = StyleSheet.create({
     minHeight: 50,
     paddingHorizontal: spacing.lg,
   },
+  content: { alignItems: 'center', flexDirection: 'row', gap: spacing.sm, justifyContent: 'center' },
   primary: {
     backgroundColor: colors.primary,
   },
   secondary: {
-    backgroundColor: colors.primarySoft,
-    borderColor: colors.primary,
+    backgroundColor: colors.surface,
+    borderColor: colors.borderStrong,
     borderWidth: 1,
   },
+  ghost: { backgroundColor: 'transparent' },
   pressed: {
     opacity: 0.82,
   },
@@ -65,6 +72,7 @@ const styles = StyleSheet.create({
     fontSize: typography.body,
     fontWeight: '700',
   },
+  icon: { color: colors.white, fontSize: 18, fontWeight: '800' },
   secondaryLabel: {
     color: colors.primary,
   },

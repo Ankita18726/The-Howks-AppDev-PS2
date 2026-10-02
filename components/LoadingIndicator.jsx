@@ -2,7 +2,7 @@ import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
 
 import { colors, spacing, typography } from '../constants/theme';
 
-export default function LoadingIndicator({ message = 'Loading…', fullScreen = false }) {
+export default function LoadingIndicator({ message = 'Loading…', detail, fullScreen = false }) {
   return (
     <View
       accessibilityLiveRegion="polite"
@@ -11,6 +11,7 @@ export default function LoadingIndicator({ message = 'Loading…', fullScreen = 
     >
       <ActivityIndicator color={colors.primary} size="large" />
       {message ? <Text style={styles.message}>{message}</Text> : null}
+      {detail ? <Text style={styles.detail}>{detail}</Text> : null}
     </View>
   );
 }
@@ -18,7 +19,7 @@ export default function LoadingIndicator({ message = 'Loading…', fullScreen = 
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    gap: spacing.sm,
+    gap: spacing.md,
     justifyContent: 'center',
     padding: spacing.xl,
   },
@@ -26,8 +27,10 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   message: {
-    color: colors.textMuted,
-    fontSize: typography.body,
+    color: colors.text,
+    fontSize: typography.heading,
+    fontWeight: '800',
     textAlign: 'center',
   },
+  detail: { color: colors.textMuted, fontSize: typography.small, lineHeight: 20, textAlign: 'center' },
 });

@@ -11,7 +11,7 @@ export default function EmptyState({
 }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.icon}>○</Text>
+      <View style={styles.iconWrap}><Text style={styles.icon}>⌕</Text></View>
       <Text style={styles.title}>{title}</Text>
       <Text style={styles.message}>{message}</Text>
       {actionLabel && typeof onAction === 'function' ? (
@@ -24,14 +24,11 @@ export default function EmptyState({
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    gap: spacing.sm,
+    gap: spacing.md,
     padding: spacing.xl,
   },
-  icon: {
-    color: colors.primary,
-    fontSize: 36,
-    fontWeight: '700',
-  },
+  iconWrap: { alignItems: 'center', backgroundColor: colors.primarySoft, borderRadius: 32, height: 64, justifyContent: 'center', width: 64 },
+  icon: { color: colors.primary, fontSize: 32, fontWeight: '800' },
   title: {
     color: colors.text,
     fontSize: typography.heading,

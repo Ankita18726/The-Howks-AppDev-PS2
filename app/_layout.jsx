@@ -1,9 +1,11 @@
 import { router, Stack, useSegments } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
-import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
+import BrandMark from '../components/BrandMark';
 import Button from '../components/Button';
+import LoadingIndicator from '../components/LoadingIndicator';
 import { colors, spacing, typography } from '../constants/theme';
 import { AuthProvider, useAuth } from '../context/AuthContext';
 import { LegalCaseProvider } from '../context/LegalCaseContext';
@@ -24,8 +26,8 @@ function AppNavigator() {
   if (loading || needsRedirect) {
     return (
       <View style={styles.center}>
-        <ActivityIndicator color={colors.primary} size="large" />
-        <Text style={styles.status}>Loading your account…</Text>
+        <BrandMark />
+        <LoadingIndicator message="Loading your account…" detail="Preparing your secure Kayda Sathi session." />
       </View>
     );
   }
@@ -33,6 +35,7 @@ function AppNavigator() {
   if (configurationError) {
     return (
       <View style={styles.center}>
+        <BrandMark compact />
         <Text style={styles.errorTitle}>Firebase setup needed</Text>
         <Text style={styles.errorText}>{configurationError}</Text>
         <Button label="Retry" onPress={retryInitialization} style={styles.retry} />
@@ -47,6 +50,7 @@ function AppNavigator() {
       headerTintColor: colors.text,
       headerTitleStyle: { fontWeight: '700' },
       contentStyle: { backgroundColor: colors.background },
+      animation: 'slide_from_right',
     }}>
       <Stack.Screen name="index" options={{ headerShown: false }} />
       <Stack.Screen name="signin" options={{ headerShown: false }} />
@@ -72,7 +76,6 @@ export default function RootLayout() {
 
 const styles = StyleSheet.create({
   center: { alignItems: 'center', backgroundColor: colors.background, flex: 1, gap: spacing.md, justifyContent: 'center', padding: spacing.xl },
-  status: { color: colors.textMuted, fontSize: typography.body },
   errorTitle: { color: colors.text, fontSize: typography.heading, fontWeight: '800' },
   errorText: { color: colors.error, fontSize: typography.body, lineHeight: 24, textAlign: 'center' },
   retry: { alignSelf: 'stretch' },
