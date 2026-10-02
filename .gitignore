@@ -14,6 +14,7 @@ web-build/
 .env.txt
 backend/.env.txt
 backend/.env.*
+!backend/.env.example
 
 # Native signing and credentials
 *.jks

@@ -32,6 +32,12 @@ export default function ResultsScreen() {
           <Text style={styles.mockText}>This is not real legal guidance. Verified knowledge has not been connected.</Text>
         </View>
       ) : null}
+      {analysis.historySaved === false ? (
+        <View accessibilityRole="alert" style={styles.saveWarning}>
+          <Text style={styles.saveWarningTitle}>Guidance ready, but history was not saved</Text>
+          <Text style={styles.saveWarningText}>Check your connection and Firestore security rules. You can still use this result now.</Text>
+        </View>
+      ) : null}
 
       <SectionCard title="Problem identified">
         <Text style={styles.value}>{readable(analysis.category)}</Text>
@@ -81,4 +87,7 @@ const styles = StyleSheet.create({
   link: { color: colors.primary, fontSize: typography.body },
   mockSource: { color: colors.error, fontSize: typography.body, fontWeight: '700' },
   disclaimer: { color: colors.textMuted, fontSize: typography.small, fontStyle: 'italic', lineHeight: 19 },
+  saveWarning: { backgroundColor: '#FFF4E5', borderColor: '#F5B455', borderRadius: 12, borderWidth: 1, gap: spacing.xs, padding: spacing.md },
+  saveWarningTitle: { color: '#8A4B08', fontSize: typography.body, fontWeight: '800' },
+  saveWarningText: { color: '#6B3D0B', fontSize: typography.small, lineHeight: 19 },
 });
