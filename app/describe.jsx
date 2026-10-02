@@ -13,6 +13,8 @@ import { analyzeProblem } from '../services/legal';
 import { SPEECH_ERROR_CODES, useSpeechService } from '../services/speechService';
 import { getErrorMessage } from '../utils/getErrorMessage';
 
+const { executeAnalysisSubmission } = require('../utils/analysisSubmission');
+
 export default function DescribeScreen() {
   const { user } = useAuth();
   const legalCase = useLegalCase();
@@ -90,16 +92,15 @@ export default function DescribeScreen() {
     setError('');
     setLoading(true);
     try {
-      const result = await analyzeProblem(problem, { signal: controllerRef.current.signal, timeout: 40000 });
-      let historySaved = true;
-      try {
-        await saveQueryHistory(user, problem, result);
-      } catch {
-        historySaved = false;
-      }
-      legalCase.setProblem(problem);
-      legalCase.setAnalysis({ ...result, historySaved });
-      router.push('/results');
+      await executeAnalysisSubmission({
+        analyze: () => analyzeProblem(problem, { signal: controllerRef.current.signal, timeout: 40000 }),
+        problem,
+        setProblem: legalCase.setProblem,
+        setAnalysis: legalCase.setAnalysis,
+        saveHistory: (result) => saveQueryHistory(user, problem, result),
+        navigate: () => router.push('/results'),
+        onNavigationError: () => setError('Your guidance is ready, but the results screen could not be opened. Please try again.'),
+      });
     } catch (requestError) {
       if (requestError.code !== 'CANCELLED') setError(getErrorMessage(requestError, 'The analysis could not be completed. Please try again.'));
     } finally {
