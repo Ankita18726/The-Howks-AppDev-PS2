@@ -1,0 +1,815 @@
+{
+  "id": "rental",
+  "version": "1.2",
+  "lastVerified": "2026-10-01",
+  "jurisdiction": {
+    "primary": "Maharashtra",
+    "country": "India",
+    "scopeNote": {
+      "en": "This MVP focuses on common residential rental issues in Maharashtra. The exact legal remedy or forum can depend on the agreement, property type, location, and facts of the dispute.",
+      "hi": "यह MVP महाराष्ट्र में सामान्य आवासीय किराये से जुड़े मामलों पर केंद्रित है। सही कानूनी उपाय या मंच किराया समझौते, संपत्ति के प्रकार, स्थान और विवाद की परिस्थितियों पर निर्भर कर सकता है।",
+      "hinglish": "Yeh MVP Maharashtra ke common residential rental issues par focus karta hai. Exact legal remedy ya forum agreement, property type, location aur dispute ke facts par depend kar sakta hai."
+    }
+  },
+
+  "languages": [
+    "en",
+    "hi",
+    "hinglish"
+  ],
+
+  "keywords": {
+    "en": [
+      "rent",
+      "rental",
+      "rent agreement",
+      "rental agreement",
+      "tenant",
+      "landlord",
+      "owner",
+      "house owner",
+      "room rent",
+      "flat rent",
+      "house rent",
+      "security deposit",
+      "deposit",
+      "rent deposit",
+      "rent increase",
+      "rent hike",
+      "rent receipt",
+      "rent receipt not given",
+      "rent receipt missing",
+      "eviction",
+      "evict",
+      "eviction notice",
+      "vacate",
+      "vacate notice",
+      "notice period",
+      "rent dispute",
+      "landlord dispute",
+      "tenant dispute",
+      "landlord harassment",
+      "tenant harassment",
+      "rent deduction",
+      "deposit not returned",
+      "security deposit not returned",
+      "maintenance issue",
+      "repair issue",
+      "repair not done",
+      "water problem",
+      "electricity problem",
+      "lockout",
+      "locked out",
+      "illegal eviction",
+      "threatening landlord",
+      "threatening tenant",
+      "leave house",
+      "house vacating",
+      "rent control",
+      "rental rights"
+    ],
+    "hi": [
+      "किराया",
+      "किराएदार",
+      "किरायेदार",
+      "मकान मालिक",
+      "मालिक",
+      "किराये का घर",
+      "किराये का कमरा",
+      "फ्लैट किराया",
+      "किराया समझौता",
+      "किरायानामा",
+      "सिक्योरिटी डिपॉजिट",
+      "जमानत राशि",
+      "जमा राशि",
+      "किराया बढ़ाना",
+      "किराया बढ़ा दिया",
+      "किराए की रसीद",
+      "रसीद नहीं मिली",
+      "बेदखली",
+      "घर खाली करना",
+      "खाली करने का नोटिस",
+      "नोटिस पीरियड",
+      "किराया विवाद",
+      "मकान मालिक की परेशानी",
+      "किरायेदार को परेशान करना",
+      "जमा राशि वापस नहीं",
+      "डिपॉजिट वापस नहीं",
+      "मरम्मत नहीं हो रही",
+      "पानी की समस्या",
+      "बिजली की समस्या",
+      "ताला लगा दिया",
+      "घर से निकालना",
+      "धमकी",
+      "किराया कानून",
+      "किरायेदार के अधिकार"
+    ],
+    "hinglish": [
+      "kiraya",
+      "kiraye",
+      "kirayedar",
+      "kirayadar",
+      "makan malik",
+      "ghar malik",
+      "owner",
+      "rent agreement",
+      "rental agreement",
+      "kiraya agreement",
+      "kirayanama",
+      "security deposit",
+      "deposit",
+      "jama paisa",
+      "deposit wapas nahi",
+      "security deposit wapas nahi",
+      "rent badha diya",
+      "kiraya badha diya",
+      "rent receipt",
+      "kiraye ki receipt",
+      "receipt nahi di",
+      "ghar khali karo",
+      "ghar khali karne ka notice",
+      "vacate notice",
+      "notice period",
+      "eviction",
+      "ghar se nikalna",
+      "zabardasti nikalna",
+      "rent dispute",
+      "kiraye ka dispute",
+      "makan malik pareshan kar raha",
+      "landlord pareshan kar raha",
+      "kirayedar ko pareshan",
+      "maintenance problem",
+      "repair nahi ho rahi",
+      "paani ki problem",
+      "bijli ki problem",
+      "tala laga diya",
+      "lockout",
+      "dhamki",
+      "rent receipt nahi mil rahi",
+      "kiraya nahi de pa raha",
+      "rent control",
+      "kirayedar ke rights"
+    ]
+  },
+
+  "summary": {
+    "en": "Rental disputes can involve rent, deposits, repairs, notices, eviction, harassment, or disagreements between tenants and landlords. In Maharashtra, the applicable legal position depends on the facts, agreement, property and type of dispute. Keep records, communicate in writing where possible, and use the appropriate official or legal-aid channel.",
+    "hi": "किराये से जुड़े विवादों में किराया, जमा राशि, मरम्मत, नोटिस, बेदखली, परेशान करना या किरायेदार और मकान मालिक के बीच अन्य विवाद शामिल हो सकते हैं। महाराष्ट्र में लागू कानूनी स्थिति मामले के तथ्य, समझौते, संपत्ति और विवाद के प्रकार पर निर्भर करती है। रिकॉर्ड सुरक्षित रखें, संभव हो तो लिखित रूप में बात करें और उचित सरकारी या कानूनी सहायता माध्यम का उपयोग करें।",
+    "hinglish": "Rental dispute mein rent, deposit, repair, notice, eviction, harassment ya tenant-landlord disagreement ho sakta hai. Maharashtra mein exact legal position case ke facts, agreement, property aur dispute type par depend karti hai. Records sambhal kar rakhein, possible ho to written communication karein aur appropriate official ya legal-aid channel use karein."
+  },
+
+  "extractFields": [
+    {
+      "id": "role",
+      "label": {
+        "en": "Are you the tenant or landlord?",
+        "hi": "क्या आप किरायेदार हैं या मकान मालिक?",
+        "hinglish": "Aap tenant hain ya landlord?"
+      },
+      "type": "enum",
+      "options": [
+        "tenant",
+        "landlord",
+        "other"
+      ]
+    },
+    {
+      "id": "problemType",
+      "label": {
+        "en": "What is the main rental problem?",
+        "hi": "मुख्य किराये की समस्या क्या है?",
+        "hinglish": "Main rental problem kya hai?"
+      },
+      "type": "text"
+    },
+    {
+      "id": "agreementAvailable",
+      "label": {
+        "en": "Do you have a written rent agreement?",
+        "hi": "क्या आपके पास लिखित किराया समझौता है?",
+        "hinglish": "Kya aapke paas written rent agreement hai?"
+      },
+      "type": "boolean"
+    },
+    {
+      "id": "rentPaid",
+      "label": {
+        "en": "How was rent paid?",
+        "hi": "किराया कैसे दिया जाता था?",
+        "hinglish": "Rent kaise pay kiya jata tha?"
+      },
+      "type": "enum",
+      "options": [
+        "bank_transfer",
+        "upi",
+        "cash",
+        "cheque",
+        "other"
+      ]
+    },
+    {
+      "id": "depositPaid",
+      "label": {
+        "en": "Was a security deposit paid?",
+        "hi": "क्या सिक्योरिटी डिपॉजिट दिया गया था?",
+        "hinglish": "Kya security deposit diya tha?"
+      },
+      "type": "boolean"
+    },
+    {
+      "id": "noticeReceived",
+      "label": {
+        "en": "Have you received a written notice?",
+        "hi": "क्या आपको कोई लिखित नोटिस मिला है?",
+        "hinglish": "Kya aapko written notice mila hai?"
+      },
+      "type": "boolean"
+    },
+    {
+      "id": "threatOrImmediateDanger",
+      "label": {
+        "en": "Is there an immediate threat, violence, or lockout?",
+        "hi": "क्या तत्काल धमकी, हिंसा या जबरन लॉकआउट की स्थिति है?",
+        "hinglish": "Kya immediate threat, violence ya zabardasti lockout hai?"
+      },
+      "type": "boolean"
+    }
+  ],
+
+  "followupQuestions": {
+    "en": [
+      "Are you the tenant or landlord?",
+      "What exactly happened?",
+      "Do you have a written rent agreement?",
+      "How was rent usually paid?",
+      "Do you have rent receipts, bank or UPI records?",
+      "Was a security deposit paid?",
+      "Has the landlord or tenant sent any written notice?",
+      "Is anyone threatening you, using violence, or preventing access to the home?",
+      "Which city or district in Maharashtra is the property located in?"
+    ],
+    "hi": [
+      "क्या आप किरायेदार हैं या मकान मालिक?",
+      "असल में क्या हुआ?",
+      "क्या आपके पास लिखित किराया समझौता है?",
+      "किराया आमतौर पर कैसे दिया जाता था?",
+      "क्या आपके पास किराये की रसीद, बैंक या UPI रिकॉर्ड हैं?",
+      "क्या सिक्योरिटी डिपॉजिट दिया गया था?",
+      "क्या मकान मालिक या किरायेदार ने कोई लिखित नोटिस भेजा है?",
+      "क्या कोई धमकी दे रहा है, हिंसा कर रहा है या घर में प्रवेश रोक रहा है?",
+      "महाराष्ट्र में संपत्ति किस शहर या जिले में है?"
+    ],
+    "hinglish": [
+      "Aap tenant hain ya landlord?",
+      "Exactly kya hua?",
+      "Kya written rent agreement hai?",
+      "Rent usually kaise pay karte the?",
+      "Kya rent receipt, bank ya UPI records hain?",
+      "Kya security deposit diya tha?",
+      "Kya landlord ya tenant ne written notice bheja hai?",
+      "Kya koi dhamki de raha hai, violence kar raha hai ya ghar mein entry rok raha hai?",
+      "Maharashtra mein property kis city ya district mein hai?"
+    ]
+  },
+
+  "scenarios": [
+    {
+      "id": "no_agreement",
+      "when": {
+        "en": "There is no written rent agreement.",
+        "hi": "लिखित किराया समझौता नहीं है।",
+        "hinglish": "Written rent agreement nahi hai."
+      },
+      "guidance": {
+        "en": "Do not assume that the absence of a written agreement means there are no legal rights. Preserve rent-payment records, messages, receipts, deposit records and other evidence of the rental arrangement.",
+        "hi": "यह न मानें कि लिखित समझौता न होने से कोई कानूनी अधिकार नहीं है। किराये के भुगतान के रिकॉर्ड, संदेश, रसीद, डिपॉजिट रिकॉर्ड और किराये की व्यवस्था से जुड़े अन्य सबूत सुरक्षित रखें।",
+        "hinglish": "Yeh assume mat karein ki written agreement nahi hai to legal rights bhi nahi hain. Rent payment records, messages, receipts, deposit records aur rental arrangement ke doosre evidence sambhal kar rakhein."
+      }
+    },
+    {
+      "id": "cash_no_receipt",
+      "when": {
+        "en": "Rent was paid in cash and receipts were not provided.",
+        "hi": "किराया नकद दिया गया लेकिन रसीद नहीं मिली।",
+        "hinglish": "Rent cash mein diya lekin receipt nahi mili."
+      },
+      "guidance": {
+        "en": "Keep any available messages, witnesses, bank withdrawals, payment acknowledgements and other records that may help establish the rental arrangement and payments.",
+        "hi": "उपलब्ध संदेश, गवाह, बैंक से निकासी, भुगतान की स्वीकृति और अन्य रिकॉर्ड सुरक्षित रखें जो किराये की व्यवस्था और भुगतान को साबित करने में मदद कर सकते हैं।",
+        "hinglish": "Available messages, witnesses, bank withdrawal records, payment acknowledgement aur doosre records sambhal kar rakhein jo rental arrangement aur payment establish karne mein help kar sakte hain."
+      }
+    },
+    {
+      "id": "deposit_not_returned",
+      "when": {
+        "en": "The security deposit has not been returned.",
+        "hi": "सिक्योरिटी डिपॉजिट वापस नहीं किया गया है।",
+        "hinglish": "Security deposit wapas nahi mila."
+      },
+      "guidance": {
+        "en": "Check the agreement for deposit terms and deductions. Keep proof of the deposit, move-out condition, communications and any claimed deductions. Ask for a written explanation of deductions.",
+        "hi": "डिपॉजिट की शर्तों और कटौती के बारे में समझौता देखें। डिपॉजिट का प्रमाण, घर खाली करते समय की स्थिति, बातचीत और बताई गई कटौतियों के रिकॉर्ड रखें। कटौती का लिखित विवरण मांगें।",
+        "hinglish": "Agreement mein deposit terms aur deductions check karein. Deposit proof, move-out condition, communications aur deductions ka record rakhein. Deductions ka written explanation maangein."
+      }
+    },
+    {
+      "id": "deductions",
+      "when": {
+        "en": "The landlord has deducted money from the deposit.",
+        "hi": "मकान मालिक ने डिपॉजिट से पैसे काट लिए हैं।",
+        "hinglish": "Landlord ne deposit se paise kaat liye hain."
+      },
+      "guidance": {
+        "en": "Ask for the reason and supporting calculation or documents for the deduction. Compare the deduction with the rental agreement and records of the property's condition.",
+        "hi": "कटौती का कारण और उसका हिसाब या संबंधित दस्तावेज लिखित रूप में मांगें। कटौती की तुलना किराया समझौते और संपत्ति की स्थिति के रिकॉर्ड से करें।",
+        "hinglish": "Deduction ka reason aur calculation ya supporting documents written mein maangein. Deduction ko rent agreement aur property condition ke records se compare karein."
+      }
+    },
+    {
+      "id": "still_living",
+      "when": {
+        "en": "The tenant is still living in the property and there is a dispute.",
+        "hi": "किरायेदार अभी भी घर में रह रहा है और विवाद है।",
+        "hinglish": "Tenant abhi bhi property mein reh raha hai aur dispute hai."
+      },
+      "guidance": {
+        "en": "Keep the rental agreement and payment records available. Do not ignore a written notice. If there is a serious dispute, obtain legal assistance before taking action that could affect your position.",
+        "hi": "किराया समझौता और भुगतान रिकॉर्ड सुरक्षित रखें। किसी लिखित नोटिस को नजरअंदाज न करें। गंभीर विवाद होने पर अपनी स्थिति प्रभावित करने वाली कार्रवाई से पहले कानूनी सहायता लें।",
+        "hinglish": "Rent agreement aur payment records sambhal kar rakhein. Written notice ko ignore na karein. Serious dispute mein aisi action lene se pehle legal help lein jo aapki position affect kar sakti hai."
+      }
+    },
+    {
+      "id": "threats",
+      "when": {
+        "en": "There are threats, violence, intimidation, or an immediate safety concern.",
+        "hi": "धमकी, हिंसा, डराने-धमकाने या तत्काल सुरक्षा की समस्या है।",
+        "hinglish": "Threat, violence, intimidation ya immediate safety problem hai."
+      },
+      "guidance": {
+        "en": "If there is immediate danger, prioritize personal safety and contact emergency services or local police. Preserve relevant evidence if it is safe to do so.",
+        "hi": "अगर तत्काल खतरा है तो पहले अपनी सुरक्षा को प्राथमिकता दें और आपातकालीन सेवा या स्थानीय पुलिस से संपर्क करें। सुरक्षित होने पर संबंधित सबूत सुरक्षित रखें।",
+        "hinglish": "Agar immediate danger hai to pehle safety ko priority dein aur emergency service ya local police se contact karein. Safe ho to evidence preserve karein."
+      }
+    },
+    {
+      "id": "unreachable",
+      "when": {
+        "en": "The other party is not responding.",
+        "hi": "दूसरा पक्ष जवाब नहीं दे रहा है।",
+        "hinglish": "Doosra party reply nahi kar raha hai."
+      },
+      "guidance": {
+        "en": "Send a clear written communication through a channel that preserves a record. Keep copies of messages and delivery information.",
+        "hi": "ऐसे माध्यम से स्पष्ट लिखित संदेश भेजें जिसका रिकॉर्ड सुरक्षित रहे। संदेश और डिलीवरी की जानकारी की प्रतियां रखें।",
+        "hinglish": "Aise channel se clear written message bhejein jiska record preserve ho. Messages aur delivery information ki copies rakhein."
+      }
+    },
+    {
+      "id": "other_state",
+      "when": {
+        "en": "The property is outside Maharashtra.",
+        "hi": "संपत्ति महाराष्ट्र के बाहर है।",
+        "hinglish": "Property Maharashtra ke bahar hai."
+      },
+      "guidance": {
+        "en": "This MVP is focused on Maharashtra. The applicable state law and authorities may be different outside Maharashtra.",
+        "hi": "यह MVP महाराष्ट्र पर केंद्रित है। महाराष्ट्र के बाहर संबंधित राज्य का कानून और प्राधिकरण अलग हो सकते हैं।",
+        "hinglish": "Yeh MVP Maharashtra par focused hai. Maharashtra ke bahar applicable state law aur authorities different ho sakte hain."
+      }
+    },
+    {
+      "id": "old_tenancy",
+      "when": {
+        "en": "The tenancy is old or has unusual historical terms.",
+        "hi": "किरायेदारी पुरानी है या इसमें पुराने/विशेष नियम हैं।",
+        "hinglish": "Tenancy purani hai ya unusual historical terms hain."
+      },
+      "guidance": {
+        "en": "Older tenancies can involve different factual and legal considerations. Keep old rent receipts, agreements, notices and other historical records and seek legal assistance for a case-specific assessment.",
+        "hi": "पुरानी किरायेदारियों में अलग तथ्य और कानूनी परिस्थितियां हो सकती हैं। पुराने किराये की रसीदें, समझौते, नोटिस और अन्य रिकॉर्ड रखें तथा मामले के अनुसार कानूनी सहायता लें।",
+        "hinglish": "Old tenancy mein different factual aur legal considerations ho sakte hain. Old rent receipts, agreements, notices aur historical records sambhal kar rakhein aur case-specific legal help lein."
+      }
+    }
+  ],
+
+  "rights": {
+    "en": [
+      "The Maharashtra Rent Control Act, 1999 is an important state law for covered rental relationships in Maharashtra, but its application depends on the facts and scope of the Act.",
+      "Tenants and landlords should preserve the rent agreement, rent-payment records, notices, receipts and other relevant evidence.",
+      "A written notice or demand should be read carefully and responded to within the applicable legal or contractual framework.",
+      "If there is a dispute about eviction, possession, rent, deposit or other tenancy rights, the appropriate forum depends on the nature of the dispute and applicable law.",
+      "Eligible persons may seek free legal services through the legal services authorities."
+    ],
+    "hi": [
+      "महाराष्ट्र में लागू किराये के संबंधों के लिए महाराष्ट्र किराया नियंत्रण अधिनियम, 1999 एक महत्वपूर्ण राज्य कानून है, लेकिन इसका लागू होना मामले के तथ्यों और अधिनियम के दायरे पर निर्भर करता है।",
+      "किरायेदार और मकान मालिक किराया समझौता, भुगतान रिकॉर्ड, नोटिस, रसीद और अन्य संबंधित सबूत सुरक्षित रखें।",
+      "किसी लिखित नोटिस या मांग को ध्यान से पढ़ें और लागू कानूनी या संविदात्मक व्यवस्था के अनुसार जवाब दें।",
+      "बेदखली, कब्जे, किराये, डिपॉजिट या अन्य किरायेदारी अधिकारों के विवाद में उचित मंच विवाद के प्रकार और लागू कानून पर निर्भर करता है।",
+      "पात्र व्यक्ति कानूनी सेवा प्राधिकरण के माध्यम से निःशुल्क कानूनी सहायता प्राप्त कर सकते हैं।"
+    ],
+    "hinglish": [
+      "Maharashtra mein covered rental relationships ke liye Maharashtra Rent Control Act, 1999 important state law hai, lekin iska application facts aur Act ke scope par depend karta hai.",
+      "Tenant aur landlord rent agreement, payment records, notices, receipts aur relevant evidence sambhal kar rakhein.",
+      "Written notice ya demand ko dhyan se padhein aur applicable legal ya contractual framework ke according reply karein.",
+      "Eviction, possession, rent, deposit ya tenancy rights ke dispute mein appropriate forum dispute ke nature aur applicable law par depend karta hai.",
+      "Eligible person legal services authorities ke through free legal services le sakta hai."
+    ]
+  },
+
+  "steps": {
+    "en": [
+      "Identify the exact rental issue: rent, deposit, repairs, notice, eviction, access, harassment or another issue.",
+      "Collect the rent agreement and any renewal or related documents.",
+      "Collect rent receipts, bank statements, UPI records or other payment proof.",
+      "Save relevant WhatsApp messages, emails, notices, photographs, videos and other evidence.",
+      "If a deposit is disputed, keep proof of payment and records showing the condition of the property when it was occupied and vacated.",
+      "Send a clear written request or response and keep proof that it was sent.",
+      "If there is an immediate threat or violence, prioritize safety and contact emergency services or police.",
+      "For a legal dispute, use legal-aid services or appropriate court/legal channels rather than relying only on informal advice.",
+      "Do not assume that every rental dispute has one universal online complaint portal."
+    ],
+    "hi": [
+      "सबसे पहले समस्या पहचानें: किराया, डिपॉजिट, मरम्मत, नोटिस, बेदखली, घर में प्रवेश, परेशान करना या अन्य समस्या।",
+      "किराया समझौता और उससे जुड़े नवीनीकरण या अन्य दस्तावेज इकट्ठा करें।",
+      "किराये की रसीद, बैंक स्टेटमेंट, UPI रिकॉर्ड या अन्य भुगतान प्रमाण रखें।",
+      "संबंधित WhatsApp संदेश, ईमेल, नोटिस, फोटो, वीडियो और अन्य सबूत सुरक्षित रखें।",
+      "अगर डिपॉजिट का विवाद है तो भुगतान का प्रमाण और घर में रहने/खाली करने के समय की स्थिति का रिकॉर्ड रखें।",
+      "स्पष्ट लिखित अनुरोध या जवाब भेजें और भेजे जाने का प्रमाण रखें।",
+      "अगर तत्काल खतरा या हिंसा है तो पहले सुरक्षा को प्राथमिकता दें और आपातकालीन सेवा या पुलिस से संपर्क करें।",
+      "कानूनी विवाद में केवल अनौपचारिक सलाह पर निर्भर न रहें; कानूनी सहायता या उचित न्यायिक माध्यम का उपयोग करें।",
+      "यह न मानें कि हर किराये के विवाद के लिए एक ही ऑनलाइन शिकायत पोर्टल होता है।"
+    ],
+    "hinglish": [
+      "Pehle exact rental issue identify karein: rent, deposit, repair, notice, eviction, access, harassment ya kuch aur.",
+      "Rent agreement aur renewal ya related documents collect karein.",
+      "Rent receipts, bank statement, UPI records ya doosra payment proof collect karein.",
+      "Relevant WhatsApp messages, emails, notices, photos, videos aur evidence save karein.",
+      "Deposit dispute hai to payment proof aur property ki move-in/move-out condition ka record rakhein.",
+      "Clear written request ya reply bhejein aur sent proof save karein.",
+      "Immediate threat ya violence ho to safety ko priority dein aur emergency service ya police ko contact karein.",
+      "Legal dispute mein sirf informal advice par depend na karein; legal aid ya appropriate legal/court channel use karein.",
+      "Har rental dispute ke liye ek universal online complaint portal hota hai, aisa assume na karein."
+    ]
+  },
+
+  "documents": {
+    "en": [
+      "Rent or leave-and-license agreement, if available",
+      "Rent receipts",
+      "Bank or UPI payment records",
+      "Security deposit payment proof",
+      "Deposit refund or deduction communication",
+      "Written notices",
+      "WhatsApp messages, emails or SMS",
+      "Photographs or videos of the property",
+      "Repair or maintenance complaints",
+      "Identity and address proof where relevant",
+      "Any previous complaint or legal document"
+    ],
+    "hi": [
+      "किराया या लीव एंड लाइसेंस समझौता, यदि उपलब्ध हो",
+      "किराये की रसीदें",
+      "बैंक या UPI भुगतान रिकॉर्ड",
+      "सिक्योरिटी डिपॉजिट भुगतान का प्रमाण",
+      "डिपॉजिट वापसी या कटौती से जुड़ी बातचीत",
+      "लिखित नोटिस",
+      "WhatsApp संदेश, ईमेल या SMS",
+      "संपत्ति की फोटो या वीडियो",
+      "मरम्मत या रखरखाव से जुड़ी शिकायतें",
+      "जहां जरूरी हो पहचान और पता प्रमाण",
+      "पहले की कोई शिकायत या कानूनी दस्तावेज"
+    ],
+    "hinglish": [
+      "Rent ya leave-and-license agreement, agar available ho",
+      "Rent receipts",
+      "Bank ya UPI payment records",
+      "Security deposit payment proof",
+      "Deposit refund ya deduction communication",
+      "Written notices",
+      "WhatsApp messages, emails ya SMS",
+      "Property ke photos ya videos",
+      "Repair ya maintenance complaints",
+      "Relevant identity aur address proof",
+      "Previous complaint ya legal document"
+    ]
+  },
+
+  "authorities": [
+    {
+      "id": "maharashtra_housing_department",
+      "name": {
+        "en": "Maharashtra Housing Department",
+        "hi": "महाराष्ट्र गृहनिर्माण विभाग",
+        "hinglish": "Maharashtra Housing Department"
+      },
+      "type": "official_information",
+      "website": "https://housing.maharashtra.gov.in/en/document/maharashtra-rent-control-act/",
+      "websiteLabel": {
+        "en": "View Maharashtra Rent Control Act",
+        "hi": "महाराष्ट्र किराया नियंत्रण अधिनियम देखें",
+        "hinglish": "Maharashtra Rent Control Act dekhein"
+      },
+      "email": "sotech1.it@maharashtra.gov.in",
+      "note": {
+        "en": "Official Maharashtra Housing Department page containing information on the Maharashtra Rent Control Act. This is an information source, not a universal rental complaint portal.",
+        "hi": "यह महाराष्ट्र गृहनिर्माण विभाग का आधिकारिक पेज है जहां महाराष्ट्र किराया नियंत्रण अधिनियम की जानकारी उपलब्ध है। यह सामान्य किराया शिकायत पोर्टल नहीं है।",
+        "hinglish": "Yeh Maharashtra Housing Department ka official page hai jahan Maharashtra Rent Control Act ki information milti hai. Yeh universal rental complaint portal nahi hai."
+      },
+      "sourceStatus": "official"
+    },
+    {
+      "id": "mslsa",
+      "name": {
+        "en": "Maharashtra State Legal Services Authority",
+        "hi": "महाराष्ट्र राज्य विधिक सेवा प्राधिकरण",
+        "hinglish": "Maharashtra State Legal Services Authority"
+      },
+      "type": "legal_aid",
+      "website": "https://legalservices.maharashtra.gov.in/",
+      "websiteLabel": {
+        "en": "Visit Maharashtra Legal Services Authority",
+        "hi": "महाराष्ट्र विधिक सेवा प्राधिकरण वेबसाइट खोलें",
+        "hinglish": "Maharashtra Legal Services Authority website kholen"
+      },
+      "email": "mslsa-bhc@nic.in",
+      "contact": {
+        "phone": [
+          "15100",
+          "1800222324"
+        ]
+      },
+      "note": {
+        "en": "Official Maharashtra legal-services authority. Eligible persons can seek legal services and guidance. Helpline numbers are 15100 and 1800222324.",
+        "hi": "यह महाराष्ट्र का आधिकारिक विधिक सेवा प्राधिकरण है। पात्र व्यक्ति कानूनी सहायता और मार्गदर्शन के लिए संपर्क कर सकते हैं। हेल्पलाइन 15100 और 1800222324 हैं।",
+        "hinglish": "Yeh Maharashtra ka official legal-services authority hai. Eligible persons legal help aur guidance ke liye contact kar sakte hain. Helpline 15100 aur 1800222324 hain."
+      },
+      "sourceStatus": "official"
+    },
+    {
+      "id": "ecourts",
+      "name": {
+        "en": "eCourts Services",
+        "hi": "ई-कोर्ट्स सेवाएं",
+        "hinglish": "eCourts Services"
+      },
+      "type": "court_information",
+      "website": "https://services.ecourts.gov.in/ecourtindia_v6/",
+      "websiteLabel": {
+        "en": "Open eCourts Services",
+        "hi": "ई-कोर्ट्स सेवाएं खोलें",
+        "hinglish": "eCourts Services kholen"
+      },
+      "note": {
+        "en": "Official court-services portal for case status and other court-related services. It should not be presented as a universal online filing portal for every rental dispute.",
+        "hi": "यह मामलों की स्थिति और अन्य न्यायालय संबंधी सेवाओं के लिए आधिकारिक पोर्टल है। इसे हर किराया विवाद के लिए सामान्य ऑनलाइन शिकायत या फाइलिंग पोर्टल के रूप में प्रस्तुत नहीं करना चाहिए।",
+        "hinglish": "Yeh case status aur court-related services ke liye official portal hai. Isse har rental dispute ke liye universal online complaint ya filing portal ke roop mein present nahi karna chahiye."
+      },
+      "sourceStatus": "official"
+    },
+    {
+      "id": "emergency_112",
+      "name": {
+        "en": "Emergency Services / Police",
+        "hi": "आपातकालीन सेवा / पुलिस",
+        "hinglish": "Emergency Services / Police"
+      },
+      "type": "emergency",
+      "website": "https://112.gov.in/",
+      "websiteLabel": {
+        "en": "Visit 112 Emergency Services",
+        "hi": "112 आपातकालीन सेवा खोलें",
+        "hinglish": "112 Emergency Services kholen"
+      },
+      "contact": {
+        "phone": [
+          "112"
+        ]
+      },
+      "note": {
+        "en": "Use for immediate danger, violence, threats or other emergencies. It is not a general rental-dispute filing portal.",
+        "hi": "तत्काल खतरे, हिंसा, धमकी या अन्य आपातकालीन स्थिति में उपयोग करें। यह सामान्य किराया विवाद फाइल करने का पोर्टल नहीं है।",
+        "hinglish": "Immediate danger, violence, threat ya emergency mein use karein. Yeh general rental-dispute filing portal nahi hai."
+      },
+      "sourceStatus": "official"
+    }
+  ],
+
+  "whereToComplain": {
+    "en": "There is no single universal online complaint portal for every rental dispute. Use the Maharashtra Housing Department site for official rental-law information, Maharashtra Legal Services Authority for legal-aid guidance, and the appropriate court/legal forum when a formal dispute requires it. For immediate danger or violence, contact emergency services/police.",
+    "hi": "हर किराया विवाद के लिए एक ही सार्वभौमिक ऑनलाइन शिकायत पोर्टल नहीं है। आधिकारिक किराया कानून की जानकारी के लिए महाराष्ट्र गृहनिर्माण विभाग, कानूनी सहायता के लिए महाराष्ट्र विधिक सेवा प्राधिकरण और औपचारिक विवाद के लिए उचित न्यायिक/कानूनी मंच का उपयोग करें। तत्काल खतरे या हिंसा की स्थिति में आपातकालीन सेवा/पुलिस से संपर्क करें।",
+    "hinglish": "Har rental dispute ke liye ek universal online complaint portal nahi hai. Official rental-law information ke liye Maharashtra Housing Department, legal-aid guidance ke liye Maharashtra Legal Services Authority aur formal dispute ke liye appropriate court/legal forum use karein. Immediate danger ya violence mein emergency service/police ko contact karein."
+  },
+
+  "timeLimits": {
+    "en": [
+      "Do not assume that a single fixed deadline applies to every rental dispute.",
+      "Check the rent agreement, written notice and applicable law for any specific deadline.",
+      "If a complaint/request asks the other party to respond within a certain number of days, label that period as a requested response period rather than a statutory deadline unless an official source establishes it as a legal deadline.",
+      "If you receive a legal notice or court document, consider obtaining legal assistance promptly."
+    ],
+    "hi": [
+      "यह न मानें कि हर किराया विवाद पर एक ही निश्चित समय सीमा लागू होती है।",
+      "किसी विशेष समय सीमा के लिए किराया समझौता, लिखित नोटिस और लागू कानून देखें।",
+      "यदि शिकायत या अनुरोध में दूसरे पक्ष से कुछ दिनों में जवाब मांगा गया है, तो उसे कानूनी समय सीमा तभी कहें जब आधिकारिक स्रोत इसे कानूनी समय सीमा बताता हो।",
+      "यदि आपको कानूनी नोटिस या न्यायालय का दस्तावेज मिलता है तो जल्द कानूनी सहायता लेने पर विचार करें।"
+    ],
+    "hinglish": [
+      "Har rental dispute ke liye ek fixed deadline hoti hai, aisa assume na karein.",
+      "Specific deadline ke liye rent agreement, written notice aur applicable law check karein.",
+      "Agar complaint/request mein kisi ko kuch din mein reply karne ko bola hai, to use statutory deadline tabhi bolen jab official source usse legal deadline establish karta ho.",
+      "Agar legal notice ya court document mile to jaldi legal help lene par consider karein."
+    ]
+  },
+
+  "commonMistakes": {
+    "en": [
+      "Deleting WhatsApp messages or other evidence",
+      "Paying or accepting cash without keeping a record",
+      "Ignoring a written notice",
+      "Signing a document without reading or understanding it",
+      "Making unsupported legal threats",
+      "Assuming the security deposit can automatically be withheld",
+      "Assuming the absence of a written agreement means there are no rights",
+      "Assuming every rental dispute has the same court, authority or deadline",
+      "Using an unofficial website as if it were a government complaint portal"
+    ],
+    "hi": [
+      "WhatsApp संदेश या अन्य सबूत मिटा देना",
+      "बिना रिकॉर्ड के नकद भुगतान करना या लेना",
+      "लिखित नोटिस को नजरअंदाज करना",
+      "बिना पढ़े या समझे किसी दस्तावेज पर हस्ताक्षर करना",
+      "बिना आधार के कानूनी धमकी देना",
+      "यह मान लेना कि सिक्योरिटी डिपॉजिट अपने आप रोका जा सकता है",
+      "यह मान लेना कि लिखित समझौता नहीं है तो कोई अधिकार नहीं हैं",
+      "यह मान लेना कि हर किराया विवाद में वही अदालत, प्राधिकरण या समय सीमा लागू होती है",
+      "अनौपचारिक वेबसाइट को सरकारी शिकायत पोर्टल समझ लेना"
+    ],
+    "hinglish": [
+      "WhatsApp messages ya evidence delete kar dena",
+      "Record ke bina cash payment karna ya lena",
+      "Written notice ignore karna",
+      "Document padhe ya samjhe bina sign karna",
+      "Unsupported legal threats dena",
+      "Assume karna ki security deposit automatically roka ja sakta hai",
+      "Assume karna ki written agreement nahi hai to rights bhi nahi hain",
+      "Assume karna ki har rental dispute mein same court, authority ya deadline hoti hai",
+      "Unofficial website ko government complaint portal samajhna"
+    ]
+  },
+
+  "complaintTemplates": [
+    {
+      "id": "deposit_refund_request",
+      "title": {
+        "en": "Security Deposit Refund Request",
+        "hi": "सिक्योरिटी डिपॉजिट वापसी अनुरोध",
+        "hinglish": "Security Deposit Refund Request"
+      },
+      "for": "tenant",
+      "template": {
+        "en": "Subject: Request for refund of security deposit\n\nDear [Landlord/Owner Name],\n\nI am writing regarding the security deposit of ₹[amount] paid for the rental property at [property address]. I vacated/plan to vacate the property on [date].\n\nPlease provide the refund of the applicable security deposit amount and, if any amount is proposed to be deducted, please provide the reason and calculation for the deduction in writing.\n\nPlease respond within [requestedResponseDays] days of receiving this message.\n\nRegards,\n[Name]\n[Phone]",
+        "hi": "विषय: सिक्योरिटी डिपॉजिट वापस करने का अनुरोध\n\nप्रिय [मकान मालिक का नाम],\n\nयह संदेश [संपत्ति का पता] के लिए दिए गए ₹[राशि] के सिक्योरिटी डिपॉजिट के संबंध में है। मैंने/मैं [तारीख] को घर खाली किया/करने वाला हूँ।\n\nकृपया लागू सिक्योरिटी डिपॉजिट राशि वापस करें। यदि कोई राशि काटी जानी है, तो कृपया कटौती का कारण और हिसाब लिखित रूप में दें।\n\nकृपया यह संदेश प्राप्त होने के [requestedResponseDays] दिनों के भीतर जवाब दें।\n\nधन्यवाद,\n[नाम]\n[फोन]",
+        "hinglish": "Subject: Security Deposit Refund Request\n\nDear [Landlord/Owner Name],\n\nYeh message [property address] ke liye diye gaye ₹[amount] security deposit ke regarding hai. Maine/main [date] ko property vacate ki hai/karne wala hoon.\n\nPlease applicable security deposit amount refund karein. Agar koi deduction proposed hai, to deduction ka reason aur calculation written mein share karein.\n\nPlease is message ke receive hone ke [requestedResponseDays] days ke andar reply karein.\n\nRegards,\n[Name]\n[Phone]"
+      },
+      "defaultRequestedResponseDays": 7,
+      "note": {
+        "en": "The requested response period is a communication preference and is not presented as a statutory deadline.",
+        "hi": "मांगी गई जवाब की अवधि केवल संचार के लिए है और इसे कानूनी समय सीमा के रूप में प्रस्तुत नहीं किया गया है।",
+        "hinglish": "Requested response period sirf communication ke liye hai; ise statutory deadline nahi bataya gaya hai."
+      }
+    },
+    {
+      "id": "repair_request",
+      "title": {
+        "en": "Repair / Maintenance Request",
+        "hi": "मरम्मत / रखरखाव अनुरोध",
+        "hinglish": "Repair / Maintenance Request"
+      },
+      "for": "tenant",
+      "template": {
+        "en": "Subject: Request for repair / maintenance\n\nDear [Landlord/Owner Name],\n\nI am writing to inform you about the following issue at [property address]: [describe problem].\n\nThe issue was first noticed on [date] and is affecting [describe impact]. I request that the issue be inspected and appropriate action be taken.\n\nPlease respond within [requestedResponseDays] days and let me know the expected next step.\n\nRegards,\n[Name]\n[Phone]",
+        "hi": "विषय: मरम्मत / रखरखाव का अनुरोध\n\nप्रिय [मकान मालिक का नाम],\n\n[संपत्ति का पता] पर निम्न समस्या है: [समस्या बताएं]।\n\nयह समस्या [तारीख] को पहली बार सामने आई और इससे [प्रभाव बताएं] हो रहा है। कृपया समस्या की जांच करवाकर उचित कार्रवाई करें।\n\nकृपया [requestedResponseDays] दिनों के भीतर जवाब दें और अगला कदम बताएं।\n\nधन्यवाद,\n[नाम]\n[फोन]",
+        "hinglish": "Subject: Repair / Maintenance Request\n\nDear [Landlord/Owner Name],\n\n[Property address] par yeh problem hai: [problem describe karein].\n\nYeh issue [date] ko first notice hua aur isse [impact] ho raha hai. Please issue inspect karke appropriate action lein.\n\nPlease [requestedResponseDays] days ke andar reply karke next step batayein.\n\nRegards,\n[Name]\n[Phone]"
+      },
+      "defaultRequestedResponseDays": 7,
+      "note": {
+        "en": "The requested response period is not presented as a statutory deadline.",
+        "hi": "मांगी गई जवाब की अवधि को कानूनी समय सीमा के रूप में प्रस्तुत नहीं किया गया है।",
+        "hinglish": "Requested response period ko statutory deadline ke roop mein present nahi kiya gaya hai."
+      }
+    },
+    {
+      "id": "notice_response",
+      "title": {
+        "en": "Response to Rental Notice",
+        "hi": "किराया नोटिस का जवाब",
+        "hinglish": "Rental Notice ka Reply"
+      },
+      "for": "tenant_or_landlord",
+      "template": {
+        "en": "Subject: Response regarding rental notice\n\nDear [Name],\n\nI acknowledge receipt of your communication dated [date] regarding [issue].\n\nMy understanding of the situation is: [brief factual description].\n\nI request that any further communication regarding this matter be made in writing. I am also keeping copies of the relevant agreement, payment records and communications.\n\nPlease provide any specific claim, calculation or supporting document that you are relying upon.\n\nRegards,\n[Name]\n[Phone]",
+        "hi": "विषय: किराये से संबंधित नोटिस का जवाब\n\nप्रिय [नाम],\n\nमैं [तारीख] को भेजे गए आपके संदेश/नोटिस की प्राप्ति स्वीकार करता/करती हूं, जो [विषय] से संबंधित है।\n\nस्थिति के बारे में मेरी समझ: [संक्षिप्त तथ्यात्मक विवरण]।\n\nकृपया इस मामले से संबंधित आगे की बातचीत लिखित रूप में करें। मैं संबंधित समझौते, भुगतान रिकॉर्ड और संदेशों की प्रतियां भी सुरक्षित रख रहा/रही हूं।\n\nकृपया जिस दावे, हिसाब या दस्तावेज पर आप भरोसा कर रहे हैं उसकी प्रति दें।\n\nधन्यवाद,\n[नाम]\n[फोन]",
+        "hinglish": "Subject: Response regarding rental notice\n\nDear [Name],\n\nMain [date] ke aapke communication/notice ki receipt acknowledge karta/karti hoon regarding [issue].\n\nSituation ke facts meri understanding mein yeh hain: [brief factual description].\n\nPlease is matter ki further communication written mein karein. Main relevant agreement, payment records aur communications ki copies bhi preserve kar raha/rahi hoon.\n\nPlease jis claim, calculation ya supporting document par aap rely kar rahe hain uski copy share karein.\n\nRegards,\n[Name]\n[Phone]"
+      }
+    }
+  ],
+
+  "sources": [
+    {
+      "id": "maharashtra_rent_control_act",
+      "title": {
+        "en": "Maharashtra Rent Control Act",
+        "hi": "महाराष्ट्र किराया नियंत्रण अधिनियम",
+        "hinglish": "Maharashtra Rent Control Act"
+      },
+      "url": "https://housing.maharashtra.gov.in/en/document/maharashtra-rent-control-act/",
+      "sourceType": "official_government",
+      "note": {
+        "en": "Official Maharashtra Housing Department source.",
+        "hi": "महाराष्ट्र गृहनिर्माण विभाग का आधिकारिक स्रोत।",
+        "hinglish": "Maharashtra Housing Department ka official source."
+      }
+    },
+    {
+      "id": "mslsa",
+      "title": {
+        "en": "Maharashtra State Legal Services Authority",
+        "hi": "महाराष्ट्र राज्य विधिक सेवा प्राधिकरण",
+        "hinglish": "Maharashtra State Legal Services Authority"
+      },
+      "url": "https://legalservices.maharashtra.gov.in/",
+      "sourceType": "official_government",
+      "note": {
+        "en": "Official legal-services authority and legal-aid contact.",
+        "hi": "आधिकारिक विधिक सेवा प्राधिकरण और कानूनी सहायता संपर्क।",
+        "hinglish": "Official legal-services authority aur legal-aid contact."
+      }
+    },
+    {
+      "id": "ecourts",
+      "title": {
+        "en": "eCourts Services",
+        "hi": "ई-कोर्ट्स सेवाएं",
+        "hinglish": "eCourts Services"
+      },
+      "url": "https://services.ecourts.gov.in/ecourtindia_v6/",
+      "sourceType": "official_government",
+      "note": {
+        "en": "Official court-services portal.",
+        "hi": "आधिकारिक न्यायालय सेवा पोर्टल।",
+        "hinglish": "Official court-services portal."
+      }
+    },
+    {
+      "id": "emergency_112",
+      "title": {
+        "en": "112 Emergency Services",
+        "hi": "112 आपातकालीन सेवा",
+        "hinglish": "112 Emergency Services"
+      },
+      "url": "https://112.gov.in/",
+      "sourceType": "official_government",
+      "note": {
+        "en": "For immediate emergencies and safety concerns.",
+        "hi": "तत्काल आपातकालीन और सुरक्षा संबंधी स्थिति के लिए।",
+        "hinglish": "Immediate emergency aur safety concerns ke liye."
+      }
+    }
+  ],
+
+  "fallback": {
+    "en": "If the issue does not clearly fit a rental scenario, preserve your documents and seek case-specific legal guidance. For eligible persons, Maharashtra Legal Services Authority can provide legal-aid guidance.",
+    "hi": "यदि समस्या किसी स्पष्ट किराया परिदृश्य में नहीं आती है, तो दस्तावेज सुरक्षित रखें और मामले के अनुसार कानूनी मार्गदर्शन लें। पात्र व्यक्ति महाराष्ट्र विधिक सेवा प्राधिकरण से कानूनी सहायता के लिए संपर्क कर सकते हैं।",
+    "hinglish": "Agar issue kisi clear rental scenario mein fit nahi hota, documents preserve karein aur case-specific legal guidance lein. Eligible persons Maharashtra Legal Services Authority se legal-aid guidance le sakte hain."
+  },
+
+  "disclaimer": {
+    "en": "Kayda Sathi provides general legal information, not legal advice. Laws and procedures can depend on the facts of your case. Verify important information with official sources or a qualified legal professional before taking legal action.",
+    "hi": "Kayda Sathi सामान्य कानूनी जानकारी देता है, कानूनी सलाह नहीं। कानून और प्रक्रिया आपके मामले के तथ्यों पर निर्भर कर सकते हैं। कानूनी कार्रवाई करने से पहले महत्वपूर्ण जानकारी को आधिकारिक स्रोत या योग्य कानूनी पेशेवर से सत्यापित करें।",
+    "hinglish": "Kayda Sathi general legal information deta hai, legal advice nahi. Laws aur procedures aapke case ke facts par depend kar sakte hain. Legal action lene se pehle important information ko official sources ya qualified legal professional se verify karein."
+  },
+
+  "verifyBeforeDemo": {
+    "en": [
+      "Confirm the official URLs are reachable.",
+      "Confirm the Maharashtra Rent Control Act source is still the intended official source.",
+      "Confirm legal-aid helpline numbers before the demo.",
+      "Do not present Maharashtra Housing Department, eCourts or 112 as a universal rental complaint portal.",
+      "Do not invent a filing deadline or court/forum for a rental dispute without case-specific verification."
+    ],
+    "hi": [
+      "डेमो से पहले आधिकारिक URLs के काम करने की पुष्टि करें।",
+      "पुष्टि करें कि महाराष्ट्र किराया नियंत्रण अधिनियम का स्रोत अभी भी सही आधिकारिक स्रोत है।",
+      "डेमो से पहले कानूनी सहायता हेल्पलाइन नंबर की पुष्टि करें।",
+      "महाराष्ट्र गृहनिर्माण विभाग, eCourts या 112 को सामान्य किराया शिकायत पोर्टल के रूप में प्रस्तुत न करें।",
+      "मामले के अनुसार सत्यापन के बिना कोई फाइलिंग समय सीमा या न्यायालय/मंच न बनाएं।"
+    ],
+    "hinglish": [
+      "Demo se pehle official URLs working hain ya nahi check karein.",
+      "Confirm karein ki Maharashtra Rent Control Act ka source intended official source hai.",
+      "Demo se pehle legal-aid helpline numbers verify karein.",
+      "Maharashtra Housing Department, eCourts ya 112 ko universal rental complaint portal ke roop mein present na karein.",
+      "Case-specific verification ke bina filing deadline ya court/forum invent na karein."
+    ]
+  }
+}

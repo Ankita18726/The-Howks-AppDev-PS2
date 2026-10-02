@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "Kayda Sathi",
+    "slug": "kayda-sathi",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "scheme": "kaydasathi",
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Allow Kayda Sathi to record your problem for speech-to-text transcription."
+        }
+      ],
+      "expo-asset"
+    ],
+    "android": {
+      "package": "com.kaydasathi.app"
+    }
+  }
+}

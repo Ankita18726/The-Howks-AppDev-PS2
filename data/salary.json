@@ -1,0 +1,1105 @@
+{
+  "id": "salary",
+  "version": "1.2",
+  "lastVerified": "2026-10-01",
+  "languages": [
+    "en",
+    "hi",
+    "hinglish"
+  ],
+  "jurisdiction": {
+    "en": "India. Labour office details are shown for Maharashtra; exact authority and procedure can depend on the employment, establishment and applicable state rules.",
+    "hi": "भारत। महाराष्ट्र के लिए श्रम कार्यालय का विवरण दिया गया है; सटीक प्राधिकारी और प्रक्रिया रोजगार, प्रतिष्ठान तथा लागू राज्य नियमों पर निर्भर कर सकती है।",
+    "hinglish": "India. Labour office details Maharashtra ke liye diye gaye hain; exact authority aur process employment, establishment aur applicable state rules par depend kar sakta hai."
+  },
+  "title": {
+    "en": "Salary / Wages Not Paid",
+    "hi": "वेतन / मज़दूरी का भुगतान नहीं हुआ",
+    "hinglish": "Salary / wages nahi mili"
+  },
+  "icon": "briefcase",
+
+  "keywords": {
+    "en": [
+      "salary",
+      "wages",
+      "unpaid salary",
+      "salary not paid",
+      "salary pending",
+      "salary delayed",
+      "employer not paying",
+      "employer",
+      "wages not paid",
+      "stipend",
+      "full and final",
+      "full and final settlement",
+      "notice period",
+      "terminated",
+      "termination",
+      "resigned",
+      "resignation",
+      "deduction",
+      "salary deduction",
+      "bonus",
+      "overtime",
+      "contractor",
+      "contract worker",
+      "minimum wage",
+      "minimum wages",
+      "underpaid",
+      "pf",
+      "provident fund",
+      "gratuity",
+      "final settlement",
+      "payment not received",
+      "salary withheld",
+      "salary stopped"
+    ],
+    "hi": [
+      "वेतन",
+      "तनख्वाह",
+      "सैलरी",
+      "मज़दूरी",
+      "बकाया वेतन",
+      "वेतन नहीं मिला",
+      "वेतन नहीं दिया",
+      "सैलरी नहीं मिली",
+      "सैलरी नहीं दी",
+      "नियोक्ता",
+      "मालिक पैसे नहीं दे रहा",
+      "कंपनी ने पैसे नहीं दिए",
+      "कंपनी ने निकाल दिया",
+      "फुल एंड फाइनल",
+      "फुल एंड फाइनल सेटलमेंट",
+      "इस्तीफा",
+      "निकाल दिया",
+      "कटौती",
+      "वेतन से कटौती",
+      "बोनस",
+      "ओवरटाइम",
+      "ठेकेदार",
+      "ठेका कर्मचारी",
+      "न्यूनतम मजदूरी",
+      "न्यूनतम वेतन",
+      "कम वेतन",
+      "पीएफ",
+      "भविष्य निधि",
+      "ग्रेच्युटी",
+      "अंतिम भुगतान",
+      "वेतन रोक लिया"
+    ],
+    "hinglish": [
+      "salary nahi mili",
+      "salary nahi mila",
+      "salary nahi diya",
+      "salary nahi di",
+      "salary pending hai",
+      "salary rok li",
+      "salary rok di",
+      "salary late hai",
+      "salary delay hai",
+      "salary nahi aa rahi",
+      "pagar nahi mila",
+      "pagar nahi mili",
+      "pagaar nahi mili",
+      "tankhwah nahi mili",
+      "tankhwa nahi mili",
+      "malik paisa nahi de raha",
+      "malik paise nahi de raha",
+      "company paisa nahi de rahi",
+      "company paise nahi de rahi",
+      "company ne salary rok li",
+      "company ne salary rok di",
+      "company ne paise nahi diye",
+      "full and final nahi mila",
+      "full and final pending hai",
+      "fnf nahi mila",
+      "fnf pending hai",
+      "job chhod di salary nahi mili",
+      "job chhodne ke baad salary nahi mili",
+      "job se nikal diya salary nahi di",
+      "termination ke baad salary nahi mili",
+      "salary se paisa kaat liya",
+      "salary deduction",
+      "paisa kaat liya",
+      "overtime ka paisa nahi mila",
+      "minimum wage se kam",
+      "minimum salary nahi mil rahi",
+      "thekedaar salary nahi de raha",
+      "thekedaar paisa nahi de raha",
+      "contractor paisa nahi de raha",
+      "contractor salary nahi de raha",
+      "pf nahi mila",
+      "pf ka paisa nahi mila",
+      "gratuity nahi mili",
+      "stipend nahi mila",
+      "internship ka paisa nahi mila",
+      "internship stipend nahi mila",
+      "salary rok di hai"
+    ]
+  },
+
+  "summary": {
+    "en": "Your employer has not paid your salary or other employment dues. Start by collecting proof and sending a written demand. If the issue is not resolved, you may approach the appropriate labour authority.",
+    "hi": "आपके नियोक्ता ने आपका वेतन या अन्य रोजगार बकाया नहीं दिया है। पहले सबूत इकट्ठा करें और लिखित माँग भेजें। समस्या हल न होने पर उचित श्रम प्राधिकारी से संपर्क किया जा सकता है।",
+    "hinglish": "Aapki salary ya employment dues pending hain. Pehle proof collect karein aur employer ko written demand bhejein. Agar issue solve na ho, to appropriate labour authority se contact kiya ja sakta hai."
+  },
+
+  "urgent": false,
+
+  "extractFields": [
+    "amount",
+    "employerName",
+    "monthsPending",
+    "joiningDate",
+    "designation",
+    "employmentStatus",
+    "workType",
+    "salaryPaymentDate",
+    "terminationDate",
+    "state"
+  ],
+
+  "followUpQuestions": [
+    {
+      "key": "employerName",
+      "type": "text",
+      "required": true,
+      "question": {
+        "en": "What is the employer or company name?",
+        "hi": "नियोक्ता या कंपनी का नाम क्या है?",
+        "hinglish": "Employer ya company ka naam kya hai?"
+      }
+    },
+    {
+      "key": "amount",
+      "type": "number",
+      "required": true,
+      "question": {
+        "en": "How much money is pending?",
+        "hi": "कितनी रकम बकाया है?",
+        "hinglish": "Kitni amount pending hai?"
+      }
+    },
+    {
+      "key": "monthsPending",
+      "type": "text",
+      "required": true,
+      "question": {
+        "en": "Which month or period is unpaid?",
+        "hi": "किस महीने या अवधि का भुगतान बाकी है?",
+        "hinglish": "Kis month ya period ki salary pending hai?"
+      }
+    },
+    {
+      "key": "employmentStatus",
+      "type": "choice",
+      "required": false,
+      "options": [
+        "still_working",
+        "resigned",
+        "terminated",
+        "laid_off"
+      ],
+      "question": {
+        "en": "Are you still working there, did you resign, or were you terminated?",
+        "hi": "क्या आप अभी वहाँ काम कर रहे हैं, आपने इस्तीफ़ा दिया है या आपको निकाला गया?",
+        "hinglish": "Kya aap abhi wahan kaam kar rahe hain, resign kiya hai, ya terminate kar diya gaya?"
+      }
+    },
+    {
+      "key": "workType",
+      "type": "choice",
+      "required": false,
+      "options": [
+        "regular_employee",
+        "contract_worker",
+        "intern",
+        "daily_wage",
+        "other"
+      ],
+      "question": {
+        "en": "What type of worker are you?",
+        "hi": "आप किस प्रकार के कर्मचारी हैं?",
+        "hinglish": "Aap kis type ke worker hain?"
+      }
+    },
+    {
+      "key": "joiningDate",
+      "type": "date",
+      "required": false,
+      "question": {
+        "en": "When did you join?",
+        "hi": "आपने कब ज्वाइन किया?",
+        "hinglish": "Aapne job kab join ki thi?"
+      }
+    },
+    {
+      "key": "hasOfferLetter",
+      "type": "yesno",
+      "required": false,
+      "question": {
+        "en": "Do you have an offer, appointment or employment letter?",
+        "hi": "क्या आपके पास ऑफ़र, नियुक्ति या रोजगार पत्र है?",
+        "hinglish": "Kya aapke paas offer, appointment ya employment letter hai?"
+      }
+    },
+    {
+      "key": "hasPayslip",
+      "type": "yesno",
+      "required": false,
+      "question": {
+        "en": "Do you have payslips or bank records showing earlier salary payments?",
+        "hi": "क्या आपके पास पेस्लिप या पहले मिले वेतन के बैंक रिकॉर्ड हैं?",
+        "hinglish": "Kya aapke paas payslip ya pehle salary payment ke bank records hain?"
+      }
+    },
+    {
+      "key": "state",
+      "type": "text",
+      "required": false,
+      "question": {
+        "en": "Which state do you work in?",
+        "hi": "आप किस राज्य में काम करते हैं?",
+        "hinglish": "Aap kis state mein kaam karte hain?"
+      }
+    }
+  ],
+
+  "scenarios": [
+    {
+      "id": "current_salary_pending",
+      "whenUserSays": {
+        "en": "I am still working but my salary is pending",
+        "hi": "मैं अभी काम कर रहा हूँ लेकिन मेरी सैलरी बाकी है",
+        "hinglish": "Main abhi bhi kaam kar raha hoon lekin salary pending hai"
+      },
+      "title": {
+        "en": "Current salary pending",
+        "hi": "वर्तमान वेतन बकाया",
+        "hinglish": "Current salary pending"
+      },
+      "extraGuidance": {
+        "en": [
+          "Keep records of the unpaid months and the amount due.",
+          "Send the employer or HR a written request instead of relying only on verbal promises.",
+          "Keep copies of emails, messages, payslips and bank statements."
+        ],
+        "hi": [
+          "जिन महीनों का वेतन बाकी है और कितनी रकम बाकी है, उसका रिकॉर्ड रखें।",
+          "सिर्फ़ मौखिक वादे पर निर्भर न रहें; नियोक्ता या HR को लिखित माँग भेजें।",
+          "ईमेल, मैसेज, पेस्लिप और बैंक स्टेटमेंट की कॉपी रखें।"
+        ],
+        "hinglish": [
+          "Jin months ki salary pending hai aur kitni amount due hai, uska record rakhein.",
+          "Sirf verbal promise par depend na karein; employer ya HR ko written demand bhejein.",
+          "Emails, messages, payslips aur bank statements ki copies rakhein."
+        ]
+      }
+    },
+
+    {
+      "id": "resigned_fnf",
+      "whenUserSays": {
+        "en": "I resigned and my salary or full and final settlement is pending",
+        "hi": "मैंने इस्तीफ़ा दिया है और मेरी सैलरी या फुल एंड फाइनल बाकी है",
+        "hinglish": "Maine resign kar diya hai aur salary ya full and final pending hai"
+      },
+      "title": {
+        "en": "Resignation / full and final pending",
+        "hi": "इस्तीफ़ा / फुल एंड फाइनल बकाया",
+        "hinglish": "Resignation / full and final pending"
+      },
+      "extraGuidance": {
+        "en": [
+          "List each unpaid item separately: salary, approved leave-related dues, bonus if applicable, and other amounts actually payable under your employment terms or applicable law.",
+          "Keep your resignation email, acceptance, relieving letter and settlement statement if available.",
+          "For wages covered by the Code on Wages, payment after resignation is subject to the statutory timing in the Code and applicable provisions."
+        ],
+        "hi": [
+          "हर बकाया मद अलग लिखें: वेतन, लागू अवकाश संबंधी बकाया, लागू होने पर बोनस और रोजगार शर्तों या कानून के अनुसार वास्तव में देय अन्य रकम।",
+          "इस्तीफ़ा ईमेल, स्वीकृति, रिलीविंग लेटर और सेटलमेंट स्टेटमेंट संभालकर रखें।",
+          "वेतन संहिता के अंतर्गत आने वाले वेतन के लिए इस्तीफ़े के बाद भुगतान की वैधानिक समय-सीमा संहिता और लागू प्रावधानों पर निर्भर करती है।"
+        ],
+        "hinglish": [
+          "Har pending item alag likhein: salary, applicable leave dues, applicable bonus aur employment terms ya law ke according payable amounts.",
+          "Resignation email, acceptance, relieving letter aur settlement statement sambhal kar rakhein.",
+          "Code on Wages ke under covered wages ke liye resignation ke baad payment timing applicable provisions par depend karti hai."
+        ]
+      }
+    },
+
+    {
+      "id": "terminated",
+      "whenUserSays": {
+        "en": "I was terminated and my salary is unpaid",
+        "hi": "मुझे निकाल दिया गया और मेरी सैलरी नहीं मिली",
+        "hinglish": "Mujhe terminate kar diya gaya aur salary nahi mili"
+      },
+      "title": {
+        "en": "Termination and unpaid wages",
+        "hi": "निकाले जाने के बाद बकाया वेतन",
+        "hinglish": "Termination ke baad unpaid salary"
+      },
+      "extraGuidance": {
+        "en": [
+          "Keep the termination letter, email or message and your last payslip.",
+          "Record the date of termination and all unpaid amounts.",
+          "The Code on Wages contains a specific payment timeline for wages after removal, dismissal or retrenchment, subject to its applicable provisions."
+        ],
+        "hi": [
+          "टर्मिनेशन लेटर, ईमेल या मैसेज और आख़िरी पेस्लिप संभालकर रखें।",
+          "टर्मिनेशन की तारीख और सभी बकाया रकम लिखकर रखें।",
+          "वेतन संहिता में हटाए जाने, बर्खास्तगी या छँटनी के बाद वेतन भुगतान की विशेष समय-सीमा है, जो लागू प्रावधानों पर निर्भर करती है।"
+        ],
+        "hinglish": [
+          "Termination letter, email ya message aur last payslip sambhal kar rakhein.",
+          "Termination ki date aur saari pending amount note karein.",
+          "Code on Wages mein removal, dismissal ya retrenchment ke baad wages payment ki specific timing hai, jo applicable provisions par depend karti hai."
+        ]
+      }
+    },
+
+    {
+      "id": "no_offer_letter",
+      "whenUserSays": {
+        "en": "I have no offer letter or contract",
+        "hi": "मेरे पास ऑफ़र लेटर या कॉन्ट्रैक्ट नहीं है",
+        "hinglish": "Mere paas offer letter ya contract nahi hai"
+      },
+      "title": {
+        "en": "No offer letter",
+        "hi": "ऑफ़र लेटर नहीं है",
+        "hinglish": "Offer letter nahi hai"
+      },
+      "extraGuidance": {
+        "en": [
+          "Other evidence may include bank statements, payslips, employee ID, attendance records, emails, WhatsApp messages and work instructions.",
+          "Write your role, joining date, agreed salary and unpaid period clearly in your demand."
+        ],
+        "hi": [
+          "अन्य सबूतों में बैंक स्टेटमेंट, पेस्लिप, कर्मचारी पहचान पत्र, उपस्थिति रिकॉर्ड, ईमेल, WhatsApp संदेश और काम से जुड़े निर्देश शामिल हो सकते हैं।",
+          "अपनी लिखित माँग में पद, ज्वाइनिंग तारीख, तय वेतन और बकाया अवधि साफ़ लिखें।"
+        ],
+        "hinglish": [
+          "Other proof mein bank statements, payslips, employee ID, attendance records, emails, WhatsApp messages aur work instructions ho sakte hain.",
+          "Apni written demand mein designation, joining date, agreed salary aur unpaid period clearly likhein."
+        ]
+      }
+    },
+
+    {
+      "id": "contract_worker",
+      "whenUserSays": {
+        "en": "I work through a contractor or agency",
+        "hi": "मैं ठेकेदार या एजेंसी के ज़रिये काम करता हूँ",
+        "hinglish": "Main contractor ya agency ke through kaam karta hoon"
+      },
+      "title": {
+        "en": "Contract / agency worker",
+        "hi": "ठेका / एजेंसी कर्मचारी",
+        "hinglish": "Contract / agency worker"
+      },
+      "extraGuidance": {
+        "en": [
+          "Keep the contractor's details and the details of the company where you actually worked.",
+          "Mention both parties in your written complaint if relevant.",
+          "The exact liability and forum can depend on the facts and applicable labour law."
+        ],
+        "hi": [
+          "ठेकेदार की जानकारी और जिस कंपनी में आपने वास्तव में काम किया उसकी जानकारी रखें।",
+          "जहाँ प्रासंगिक हो, लिखित शिकायत में दोनों पक्षों का विवरण दें।",
+          "सटीक जिम्मेदारी और प्राधिकारी मामले के तथ्यों तथा लागू श्रम कानून पर निर्भर कर सकते हैं।"
+        ],
+        "hinglish": [
+          "Contractor ki details aur jis company mein actually kaam kiya uski details rakhein.",
+          "Agar relevant ho to written complaint mein dono parties ki details mention karein.",
+          "Exact liability aur forum facts aur applicable labour law par depend kar sakta hai."
+        ]
+      }
+    },
+
+    {
+      "id": "intern_stipend",
+      "whenUserSays": {
+        "en": "My internship stipend was not paid",
+        "hi": "मेरी इंटर्नशिप का स्टाइपेंड नहीं मिला",
+        "hinglish": "Meri internship ka stipend nahi mila"
+      },
+      "title": {
+        "en": "Internship / stipend",
+        "hi": "इंटर्नशिप / स्टाइपेंड",
+        "hinglish": "Internship / stipend"
+      },
+      "extraGuidance": {
+        "en": [
+          "Keep the internship offer, stipend promise, attendance records and messages.",
+          "Whether a particular intern is covered by employment-related wage provisions depends on the facts and arrangement.",
+          "For a formal dispute, consider legal-aid or professional advice before filing."
+        ],
+        "hi": [
+          "इंटर्नशिप ऑफ़र, स्टाइपेंड का वादा, उपस्थिति रिकॉर्ड और संदेश संभालकर रखें।",
+          "किसी विशेष इंटर्न पर रोजगार संबंधी वेतन प्रावधान लागू होंगे या नहीं, यह तथ्यों और व्यवस्था पर निर्भर करता है।",
+          "औपचारिक विवाद से पहले विधिक सहायता या पेशेवर सलाह लेने पर विचार करें।"
+        ],
+        "hinglish": [
+          "Internship offer, stipend promise, attendance records aur messages sambhal kar rakhein.",
+          "Kisi particular intern par employment-related wage provisions apply honge ya nahi, ye facts aur arrangement par depend karta hai.",
+          "Formal dispute file karne se pehle legal aid ya professional advice lene par consider karein."
+        ]
+      }
+    },
+
+    {
+      "id": "salary_deduction",
+      "whenUserSays": {
+        "en": "My employer deducted money from my salary",
+        "hi": "मेरे नियोक्ता ने मेरी सैलरी से पैसे काट लिए",
+        "hinglish": "Employer ne meri salary se paise kaat liye"
+      },
+      "title": {
+        "en": "Salary deduction",
+        "hi": "वेतन से कटौती",
+        "hinglish": "Salary deduction"
+      },
+      "extraGuidance": {
+        "en": [
+          "Ask for a written breakup and reason for every disputed deduction.",
+          "The Code on Wages permits only deductions authorised by the Code and applicable rules.",
+          "Keep the payslip showing the deduction."
+        ],
+        "hi": [
+          "हर विवादित कटौती का लिखित कारण और विवरण माँगें।",
+          "वेतन संहिता के तहत केवल संहिता और लागू नियमों के अनुसार अधिकृत कटौतियाँ की जा सकती हैं।",
+          "कटौती दिखाने वाली पेस्लिप संभालकर रखें।"
+        ],
+        "hinglish": [
+          "Har disputed deduction ka written breakup aur reason maangein.",
+          "Code on Wages ke under sirf authorised deductions ki permission hoti hai, subject to applicable rules.",
+          "Deduction dikhane wali payslip sambhal kar rakhein."
+        ]
+      }
+    },
+
+    {
+      "id": "below_minimum",
+      "whenUserSays": {
+        "en": "I am being paid less than the applicable minimum wage",
+        "hi": "मुझे लागू न्यूनतम मज़दूरी से कम भुगतान हो रहा है",
+        "hinglish": "Mujhe applicable minimum wage se kam salary mil rahi hai"
+      },
+      "title": {
+        "en": "Minimum wage issue",
+        "hi": "न्यूनतम मज़दूरी का मामला",
+        "hinglish": "Minimum wage issue"
+      },
+      "extraGuidance": {
+        "en": [
+          "Check the applicable notified minimum wage for your employment, category and area.",
+          "Keep payslips, attendance records and proof of the work performed.",
+          "Do not assume one minimum-wage rate applies to every job."
+        ],
+        "hi": [
+          "अपने रोजगार, श्रेणी और क्षेत्र पर लागू अधिसूचित न्यूनतम मज़दूरी देखें।",
+          "पेस्लिप, उपस्थिति रिकॉर्ड और किए गए काम का सबूत रखें।",
+          "हर नौकरी पर एक ही न्यूनतम मज़दूरी लागू होती है, ऐसा न मानें।"
+        ],
+        "hinglish": [
+          "Apne employment, category aur area par applicable notified minimum wage check karein.",
+          "Payslips, attendance records aur work proof rakhein.",
+          "Ye assume na karein ki har job par same minimum wage rate apply hota hai."
+        ]
+      }
+    },
+
+    {
+      "id": "fear_retaliation",
+      "whenUserSays": {
+        "en": "I am scared the employer will retaliate",
+        "hi": "मुझे डर है कि नियोक्ता बदला लेगा",
+        "hinglish": "Mujhe darr hai ki employer badla lega"
+      },
+      "title": {
+        "en": "Fear of retaliation",
+        "hi": "बदले की कार्रवाई का डर",
+        "hinglish": "Employer retaliation ka fear"
+      },
+      "extraGuidance": {
+        "en": [
+          "Keep copies of important documents outside the employer's systems.",
+          "Prefer written communication so there is a clear record.",
+          "Consider contacting legal aid, a labour union or a lawyer about the safest way to proceed."
+        ],
+        "hi": [
+          "महत्वपूर्ण दस्तावेज़ों की कॉपी नियोक्ता के सिस्टम से बाहर सुरक्षित रखें।",
+          "लिखित संचार को प्राथमिकता दें ताकि रिकॉर्ड रहे।",
+          "आगे बढ़ने के सुरक्षित तरीके के लिए विधिक सहायता, श्रमिक संघ या वकील से संपर्क करने पर विचार करें।"
+        ],
+        "hinglish": [
+          "Important documents ki copies employer ke system ke bahar safe rakhein.",
+          "Written communication ko prefer karein taaki proper record rahe.",
+          "Safe way se proceed karne ke liye legal aid, labour union ya lawyer se contact karne par consider karein."
+        ]
+      }
+    },
+
+    {
+      "id": "company_closed",
+      "whenUserSays": {
+        "en": "The company closed or the employer disappeared",
+        "hi": "कंपनी बंद हो गई या नियोक्ता गायब हो गया",
+        "hinglish": "Company band ho gayi ya employer gayab ho gaya"
+      },
+      "title": {
+        "en": "Company closed",
+        "hi": "कंपनी बंद हो गई",
+        "hinglish": "Company band ho gayi"
+      },
+      "extraGuidance": {
+        "en": [
+          "Keep the company's last known address and registration details.",
+          "Collect evidence of employment and unpaid wages.",
+          "If several workers are affected, each worker should preserve their own employment and payment records."
+        ],
+        "hi": [
+          "कंपनी का आख़िरी ज्ञात पता और पंजीकरण विवरण रखें।",
+          "रोजगार और बकाया वेतन का सबूत इकट्ठा करें।",
+          "यदि कई कर्मचारी प्रभावित हैं, तो हर कर्मचारी अपना रोजगार और भुगतान रिकॉर्ड सुरक्षित रखे।"
+        ],
+        "hinglish": [
+          "Company ka last known address aur registration details rakhein.",
+          "Employment aur unpaid salary ka proof collect karein.",
+          "Agar multiple workers affected hain, to har worker apne employment aur payment records safe rakhe."
+        ]
+      }
+    },
+
+    {
+      "id": "pf_gratuity",
+      "whenUserSays": {
+        "en": "My PF or gratuity is also unpaid",
+        "hi": "मेरा PF या ग्रेच्युटी भी बकाया है",
+        "hinglish": "Mera PF ya gratuity bhi pending hai"
+      },
+      "title": {
+        "en": "PF / gratuity",
+        "hi": "PF / ग्रेच्युटी",
+        "hinglish": "PF / gratuity"
+      },
+      "extraGuidance": {
+        "en": [
+          "PF and gratuity are governed through separate legal and administrative mechanisms.",
+          "For PF issues, use the EPFO grievance mechanism where applicable.",
+          "For gratuity issues, the appropriate authority depends on the applicable law and employment facts."
+        ],
+        "hi": [
+          "PF और ग्रेच्युटी अलग कानूनी और प्रशासनिक व्यवस्थाओं के अंतर्गत आते हैं।",
+          "PF की समस्या के लिए जहाँ लागू हो EPFO शिकायत व्यवस्था का उपयोग करें।",
+          "ग्रेच्युटी की समस्या के लिए उपयुक्त प्राधिकारी लागू कानून और रोजगार के तथ्यों पर निर्भर करता है।"
+        ],
+        "hinglish": [
+          "PF aur gratuity separate legal aur administrative mechanisms ke under aate hain.",
+          "PF issue ke liye, jahan applicable ho, EPFO grievance mechanism use karein.",
+          "Gratuity issue ke liye appropriate authority applicable law aur employment facts par depend karti hai."
+        ]
+      }
+    }
+  ],
+
+  "rights": {
+    "en": [
+      "The Code on Wages, 2019 provides rules for payment of wages and authorised deductions.",
+      "For monthly wage periods, wages are generally required to be paid before the expiry of the seventh day of the succeeding month.",
+      "For an employee who has been removed, dismissed, retrenched, resigned, or become unemployed due to closure, the Code provides payment within two working days, subject to its applicable provisions.",
+      "A claim under Section 45 may generally be filed within three years from the date the claim arose; the authority may entertain a delayed application for sufficient cause.",
+      "The claim authority may order compensation in addition to the claim, potentially up to ten times the claim determined, subject to the law and circumstances.",
+      "The authority is required to endeavour to decide the claim within three months.",
+      "The exact notified claim authority and procedure can depend on the appropriate government and applicable rules.",
+      "Eligible persons can seek free legal services through the Legal Services Authorities."
+    ],
+    "hi": [
+      "वेतन संहिता, 2019 वेतन भुगतान और अधिकृत कटौतियों के संबंध में नियम देती है।",
+      "मासिक वेतन अवधि के लिए वेतन सामान्यतः अगले महीने की 7 तारीख समाप्त होने से पहले दिया जाना चाहिए।",
+      "जिस कर्मचारी को हटाया गया, बर्खास्त किया गया, छँटनी हुई, जिसने इस्तीफ़ा दिया या प्रतिष्ठान बंद होने के कारण बेरोज़गार हुआ, उसके लिए संहिता लागू प्रावधानों के अनुसार दो कार्य दिवस के भीतर भुगतान का प्रावधान करती है।",
+      "धारा 45 के तहत दावा सामान्यतः दावा उत्पन्न होने की तारीख से तीन साल के भीतर किया जा सकता है; पर्याप्त कारण होने पर देरी से आवेदन स्वीकार किया जा सकता है।",
+      "दावा प्राधिकारी दावे के अतिरिक्त मुआवज़ा दे सकता है, जो परिस्थितियों और कानून के अनुसार निर्धारित दावे के दस गुना तक हो सकता है।",
+      "प्राधिकारी से दावा तीन महीने के भीतर तय करने का प्रयास करने की अपेक्षा है।",
+      "सटीक दावा प्राधिकारी और प्रक्रिया उपयुक्त सरकार तथा लागू नियमों पर निर्भर कर सकती है।",
+      "पात्र व्यक्ति विधिक सेवा प्राधिकरण के माध्यम से मुफ़्त कानूनी सहायता ले सकते हैं।"
+    ],
+    "hinglish": [
+      "Code on Wages, 2019 wages payment aur authorised deductions ke rules provide karta hai.",
+      "Monthly wage period ke liye wages generally succeeding month ke 7th day ki expiry se pehle pay ki jaani chahiye.",
+      "Removal, dismissal, retrenchment, resignation ya closure ki wajah se unemployment ke cases mein Code applicable provisions ke subject mein two working days ke payment provision deta hai.",
+      "Section 45 ke under claim generally claim arise hone ki date se 3 years ke andar file kiya ja sakta hai; sufficient cause hone par delayed application entertain ho sakti hai.",
+      "Claim authority claim ke alawa compensation order kar sakti hai, jo law aur circumstances ke subject mein determined claim ke ten times tak ho sakta hai.",
+      "Authority se claim ko three months ke andar decide karne ka endeavour expected hai.",
+      "Exact claim authority aur procedure appropriate government aur applicable rules par depend kar sakta hai.",
+      "Eligible persons Legal Services Authorities ke through free legal services le sakte hain."
+    ]
+  },
+
+  "steps": {
+    "en": [
+      "Collect your appointment or offer letter, payslips, bank statements and employment records.",
+      "Calculate the unpaid amount and list the months or components separately.",
+      "Send a written demand to HR or the employer and keep proof of delivery.",
+      "If there is no resolution, send a written reminder and consider a formal legal notice where appropriate.",
+      "Approach the appropriate labour authority or labour department for the applicable employment and state.",
+      "If you need help and are eligible, contact the Legal Services Authority at 15100."
+    ],
+    "hi": [
+      "अपना नियुक्ति या ऑफ़र लेटर, पेस्लिप, बैंक स्टेटमेंट और रोजगार रिकॉर्ड इकट्ठा करें।",
+      "बकाया रकम की गणना करें और महीनों या अलग-अलग मदों को सूचीबद्ध करें।",
+      "HR या नियोक्ता को लिखित माँग भेजें और भेजने का प्रमाण रखें।",
+      "समस्या हल न होने पर लिखित रिमाइंडर भेजें और जहाँ उचित हो औपचारिक कानूनी नोटिस पर विचार करें।",
+      "लागू रोजगार और राज्य के अनुसार उचित श्रम प्राधिकारी या श्रम विभाग से संपर्क करें।",
+      "यदि आप पात्र हैं और सहायता चाहिए, तो 15100 पर विधिक सेवा प्राधिकरण से संपर्क करें।"
+    ],
+    "hinglish": [
+      "Apna appointment ya offer letter, payslips, bank statements aur employment records collect karein.",
+      "Pending amount calculate karein aur months ya components ko separately list karein.",
+      "HR ya employer ko written demand bhejein aur delivery ka proof rakhein.",
+      "Agar resolution nahi hota, to written reminder bhejein aur jahan appropriate ho formal legal notice par consider karein.",
+      "Applicable employment aur state ke hisaab se appropriate labour authority ya labour department se contact karein.",
+      "Agar aap eligible hain aur help chahiye, to Legal Services Authority ke 15100 helpline par contact karein."
+    ]
+  },
+
+  "documents": {
+    "en": [
+      "Offer / appointment letter or employment contract",
+      "Payslips",
+      "Bank statements showing salary credits",
+      "Employment ID card",
+      "Attendance or work records",
+      "Emails or WhatsApp messages about salary",
+      "Resignation or termination letter, if any",
+      "Full and final settlement statement, if any",
+      "Proof of overtime or other claimed dues, if applicable"
+    ],
+    "hi": [
+      "ऑफ़र / नियुक्ति पत्र या रोजगार अनुबंध",
+      "पेस्लिप",
+      "वेतन क्रेडिट दिखाने वाले बैंक स्टेटमेंट",
+      "कर्मचारी पहचान पत्र",
+      "उपस्थिति या काम के रिकॉर्ड",
+      "वेतन से संबंधित ईमेल या WhatsApp संदेश",
+      "इस्तीफ़ा या टर्मिनेशन लेटर, यदि हो",
+      "फुल एंड फाइनल सेटलमेंट स्टेटमेंट, यदि हो",
+      "ओवरटाइम या अन्य बकाया का सबूत, यदि लागू हो"
+    ],
+    "hinglish": [
+      "Offer / appointment letter ya employment contract",
+      "Payslips",
+      "Salary credits dikhane wale bank statements",
+      "Employee ID card",
+      "Attendance ya work records",
+      "Salary se related emails ya WhatsApp messages",
+      "Resignation ya termination letter, agar hai",
+      "Full and final settlement statement, agar hai",
+      "Overtime ya other claimed dues ka proof, agar applicable hai"
+    ]
+  },
+
+  "authorities": [
+    {
+      "id": "maha_labour",
+      "name": {
+        "en": "Department of Labour, Government of Maharashtra",
+        "hi": "श्रम विभाग, महाराष्ट्र सरकार",
+        "hinglish": "Department of Labour, Maharashtra Government"
+      },
+      "type": "labour_department",
+      "website": "https://mahakamgar.maharashtra.gov.in",
+      "email": "mahalabourcommr@gmail.com",
+      "contact": {
+        "en": "Use the Labour Department website to identify the appropriate office or service for your area.",
+        "hi": "अपने क्षेत्र के उचित कार्यालय या सेवा की जानकारी के लिए श्रम विभाग की वेबसाइट देखें।",
+        "hinglish": "Apne area ke appropriate office ya service ki information ke liye Labour Department ki website dekhein."
+      },
+      "note": {
+        "en": "Exact complaint authority and procedure can depend on the applicable law, establishment and current state rules.",
+        "hi": "सटीक शिकायत प्राधिकारी और प्रक्रिया लागू कानून, प्रतिष्ठान और वर्तमान राज्य नियमों पर निर्भर कर सकती है।",
+        "hinglish": "Exact complaint authority aur procedure applicable law, establishment aur current state rules par depend kar sakta hai."
+      },
+      "sourceStatus": "official"
+    },
+
+    {
+      "id": "shramsuvidha",
+      "name": {
+        "en": "Shram Suvidha Portal",
+        "hi": "श्रम सुविधा पोर्टल",
+        "hinglish": "Shram Suvidha Portal"
+      },
+      "type": "portal",
+      "website": "https://shramsuvidha.gov.in",
+      "contact": {
+        "en": "Online labour services and complaint-related facilities where applicable.",
+        "hi": "जहाँ लागू हो वहाँ ऑनलाइन श्रम सेवाएँ और शिकायत संबंधी सुविधाएँ।",
+        "hinglish": "Jahan applicable ho wahan online labour services aur complaint-related facilities."
+      },
+      "note": {
+        "en": "Check whether your particular complaint is routed through this portal or a state-specific system.",
+        "hi": "देखें कि आपकी शिकायत इस पोर्टल से ली जाती है या राज्य के अलग सिस्टम से।",
+        "hinglish": "Check karein ki aapki particular complaint is portal se li jaati hai ya state-specific system se."
+      },
+      "sourceStatus": "official_portal"
+    },
+
+    {
+      "id": "epfigms",
+      "name": {
+        "en": "EPFO Grievance Portal",
+        "hi": "EPFO शिकायत पोर्टल",
+        "hinglish": "EPFO Grievance Portal"
+      },
+      "type": "portal",
+      "website": "https://epfigms.gov.in",
+      "email": "epfigms-epfo@nic.in",
+      "contact": {
+        "en": "For applicable provident fund grievances.",
+        "hi": "लागू भविष्य निधि (PF) शिकायतों के लिए।",
+        "hinglish": "Applicable provident fund ya PF grievances ke liye."
+      },
+      "note": {
+        "en": "Use for PF-related issues, not ordinary unpaid salary claims.",
+        "hi": "PF से जुड़ी समस्या के लिए उपयोग करें, सामान्य बकाया वेतन के लिए नहीं।",
+        "hinglish": "PF-related issue ke liye use karein, ordinary unpaid salary claim ke liye nahi."
+      },
+      "sourceStatus": "official_portal"
+    },
+
+    {
+      "id": "nalsa",
+      "name": {
+        "en": "National Legal Services Authority",
+        "hi": "राष्ट्रीय विधिक सेवा प्राधिकरण",
+        "hinglish": "National Legal Services Authority"
+      },
+      "type": "legal_aid",
+      "website": "https://nalsa.gov.in",
+      "email": "nalsa-dla@nic.in",
+      "contact": {
+        "en": "Toll-free legal aid helpline: 15100",
+        "hi": "टोल-फ्री कानूनी सहायता हेल्पलाइन: 15100",
+        "hinglish": "Toll-free legal aid helpline: 15100"
+      },
+      "note": {
+        "en": "Legal-aid eligibility depends on the applicable eligibility rules.",
+        "hi": "कानूनी सहायता की पात्रता लागू पात्रता नियमों पर निर्भर करती है।",
+        "hinglish": "Legal aid eligibility applicable eligibility rules par depend karti hai."
+      },
+      "sourceStatus": "official"
+    }
+  ],
+
+  "timeLimits": {
+    "en": [
+      "Monthly wages: generally before expiry of the 7th day of the succeeding month.",
+      "After resignation, removal, dismissal or retrenchment: the Code provides payment within two working days, subject to applicable provisions.",
+      "Claim application: generally within 3 years from the date the claim arose, with possible delayed acceptance for sufficient cause.",
+      "Do not wait unnecessarily even where a limitation period exists."
+    ],
+    "hi": [
+      "मासिक वेतन: सामान्यतः अगले महीने की 7 तारीख समाप्त होने से पहले।",
+      "इस्तीफ़े, हटाए जाने, बर्खास्तगी या छँटनी के बाद: संहिता लागू प्रावधानों के अनुसार दो कार्य दिवस के भीतर भुगतान का प्रावधान करती है।",
+      "दावा आवेदन: सामान्यतः दावा उत्पन्न होने की तारीख से 3 साल के भीतर; पर्याप्त कारण होने पर देरी से आवेदन स्वीकार किया जा सकता है।",
+      "समय-सीमा होने के बावजूद अनावश्यक देरी न करें।"
+    ],
+    "hinglish": [
+      "Monthly wages: generally succeeding month ke 7th day ki expiry se pehle pay ki jaani chahiye.",
+      "Resignation, removal, dismissal ya retrenchment ke baad: Code applicable provisions ke subject mein two working days ke payment provision deta hai.",
+      "Claim application: generally claim arise hone ki date se 3 years ke andar; sufficient cause hone par delayed acceptance possible hai.",
+      "Limitation period hone ke baad bhi unnecessary delay na karein."
+    ]
+  },
+
+  "commonMistakes": {
+    "en": [
+      "Relying only on verbal promises from HR or a manager.",
+      "Not keeping bank statements and payslips.",
+      "Sending an angry message without clearly stating the amount and unpaid period.",
+      "Signing a no-dues or full-and-final document without understanding what it records.",
+      "Deleting work emails or messages after leaving the company.",
+      "Assuming the same labour procedure applies to every worker and every state."
+    ],
+    "hi": [
+      "HR या मैनेजर के केवल मौखिक वादे पर भरोसा करना।",
+      "बैंक स्टेटमेंट और पेस्लिप सुरक्षित न रखना।",
+      "रकम और बकाया अवधि स्पष्ट किए बिना गुस्से में संदेश भेजना।",
+      "बिना समझे नो-ड्यूज़ या फुल एंड फाइनल दस्तावेज़ पर हस्ताक्षर करना।",
+      "कंपनी छोड़ने के बाद काम से जुड़े ईमेल या संदेश मिटा देना।",
+      "यह मान लेना कि हर कर्मचारी और हर राज्य में एक ही श्रम प्रक्रिया लागू होती है।"
+    ],
+    "hinglish": [
+      "HR ya manager ke sirf verbal promise par depend karna.",
+      "Bank statements aur payslips safe na rakhna.",
+      "Amount aur unpaid period clearly bataye bina angry message bhejna.",
+      "Samjhe bina no-dues ya full-and-final document sign karna.",
+      "Company chhodne ke baad work emails ya messages delete kar dena.",
+      "Ye assume karna ki har worker aur har state mein same labour procedure apply hota hai."
+    ]
+  },
+
+  "complaintTemplates": [
+    {
+      "id": "salary_demand",
+      "subject": {
+        "en": "Request for Payment of Pending Salary",
+        "hi": "बकाया वेतन के भुगतान का अनुरोध",
+        "hinglish": "Pending Salary Payment ka Request"
+      },
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": {
+            "en": "Your name",
+            "hi": "आपका नाम",
+            "hinglish": "Aapka naam"
+          }
+        },
+        {
+          "key": "phone",
+          "type": "phone",
+          "label": {
+            "en": "Your phone",
+            "hi": "आपका फोन",
+            "hinglish": "Aapka phone"
+          }
+        },
+        {
+          "key": "employerName",
+          "type": "text",
+          "label": {
+            "en": "Employer / company",
+            "hi": "नियोक्ता / कंपनी",
+            "hinglish": "Employer / company"
+          }
+        },
+        {
+          "key": "designation",
+          "type": "text",
+          "label": {
+            "en": "Your designation",
+            "hi": "आपका पद",
+            "hinglish": "Aapka designation"
+          }
+        },
+        {
+          "key": "joiningDate",
+          "type": "date",
+          "label": {
+            "en": "Joining date",
+            "hi": "ज्वाइनिंग की तारीख",
+            "hinglish": "Joining date"
+          }
+        },
+        {
+          "key": "monthsPending",
+          "type": "text",
+          "label": {
+            "en": "Unpaid month / period",
+            "hi": "बकाया महीना / अवधि",
+            "hinglish": "Unpaid month / period"
+          }
+        },
+        {
+          "key": "amount",
+          "type": "number",
+          "label": {
+            "en": "Amount pending (Rs.)",
+            "hi": "बकाया रकम (रु.)",
+            "hinglish": "Pending amount (Rs.)"
+          }
+        },
+        {
+          "key": "requestedResponseDays",
+          "type": "number",
+          "label": {
+            "en": "Requested response period",
+            "hi": "माँगी गई जवाब की अवधि",
+            "hinglish": "Requested response period"
+          },
+          "default": 7
+        },
+        {
+          "key": "today",
+          "type": "date",
+          "label": {
+            "en": "Date",
+            "hi": "तारीख",
+            "hinglish": "Date"
+          }
+        }
+      ],
+      "body": {
+        "en": "To,\nThe HR Manager / {{employerName}}\n\nDate: {{today}}\n\nSubject: Request for Payment of Pending Salary\n\nDear Sir/Madam,\n\nI, {{name}}, have been working with {{employerName}} as {{designation}} since {{joiningDate}}. My salary for {{monthsPending}}, amounting to Rs. {{amount}}, remains unpaid.\n\nI request you to clear the pending amount and provide a written confirmation of the payment within {{requestedResponseDays}} days of this request.\n\nIf the matter remains unresolved, I may approach the appropriate labour authorities or seek other remedies available under applicable law.\n\nYours sincerely,\n{{name}}\n{{phone}}",
+        "hi": "सेवा में,\nएचआर मैनेजर / {{employerName}}\n\nदिनांक: {{today}}\n\nविषय: बकाया वेतन के भुगतान का अनुरोध\n\nमहोदय/महोदया,\n\nमैं, {{name}}, {{joiningDate}} से {{employerName}} में {{designation}} के पद पर कार्यरत हूँ। {{monthsPending}} का मेरा वेतन, जो रु. {{amount}} है, अब तक बकाया है।\n\nमेरा अनुरोध है कि इस अनुरोध की तारीख से {{requestedResponseDays}} दिनों के भीतर बकाया राशि का भुगतान करें और लिखित पुष्टि दें।\n\nयदि समस्या का समाधान नहीं होता है, तो मैं उचित श्रम प्राधिकारी से संपर्क कर सकता/सकती हूँ या लागू कानून के तहत उपलब्ध अन्य उपाय अपना सकता/सकती हूँ।\n\nभवदीय,\n{{name}}\n{{phone}}",
+        "hinglish": "To,\nHR Manager / {{employerName}}\n\nDate: {{today}}\n\nSubject: Pending Salary Payment ka Request\n\nDear Sir/Madam,\n\nMain, {{name}}, {{joiningDate}} se {{employerName}} mein {{designation}} ke position par kaam kar raha/rahi hoon. {{monthsPending}} ki meri salary, Rs. {{amount}}, abhi tak pending hai.\n\nRequest hai ki is request ki date se {{requestedResponseDays}} days ke andar pending amount clear karein aur payment ki written confirmation dein.\n\nAgar matter resolve nahi hota hai, to main appropriate labour authority se contact kar sakta/sakti hoon ya applicable law ke under available remedies seek kar sakta/sakti hoon.\n\nYours sincerely,\n{{name}}\n{{phone}}"
+      },
+      "note": {
+        "en": "The requested response period is a request made by the employee; it is not presented as a statutory deadline.",
+        "hi": "माँगी गई जवाब की अवधि कर्मचारी द्वारा माँगी गई अवधि है; इसे वैधानिक समय-सीमा के रूप में प्रस्तुत नहीं किया गया है।",
+        "hinglish": "Requested response period employee ki request hai; ise statutory deadline ke roop mein present nahi kiya gaya hai."
+      }
+    },
+
+    {
+      "id": "labour_office_complaint",
+      "subject": {
+        "en": "Complaint Regarding Non-Payment of Wages",
+        "hi": "वेतन का भुगतान न होने की शिकायत",
+        "hinglish": "Salary / Wages Payment na hone ki Complaint"
+      },
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": {
+            "en": "Your name",
+            "hi": "आपका नाम",
+            "hinglish": "Aapka naam"
+          }
+        },
+        {
+          "key": "phone",
+          "type": "phone",
+          "label": {
+            "en": "Your phone",
+            "hi": "आपका फोन",
+            "hinglish": "Aapka phone"
+          }
+        },
+        {
+          "key": "address",
+          "type": "text",
+          "label": {
+            "en": "Your address",
+            "hi": "आपका पता",
+            "hinglish": "Aapka address"
+          }
+        },
+        {
+          "key": "employerName",
+          "type": "text",
+          "label": {
+            "en": "Employer / company",
+            "hi": "नियोक्ता / कंपनी",
+            "hinglish": "Employer / company"
+          }
+        },
+        {
+          "key": "employerAddress",
+          "type": "text",
+          "label": {
+            "en": "Employer address",
+            "hi": "नियोक्ता का पता",
+            "hinglish": "Employer ka address"
+          }
+        },
+        {
+          "key": "designation",
+          "type": "text",
+          "label": {
+            "en": "Your designation",
+            "hi": "आपका पद",
+            "hinglish": "Aapka designation"
+          }
+        },
+        {
+          "key": "joiningDate",
+          "type": "date",
+          "label": {
+            "en": "Joining date",
+            "hi": "ज्वाइनिंग की तारीख",
+            "hinglish": "Joining date"
+          }
+        },
+        {
+          "key": "monthsPending",
+          "type": "text",
+          "label": {
+            "en": "Unpaid month / period",
+            "hi": "बकाया महीना / अवधि",
+            "hinglish": "Unpaid month / period"
+          }
+        },
+        {
+          "key": "amount",
+          "type": "number",
+          "label": {
+            "en": "Amount pending (Rs.)",
+            "hi": "बकाया रकम (रु.)",
+            "hinglish": "Pending amount (Rs.)"
+          }
+        },
+        {
+          "key": "today",
+          "type": "date",
+          "label": {
+            "en": "Date",
+            "hi": "तारीख",
+            "hinglish": "Date"
+          }
+        }
+      ],
+      "body": {
+        "en": "To,\nThe Appropriate Labour Authority\n\nDate: {{today}}\n\nSubject: Complaint Regarding Non-Payment of Wages\n\nRespected Sir/Madam,\n\nI, {{name}}, resident of {{address}}, was/is employed with {{employerName}}, {{employerAddress}}, as {{designation}} since {{joiningDate}}.\n\nMy wages for {{monthsPending}}, amounting to Rs. {{amount}}, have not been paid despite my written request to the employer.\n\nI am enclosing available employment records, payslips, bank statements and correspondence as supporting documents.\n\nI request that the matter be examined and that appropriate action be taken under the applicable law.\n\nYours sincerely,\n{{name}}\n{{phone}}",
+        "hi": "सेवा में,\nउचित श्रम प्राधिकारी\n\nदिनांक: {{today}}\n\nविषय: वेतन का भुगतान न होने की शिकायत\n\nमहोदय/महोदया,\n\nमैं, {{name}}, निवासी {{address}}, {{joiningDate}} से {{employerName}}, {{employerAddress}} में {{designation}} के पद पर कार्यरत था/थी या हूँ।\n\nमेरी लिखित माँग के बावजूद {{monthsPending}} का मेरा वेतन, जो रु. {{amount}} है, अब तक नहीं दिया गया है।\n\nमैं रोजगार रिकॉर्ड, पेस्लिप, बैंक स्टेटमेंट और पत्राचार की उपलब्ध प्रतियाँ संलग्न कर रहा/रही हूँ।\n\nकृपया मामले की जाँच कर लागू कानून के अनुसार उचित कार्रवाई करें।\n\nभवदीय,\n{{name}}\n{{phone}}",
+        "hinglish": "To,\nAppropriate Labour Authority\n\nDate: {{today}}\n\nSubject: Salary / Wages Payment na hone ki Complaint\n\nRespected Sir/Madam,\n\nMain, {{name}}, {{address}} ka resident, {{joiningDate}} se {{employerName}}, {{employerAddress}} mein {{designation}} ke position par employed tha/thi ya hoon.\n\nEmployer ko written request dene ke baad bhi {{monthsPending}} ki meri wages, Rs. {{amount}}, abhi tak pay nahi hui hain.\n\nMain available employment records, payslips, bank statements aur correspondence ko supporting documents ke roop mein attach kar raha/rahi hoon.\n\nRequest hai ki matter ko examine karke applicable law ke according appropriate action liya jaye.\n\nYours sincerely,\n{{name}}\n{{phone}}"
+      }
+    }
+  ],
+
+  "sources": [
+    {
+      "label": "Code on Wages, 2019 — Ministry of Labour & Employment",
+      "url": "https://labour.gov.in/sites/default/files/the_code_on_wages_2019_no._29_of_2019.pdf",
+      "status": "official"
+    },
+    {
+      "label": "Code on Wages, 2019 — wage payment provisions",
+      "url": "https://labour.gov.in/sites/default/files/the_code_on_wages_as_passed_in_lok_sabha.pdf",
+      "status": "official"
+    },
+    {
+      "label": "Maharashtra Labour Department",
+      "url": "https://mahakamgar.maharashtra.gov.in",
+      "status": "official"
+    },
+    {
+      "label": "Maharashtra Labour Department — Labour Code FAQs",
+      "url": "https://mahakamgar.maharashtra.gov.in/Site/Upload/PDF/FAQs-on-LabourCodes-16032026.pdf",
+      "status": "official"
+    },
+    {
+      "label": "NALSA — Legal Services",
+      "url": "https://nalsa.gov.in",
+      "status": "official"
+    }
+  ],
+
+  "verifyBeforeDemo": [
+    "Confirm the exact Maharashtra authority and filing procedure for the user's specific type of employment before presenting a complaint route as definite.",
+    "Do not display a single minimum-wage amount without first identifying the applicable employment, category and area.",
+    "Treat internship and stipend cases separately because whether particular wage provisions apply depends on the facts.",
+    "Keep the distinction between a statutory deadline and a response period requested by the user in the complaint template.",
+    "If the app later expands beyond Maharashtra, add state-specific labour authority data rather than assuming Maharashtra procedure applies everywhere.",
+    "Confirm that the cited Code on Wages provisions are applicable to the user's employment situation before presenting them as directly applicable."
+  ],
+
+  "fallback": {
+    "en": "I can explain the general steps, but I need your state, employment type and unpaid period before identifying the most appropriate labour authority.",
+    "hi": "मैं सामान्य कदम बता सकता/सकती हूँ, लेकिन सही श्रम प्राधिकारी बताने के लिए आपका राज्य, रोजगार का प्रकार और बकाया अवधि जानना ज़रूरी है।",
+    "hinglish": "Main general steps explain kar sakta/sakti hoon, lekin appropriate labour authority identify karne ke liye aapka state, employment type aur unpaid period jaana zaroori hai."
+  },
+
+  "disclaimer": {
+    "en": "This app provides general legal information, not legal advice. Labour rights and procedures can depend on the worker's status, establishment, state rules and facts. Verify important details with an official authority or qualified legal professional.",
+    "hi": "यह ऐप सामान्य कानूनी जानकारी देता है, कानूनी सलाह नहीं। श्रम अधिकार और प्रक्रिया कर्मचारी की स्थिति, प्रतिष्ठान, राज्य के नियमों और मामले के तथ्यों पर निर्भर कर सकते हैं। महत्वपूर्ण जानकारी की पुष्टि आधिकारिक प्राधिकारी या योग्य कानूनी पेशेवर से करें।",
+    "hinglish": "Yeh app general legal information deta hai, legal advice nahi. Labour rights aur procedures worker ki status, establishment, state rules aur case ke facts par depend kar sakte hain. Important details ko official authority ya qualified legal professional se verify karein."
+  }
+}

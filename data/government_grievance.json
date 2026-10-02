@@ -1,0 +1,969 @@
+{
+  "id": "government_grievance",
+  "version": "1.3",
+  "lastVerified": "2026-10-01",
+
+  "languages": [
+    "en",
+    "hi",
+    "hinglish"
+  ],
+
+  "jurisdiction": {
+    "en": "India (central departments) and Maharashtra (state services). Local government services may have separate procedures.",
+    "hi": "भारत (केंद्रीय विभाग) और महाराष्ट्र (राज्य सेवाएँ)। स्थानीय सरकारी सेवाओं की अलग प्रक्रिया हो सकती है।",
+    "hinglish": "India ke central departments aur Maharashtra ki state services. Local government services ki alag process ho sakti hai."
+  },
+
+  "title": {
+    "en": "Government Service Grievance",
+    "hi": "सरकारी सेवा शिकायत",
+    "hinglish": "Sarkari Seva Ki Shikayat"
+  },
+
+  "icon": "landmark",
+
+  "keywords": {
+    "en": [
+      "government",
+      "government office",
+      "government service",
+      "government department",
+      "application pending",
+      "application delayed",
+      "certificate delayed",
+      "certificate not received",
+      "delay",
+      "office",
+      "officer",
+      "ration card",
+      "pension",
+      "passport",
+      "license",
+      "bribe",
+      "corruption",
+      "no response",
+      "no reply",
+      "rejected",
+      "application rejected",
+      "tehsil",
+      "caste certificate",
+      "income certificate",
+      "domicile",
+      "residence certificate",
+      "municipal",
+      "municipality",
+      "municipal corporation",
+      "denied service",
+      "government complaint",
+      "file pending",
+      "file delayed",
+      "public service",
+      "government form",
+      "government application",
+      "government work",
+      "official delay"
+    ],
+
+    "hi": [
+      "सरकारी",
+      "सरकारी काम",
+      "सरकारी कार्यालय",
+      "सरकारी विभाग",
+      "सरकारी सेवा",
+      "आवेदन लंबित",
+      "आवेदन में देरी",
+      "प्रमाणपत्र में देरी",
+      "प्रमाणपत्र नहीं मिला",
+      "देरी",
+      "दफ़्तर",
+      "कार्यालय",
+      "अधिकारी",
+      "राशन कार्ड",
+      "पेंशन",
+      "पासपोर्ट",
+      "लाइसेंस",
+      "रिश्वत",
+      "भ्रष्टाचार",
+      "जवाब नहीं",
+      "कोई जवाब नहीं",
+      "आवेदन खारिज",
+      "आवेदन अस्वीकार",
+      "तहसील",
+      "जाति प्रमाणपत्र",
+      "आय प्रमाणपत्र",
+      "निवास प्रमाणपत्र",
+      "डोमिसाइल",
+      "नगरपालिका",
+      "नगर निगम",
+      "सरकारी शिकायत",
+      "फाइल लंबित",
+      "फाइल में देरी",
+      "सार्वजनिक सेवा",
+      "सरकारी आवेदन",
+      "सरकारी फॉर्म"
+    ],
+
+    "hinglish": [
+      "sarkari kaam",
+      "sarkari office",
+      "sarkari daftar",
+      "sarkari seva",
+      "sarkari department",
+      "government office",
+      "government seva",
+      "application pending",
+      "application atki hai",
+      "application atka hai",
+      "application delay",
+      "arji pending",
+      "arji atki hai",
+      "arji atka hai",
+      "certificate nahi mila",
+      "certificate pending",
+      "certificate ban nahi raha",
+      "certificate mein delay",
+      "tehsil office",
+      "tehsil mein kaam nahi ho raha",
+      "pension nahi aa rahi",
+      "pension nahi mili",
+      "ration card nahi bana",
+      "ration card pending",
+      "passport pending",
+      "license nahi mila",
+      "officer jawab nahi de raha",
+      "office wale jawab nahi de rahe",
+      "application reject",
+      "application reject ho gaya",
+      "form reject kar diya",
+      "officer ghoos maang raha",
+      "rishwat maang raha",
+      "ghoos maang rahe hain",
+      "paise maang raha hai",
+      "office ke chakkar",
+      "file pending hai",
+      "file atki hui hai",
+      "file mein delay hai",
+      "sarkari complaint",
+      "government complaint",
+      "sarkari application",
+      "sarkari form",
+      "government ka kaam nahi ho raha",
+      "officer response nahi de raha"
+    ]
+  },
+
+  "summary": {
+    "en": "A government office has delayed, denied or ignored your application or service. You can use the appropriate government grievance system. For Maharashtra notified public services, an appeal route may also be available under the Right to Public Services framework.",
+    "hi": "किसी सरकारी कार्यालय ने आपके आवेदन या सेवा में देरी की, उसे अस्वीकार किया या अनदेखा किया है। आप उचित सरकारी शिकायत प्रणाली का उपयोग कर सकते हैं। महाराष्ट्र की अधिसूचित सार्वजनिक सेवाओं के लिए सेवा हक्क व्यवस्था के तहत अपील का रास्ता भी उपलब्ध हो सकता है।",
+    "hinglish": "Agar kisi sarkari office ne aapke application ya service mein delay kiya, reject kiya ya response nahi diya hai, to aap appropriate government grievance system ka use kar sakte hain. Maharashtra ki notified public services ke liye Right to Public Services framework ke under appeal ka option bhi ho sakta hai."
+  },
+
+  "urgent": false,
+
+  "extractFields": [
+    "serviceName",
+    "department",
+    "applicationNumber",
+    "applicationDate",
+    "govtLevel",
+    "statusNow",
+    "location"
+  ],
+
+  "followUpQuestions": [
+    {
+      "key": "serviceName",
+      "type": "text",
+      "required": true,
+      "question": {
+        "en": "Which government service or document is this about?",
+        "hi": "यह किस सरकारी सेवा या दस्तावेज़ के बारे में है?",
+        "hinglish": "Yeh kis government service ya document ke baare mein hai?"
+      }
+    },
+    {
+      "key": "department",
+      "type": "text",
+      "required": true,
+      "question": {
+        "en": "Which office or department did you apply to?",
+        "hi": "आपने किस कार्यालय या विभाग में आवेदन किया था?",
+        "hinglish": "Aapne kis office ya department mein application diya tha?"
+      }
+    },
+    {
+      "key": "applicationNumber",
+      "type": "text",
+      "required": false,
+      "question": {
+        "en": "Do you have an application or acknowledgement number?",
+        "hi": "क्या आपके पास आवेदन या पावती संख्या है?",
+        "hinglish": "Kya aapke paas application ya acknowledgement number hai?"
+      }
+    },
+    {
+      "key": "applicationDate",
+      "type": "date",
+      "required": false,
+      "question": {
+        "en": "When did you apply?",
+        "hi": "आपने कब आवेदन किया था?",
+        "hinglish": "Aapne application kab diya tha?"
+      }
+    },
+    {
+      "key": "govtLevel",
+      "type": "choice",
+      "required": false,
+      "options": [
+        "central",
+        "maharashtra_state",
+        "local",
+        "unknown"
+      ],
+      "question": {
+        "en": "Is this a central, Maharashtra state, or local government service?",
+        "hi": "यह केंद्रीय, महाराष्ट्र राज्य या स्थानीय सरकारी सेवा है?",
+        "hinglish": "Yeh central, Maharashtra state ya local government service hai?"
+      }
+    },
+    {
+      "key": "statusNow",
+      "type": "choice",
+      "required": false,
+      "options": [
+        "pending",
+        "rejected",
+        "no_response",
+        "bribe_demanded",
+        "other"
+      ],
+      "question": {
+        "en": "What happened: pending, rejected, no response, or bribe demanded?",
+        "hi": "क्या हुआ: लंबित, अस्वीकार, जवाब नहीं या रिश्वत माँगी गई?",
+        "hinglish": "Kya hua: pending hai, reject hua, response nahi mila ya bribe maangi gayi?"
+      }
+    },
+    {
+      "key": "location",
+      "type": "text",
+      "required": false,
+      "question": {
+        "en": "Which city, district or state is this government office in?",
+        "hi": "यह सरकारी कार्यालय किस शहर, जिले या राज्य में है?",
+        "hinglish": "Yeh government office kis city, district ya state mein hai?"
+      }
+    }
+  ],
+
+  "scenarios": [
+    {
+      "id": "which_portal",
+      "whenUserSays": {
+        "en": "I don't know whether this is a central or state government matter",
+        "hi": "मुझे नहीं पता कि यह केंद्र का मामला है या राज्य का",
+        "hinglish": "Mujhe nahi pata yeh central government ka matter hai ya state government ka"
+      },
+      "title": {
+        "en": "Central or state?",
+        "hi": "केंद्र या राज्य?",
+        "hinglish": "Central ya state government?"
+      },
+      "extraGuidance": {
+        "en": [
+          "First identify the department and service.",
+          "For applicable central government departments, CPGRAMS is a central public grievance system.",
+          "For applicable Maharashtra state services, Aaple Sarkar and the Maharashtra Right to Public Services system may be relevant.",
+          "Local municipal or panchayat services may have their own grievance route."
+        ],
+        "hi": [
+          "पहले विभाग और सेवा की पहचान करें।",
+          "लागू केंद्रीय सरकारी विभागों के लिए CPGRAMS केंद्रीय लोक शिकायत प्रणाली है।",
+          "लागू महाराष्ट्र राज्य सेवाओं के लिए आपले सरकार और महाराष्ट्र सेवा हक्क व्यवस्था प्रासंगिक हो सकती है।",
+          "स्थानीय नगरपालिका या पंचायत सेवाओं की अपनी शिकायत व्यवस्था हो सकती है।"
+        ],
+        "hinglish": [
+          "Sabse pehle department aur service identify karein.",
+          "Applicable central government departments ke liye CPGRAMS central public grievance system hai.",
+          "Applicable Maharashtra state services ke liye Aaple Sarkar aur Maharashtra Right to Public Services system relevant ho sakta hai.",
+          "Local municipal ya panchayat services ka apna grievance route ho sakta hai."
+        ]
+      }
+    },
+
+    {
+      "id": "rts_service",
+      "whenUserSays": {
+        "en": "It is a Maharashtra service with a notified time limit",
+        "hi": "यह महाराष्ट्र की समय-सीमा वाली अधिसूचित सेवा है",
+        "hinglish": "Yeh Maharashtra ki notified service hai jisme time limit di gayi hai"
+      },
+      "title": {
+        "en": "Maharashtra notified service",
+        "hi": "महाराष्ट्र की अधिसूचित सेवा",
+        "hinglish": "Maharashtra notified service"
+      },
+      "extraGuidance": {
+        "en": [
+          "Check whether the service is notified under the Maharashtra Right to Public Services framework.",
+          "Check the service-specific time limit on the official Maharashtra service portal.",
+          "If the service is delayed or refused, use the applicable First Appeal and Second Appeal process.",
+          "A Third Appeal may be available before the Maharashtra State Commission for Right to Services within the applicable period."
+        ],
+        "hi": [
+          "देखें कि सेवा महाराष्ट्र सेवा हक्क व्यवस्था के तहत अधिसूचित है या नहीं।",
+          "आधिकारिक महाराष्ट्र सेवा पोर्टल पर उस सेवा की समय-सीमा देखें।",
+          "सेवा में देरी या इनकार होने पर लागू प्रथम और द्वितीय अपील प्रक्रिया का उपयोग करें।",
+          "लागू अवधि के भीतर महाराष्ट्र राज्य सेवा हक्क आयोग के समक्ष तृतीय अपील का रास्ता उपलब्ध हो सकता है।"
+        ],
+        "hinglish": [
+          "Check karein ki service Maharashtra Right to Public Services framework ke under notified hai ya nahi.",
+          "Official Maharashtra service portal par us service ki specific time limit check karein.",
+          "Agar service mein delay ya refusal hua hai, to applicable First Appeal aur Second Appeal process use karein.",
+          "Applicable period ke andar Maharashtra State Commission for Right to Services ke saamne Third Appeal ka option ho sakta hai."
+        ]
+      }
+    },
+
+    {
+      "id": "not_notified",
+      "whenUserSays": {
+        "en": "My service does not have a notified time limit",
+        "hi": "मेरी सेवा की कोई अधिसूचित समय-सीमा नहीं है",
+        "hinglish": "Meri service ki koi notified time limit nahi hai"
+      },
+      "title": {
+        "en": "No notified time limit",
+        "hi": "अधिसूचित समय-सीमा नहीं",
+        "hinglish": "Notified time limit nahi hai"
+      },
+      "extraGuidance": {
+        "en": [
+          "Ask the office for the current status and the reason for delay in writing.",
+          "Keep proof that you contacted the office.",
+          "You may use the appropriate grievance portal.",
+          "Where appropriate, an RTI request can be used to seek information about the status of a file."
+        ],
+        "hi": [
+          "कार्यालय से वर्तमान स्थिति और देरी का कारण लिखित में माँगें।",
+          "कार्यालय से संपर्क करने का प्रमाण रखें।",
+          "उचित शिकायत पोर्टल का उपयोग कर सकते हैं।",
+          "जहाँ उचित हो, फ़ाइल की स्थिति की जानकारी लेने के लिए RTI आवेदन किया जा सकता है।"
+        ],
+        "hinglish": [
+          "Office se current status aur delay ka reason written mein maangein.",
+          "Office se contact karne ka proof sambhal kar rakhein.",
+          "Appropriate grievance portal ka use kar sakte hain.",
+          "Jahan appropriate ho, file ki status information lene ke liye RTI application diya ja sakta hai."
+        ]
+      }
+    },
+
+    {
+      "id": "bribe",
+      "whenUserSays": {
+        "en": "An officer is asking for a bribe",
+        "hi": "अधिकारी रिश्वत माँग रहा है",
+        "hinglish": "Officer mujhse rishwat ya ghoos maang raha hai"
+      },
+      "title": {
+        "en": "Bribe demand",
+        "hi": "रिश्वत की माँग",
+        "hinglish": "Rishwat ki demand"
+      },
+      "extraGuidance": {
+        "en": [
+          "Do not treat a bribe as a normal service fee.",
+          "Record the date, place, officer's name or designation and what was demanded, if it is safe to do so.",
+          "Use the appropriate Anti-Corruption Bureau or other authorised anti-corruption reporting channel.",
+          "If you face an immediate safety threat, contact emergency services."
+        ],
+        "hi": [
+          "रिश्वत को सामान्य सरकारी शुल्क न समझें।",
+          "यदि सुरक्षित हो तो तारीख, जगह, अधिकारी का नाम या पद और क्या माँगा गया, इसका रिकॉर्ड रखें।",
+          "उचित भ्रष्टाचार निरोधक ब्यूरो या अधिकृत भ्रष्टाचार-रोधी शिकायत माध्यम का उपयोग करें।",
+          "यदि तत्काल सुरक्षा का खतरा हो तो आपातकालीन सेवा से संपर्क करें।"
+        ],
+        "hinglish": [
+          "Rishwat ko normal government service fee na samjhein.",
+          "Agar safe ho to date, place, officer ka naam ya designation aur kya demand ki gayi thi uska record rakhein.",
+          "Appropriate Anti-Corruption Bureau ya authorised anti-corruption reporting channel ka use karein.",
+          "Agar immediate safety threat ho to emergency services se contact karein."
+        ]
+      }
+    },
+
+    {
+      "id": "rejected",
+      "whenUserSays": {
+        "en": "My government application was rejected",
+        "hi": "मेरा सरकारी आवेदन अस्वीकार हो गया",
+        "hinglish": "Mera government application reject ho gaya"
+      },
+      "title": {
+        "en": "Application rejected",
+        "hi": "आवेदन अस्वीकार",
+        "hinglish": "Application reject ho gaya"
+      },
+      "extraGuidance": {
+        "en": [
+          "Ask for the rejection reason in writing.",
+          "Check whether a missing document or correction caused the rejection.",
+          "If an appeal process exists for that service, follow the service-specific appeal route.",
+          "Attach the rejection communication when filing a grievance."
+        ],
+        "hi": [
+          "अस्वीकृति का कारण लिखित में माँगें।",
+          "देखें कि कोई दस्तावेज़ या सुधार की कमी के कारण आवेदन अस्वीकार हुआ या नहीं।",
+          "यदि उस सेवा के लिए अपील प्रक्रिया है तो सेवा-विशिष्ट अपील मार्ग अपनाएँ।",
+          "शिकायत करते समय अस्वीकृति का पत्र या संदेश संलग्न करें।"
+        ],
+        "hinglish": [
+          "Rejection ka reason written mein maangein.",
+          "Check karein ki koi document missing ya correction ki wajah se application reject hua hai ya nahi.",
+          "Agar service ke liye appeal process available hai to service-specific appeal route follow karein.",
+          "Grievance file karte waqt rejection letter ya message attach karein."
+        ]
+      }
+    },
+
+    {
+      "id": "no_acknowledgement",
+      "whenUserSays": {
+        "en": "I submitted the application but received no acknowledgement",
+        "hi": "मैंने आवेदन दिया लेकिन पावती नहीं मिली",
+        "hinglish": "Maine application diya lekin acknowledgement nahi mila"
+      },
+      "title": {
+        "en": "No acknowledgement",
+        "hi": "पावती नहीं मिली",
+        "hinglish": "Acknowledgement nahi mila"
+      },
+      "extraGuidance": {
+        "en": [
+          "Keep a copy or photograph of the submitted application.",
+          "Keep any receipt, postal proof, email or online payment record.",
+          "Ask the office in writing for an acknowledgement or application number.",
+          "Avoid submitting the same application repeatedly unless the department instructs you to do so."
+        ],
+        "hi": [
+          "जमा किए गए आवेदन की कॉपी या फोटो रखें।",
+          "रसीद, डाक प्रमाण, ईमेल या ऑनलाइन भुगतान का रिकॉर्ड रखें।",
+          "कार्यालय से लिखित रूप में पावती या आवेदन संख्या माँगें।",
+          "जब तक विभाग ऐसा न कहे, वही आवेदन बार-बार जमा करने से बचें।"
+        ],
+        "hinglish": [
+          "Submitted application ki copy ya photo sambhal kar rakhein.",
+          "Receipt, postal proof, email ya online payment record rakhein.",
+          "Office se written mein acknowledgement ya application number maangein.",
+          "Jab tak department na kahe, same application baar-baar submit karne se bachein."
+        ]
+      }
+    },
+
+    {
+      "id": "urgent_pension_ration",
+      "whenUserSays": {
+        "en": "This is urgent because I need pension, ration or a medical-related government service",
+        "hi": "यह ज़रूरी है क्योंकि मुझे पेंशन, राशन या चिकित्सा संबंधी सरकारी सेवा चाहिए",
+        "hinglish": "Yeh urgent hai kyunki mujhe pension, ration ya medical-related government service chahiye"
+      },
+      "title": {
+        "en": "Urgent government service",
+        "hi": "तत्काल सरकारी सेवा",
+        "hinglish": "Urgent government service"
+      },
+      "extraGuidance": {
+        "en": [
+          "Clearly explain the hardship or urgency in the grievance.",
+          "Attach documents showing the pending application and the immediate difficulty, where available.",
+          "Use the applicable grievance and appeal mechanism rather than relying only on repeated visits to the office."
+        ],
+        "hi": [
+          "शिकायत में कठिनाई या तत्काल आवश्यकता साफ़ लिखें।",
+          "जहाँ उपलब्ध हो, लंबित आवेदन और तत्काल समस्या से जुड़े दस्तावेज़ लगाएँ।",
+          "केवल बार-बार कार्यालय जाने के बजाय लागू शिकायत और अपील व्यवस्था का उपयोग करें।"
+        ],
+        "hinglish": [
+          "Grievance mein apni difficulty ya urgency clearly explain karein.",
+          "Jahan available ho, pending application aur immediate problem se related documents attach karein.",
+          "Sirf baar-baar office jaane ke bajay applicable grievance aur appeal mechanism ka use karein."
+        ]
+      }
+    },
+
+    {
+      "id": "application_pending",
+      "whenUserSays": {
+        "en": "My application has been pending for a long time",
+        "hi": "मेरा आवेदन बहुत समय से लंबित है",
+        "hinglish": "Mera application bahut time se pending hai"
+      },
+      "title": {
+        "en": "Application pending",
+        "hi": "आवेदन लंबित",
+        "hinglish": "Application pending hai"
+      },
+      "extraGuidance": {
+        "en": [
+          "Find the application number and expected service time.",
+          "Check the application status on the official portal if online tracking is available.",
+          "Send a written status request to the office.",
+          "Escalate through the applicable grievance or appeal mechanism if the delay continues."
+        ],
+        "hi": [
+          "आवेदन संख्या और अपेक्षित सेवा समय पता करें।",
+          "यदि ऑनलाइन ट्रैकिंग उपलब्ध है तो आधिकारिक पोर्टल पर स्थिति देखें।",
+          "कार्यालय को लिखित रूप से स्थिति पूछें।",
+          "देरी जारी रहने पर लागू शिकायत या अपील व्यवस्था के माध्यम से आगे बढ़ें।"
+        ],
+        "hinglish": [
+          "Application number aur expected service time pata karein.",
+          "Agar online tracking available hai to official portal par status check karein.",
+          "Office ko written mein status ke baare mein poochein.",
+          "Delay continue hone par applicable grievance ya appeal mechanism ke through escalate karein."
+        ]
+      }
+    }
+  ],
+
+  "rights": {
+    "en": [
+      "Government departments generally provide grievance mechanisms for complaints about delay, denial or service-related problems.",
+      "CPGRAMS provides a central online public grievance mechanism for applicable government departments.",
+      "CPGRAMS guidance provides a 21-day grievance redressal target and an appeal mechanism; the exact handling can depend on the department and grievance.",
+      "In Maharashtra, notified public services can be subject to time limits and appeal mechanisms under the Maharashtra Right to Public Services framework.",
+      "An RTI request can be used to seek information from public authorities where the RTI Act and the concerned authority's process apply.",
+      "You should keep your application number, acknowledgement and communication records."
+    ],
+    "hi": [
+      "सरकारी विभागों में आम तौर पर देरी, इनकार या सेवा से जुड़ी समस्याओं के लिए शिकायत व्यवस्था होती है।",
+      "लागू सरकारी विभागों के लिए CPGRAMS ऑनलाइन लोक शिकायत व्यवस्था प्रदान करता है।",
+      "CPGRAMS की व्यवस्था में 21 दिनों में शिकायत निपटाने का लक्ष्य और अपील का प्रावधान है; वास्तविक प्रक्रिया विभाग और शिकायत के अनुसार अलग हो सकती है।",
+      "महाराष्ट्र में अधिसूचित सार्वजनिक सेवाएँ महाराष्ट्र सेवा हक्क व्यवस्था के तहत समय-सीमा और अपील प्रक्रिया के अधीन हो सकती हैं।",
+      "जहाँ RTI अधिनियम और संबंधित प्राधिकारी की प्रक्रिया लागू हो, वहाँ जानकारी माँगने के लिए RTI आवेदन किया जा सकता है।",
+      "अपनी आवेदन संख्या, पावती और सभी संचार रिकॉर्ड सुरक्षित रखें।"
+    ],
+    "hinglish": [
+      "Government departments mein delay, denial ya service-related problems ke liye generally grievance mechanism hota hai.",
+      "Applicable central government departments ke liye CPGRAMS online public grievance system provide karta hai.",
+      "CPGRAMS guidance mein grievance redressal ka 21-day target aur appeal mechanism diya gaya hai; exact handling department aur grievance par depend kar sakti hai.",
+      "Maharashtra mein notified public services Maharashtra Right to Public Services framework ke under time limits aur appeal mechanisms ke subject ho sakti hain.",
+      "Jahan RTI Act aur concerned authority ki process apply hoti hai, wahan information lene ke liye RTI application diya ja sakta hai.",
+      "Application number, acknowledgement aur saare communication records safe rakhein."
+    ]
+  },
+
+  "steps": {
+    "en": [
+      "Note the service name, department, application number and application date.",
+      "Check the official portal for the service status and applicable time limit.",
+      "Contact the concerned office in writing and ask for the current status or reason for delay.",
+      "File a grievance through the appropriate portal and keep the grievance registration number.",
+      "For Maharashtra notified services, use the applicable First Appeal and Second Appeal process if the service is delayed or refused.",
+      "If the matter requires further information, consider an RTI request where applicable.",
+      "Seek legal aid if the issue requires formal legal proceedings."
+    ],
+    "hi": [
+      "सेवा का नाम, विभाग, आवेदन संख्या और आवेदन की तारीख लिख लें।",
+      "सेवा की स्थिति और लागू समय-सीमा के लिए आधिकारिक पोर्टल देखें।",
+      "संबंधित कार्यालय को लिखित रूप से वर्तमान स्थिति या देरी का कारण पूछें।",
+      "उचित पोर्टल के माध्यम से शिकायत दर्ज करें और शिकायत संख्या सुरक्षित रखें।",
+      "महाराष्ट्र की अधिसूचित सेवाओं के लिए देरी या इनकार होने पर लागू प्रथम और द्वितीय अपील प्रक्रिया का उपयोग करें।",
+      "अधिक जानकारी चाहिए तो जहाँ लागू हो RTI आवेदन पर विचार करें।",
+      "यदि मामले में औपचारिक कानूनी कार्रवाई की आवश्यकता हो तो कानूनी सहायता लें।"
+    ],
+    "hinglish": [
+      "Service ka naam, department, application number aur application date note karein.",
+      "Official portal par service status aur applicable time limit check karein.",
+      "Concerned office ko written mein current status ya delay ka reason poochein.",
+      "Appropriate portal ke through grievance file karein aur grievance registration number save karein.",
+      "Maharashtra ki notified services mein delay ya refusal hone par applicable First Appeal aur Second Appeal process use karein.",
+      "Agar further information chahiye to jahan applicable ho RTI application par consider karein.",
+      "Agar matter mein formal legal proceedings ki zarurat ho to legal aid lein."
+    ]
+  },
+
+  "documents": {
+    "en": [
+      "Application form",
+      "Application or acknowledgement number",
+      "Proof of submission date",
+      "Receipt or payment proof",
+      "Supporting documents submitted with the application",
+      "Emails, letters or messages with the office",
+      "Rejection letter, if any",
+      "Identity proof, where required"
+    ],
+    "hi": [
+      "आवेदन पत्र",
+      "आवेदन या पावती संख्या",
+      "आवेदन जमा करने की तारीख का प्रमाण",
+      "रसीद या भुगतान का प्रमाण",
+      "आवेदन के साथ जमा किए गए सहायक दस्तावेज़",
+      "कार्यालय के साथ ईमेल, पत्र या संदेश",
+      "अस्वीकृति पत्र, यदि हो",
+      "जहाँ आवश्यक हो पहचान प्रमाण"
+    ],
+    "hinglish": [
+      "Application form",
+      "Application ya acknowledgement number",
+      "Application submit karne ki date ka proof",
+      "Receipt ya payment proof",
+      "Application ke saath submit kiye gaye supporting documents",
+      "Office ke saath emails, letters ya messages",
+      "Rejection letter, agar hai",
+      "Jahan required ho identity proof"
+    ]
+  },
+
+  "authorities": [
+    {
+      "id": "cpgrams",
+      "name": {
+        "en": "CPGRAMS",
+        "hi": "CPGRAMS",
+        "hinglish": "CPGRAMS"
+      },
+      "type": "portal",
+      "website": "https://pgportal.gov.in",
+      "websiteLabel": {
+        "en": "Open CPGRAMS",
+        "hi": "CPGRAMS खोलें",
+        "hinglish": "CPGRAMS kholen"
+      },
+      "email": "cpgrams-darpg@nic.in",
+      "emailLabel": {
+        "en": "CPGRAMS technical support email",
+        "hi": "CPGRAMS तकनीकी सहायता ईमेल",
+        "hinglish": "CPGRAMS technical support email"
+      },
+      "contact": {
+        "en": "Online public grievance system for applicable government departments.",
+        "hi": "लागू सरकारी विभागों के लिए ऑनलाइन लोक शिकायत प्रणाली।",
+        "hinglish": "Applicable government departments ke liye online public grievance system."
+      },
+      "note": {
+        "en": "Use the website to submit a grievance. The email listed here is for technical/support-related contact and should not be presented as the normal grievance-submission route. Keep the grievance registration number.",
+        "hi": "शिकायत दर्ज करने के लिए वेबसाइट का उपयोग करें। यहां दिया गया ईमेल तकनीकी/सहायता संबंधी संपर्क के लिए है और इसे सामान्य शिकायत दर्ज करने के माध्यम के रूप में प्रस्तुत नहीं करना चाहिए। शिकायत पंजीकरण संख्या सुरक्षित रखें।",
+        "hinglish": "Grievance submit karne ke liye website use karein. Yahan diya email technical/support contact ke liye hai; ise normal grievance submission route ke roop mein present na karein. Grievance registration number save karein."
+      },
+      "sourceStatus": "official"
+    },
+
+    {
+      "id": "aaplesarkar",
+      "name": {
+        "en": "Aaple Sarkar",
+        "hi": "आपले सरकार",
+        "hinglish": "Aaple Sarkar"
+      },
+      "type": "portal",
+      "website": "https://aaplesarkar.mahaonline.gov.in",
+      "websiteLabel": {
+        "en": "Open Aaple Sarkar",
+        "hi": "आपले सरकार खोलें",
+        "hinglish": "Aaple Sarkar kholen"
+      },
+      "contact": {
+        "en": "Maharashtra government service portal.",
+        "hi": "महाराष्ट्र सरकार का सेवा पोर्टल।",
+        "hinglish": "Maharashtra government ka service portal."
+      },
+      "note": {
+        "en": "Use it for applicable Maharashtra government services and check the service-specific time limit and appeal options.",
+        "hi": "लागू महाराष्ट्र सरकारी सेवाओं के लिए इसका उपयोग करें और सेवा की समय-सीमा तथा अपील विकल्प देखें।",
+        "hinglish": "Applicable Maharashtra government services ke liye use karein aur service-specific time limit aur appeal options check karein."
+      },
+      "sourceStatus": "official"
+    },
+
+    {
+      "id": "rtionline",
+      "name": {
+        "en": "RTI Online",
+        "hi": "RTI ऑनलाइन",
+        "hinglish": "RTI Online"
+      },
+      "type": "portal",
+      "website": "https://rtionline.gov.in",
+      "websiteLabel": {
+        "en": "Open RTI Online",
+        "hi": "RTI ऑनलाइन खोलें",
+        "hinglish": "RTI Online kholen"
+      },
+      "email": "helprtionline-dopt@nic.in",
+      "emailLabel": {
+        "en": "RTI Online support email",
+        "hi": "RTI ऑनलाइन सहायता ईमेल",
+        "hinglish": "RTI Online support email"
+      },
+      "contact": {
+        "en": "Online RTI facility for applicable central public authorities.",
+        "hi": "लागू केंद्रीय सार्वजनिक प्राधिकरणों के लिए ऑनलाइन RTI सुविधा।",
+        "hinglish": "Applicable central public authorities ke liye online RTI facility."
+      },
+      "note": {
+        "en": "The RTI Online portal applies to applicable central public authorities. State public authorities may use their own RTI procedure. The listed email is for portal/support-related queries, not a substitute for filing an RTI application.",
+        "hi": "RTI Online पोर्टल लागू केंद्रीय सार्वजनिक प्राधिकरणों के लिए है। राज्य के सार्वजनिक प्राधिकरण अपनी RTI प्रक्रिया का उपयोग कर सकते हैं। दिया गया ईमेल पोर्टल/सहायता संबंधी प्रश्नों के लिए है, RTI आवेदन दाखिल करने का विकल्प नहीं है।",
+        "hinglish": "RTI Online portal applicable central public authorities ke liye hai. State public authorities apni RTI procedure use kar sakte hain. Listed email portal/support queries ke liye hai, RTI application file karne ka substitute nahi hai."
+      },
+      "sourceStatus": "official"
+    },
+
+    {
+      "id": "nalsa",
+      "name": {
+        "en": "National Legal Services Authority",
+        "hi": "राष्ट्रीय विधिक सेवा प्राधिकरण",
+        "hinglish": "National Legal Services Authority"
+      },
+      "type": "legal_aid",
+      "website": "https://nalsa.gov.in",
+      "websiteLabel": {
+        "en": "Visit NALSA",
+        "hi": "NALSA वेबसाइट खोलें",
+        "hinglish": "NALSA website kholen"
+      },
+      "email": "nalsa-dla@nic.in",
+      "emailLabel": {
+        "en": "NALSA email",
+        "hi": "NALSA ईमेल",
+        "hinglish": "NALSA email"
+      },
+      "contact": {
+        "phone": [
+          "15100"
+        ]
+      },
+      "contactLabel": {
+        "en": "Toll-free legal aid helpline: 15100",
+        "hi": "टोल-फ्री कानूनी सहायता हेल्पलाइन: 15100",
+        "hinglish": "Toll-free legal aid helpline: 15100"
+      },
+      "note": {
+        "en": "Legal-aid eligibility depends on the applicable eligibility rules.",
+        "hi": "कानूनी सहायता की पात्रता लागू पात्रता नियमों पर निर्भर करती है।",
+        "hinglish": "Legal aid ki eligibility applicable eligibility rules par depend karti hai."
+      },
+      "sourceStatus": "official"
+    }
+  ],
+
+  "timeLimits": {
+    "en": [
+      "CPGRAMS: the stated grievance redressal target is 21 days.",
+      "CPGRAMS: an appeal mechanism is available; the applicable appeal period should be checked on the current portal guidance.",
+      "Maharashtra notified services: use the service-specific notified time limit shown by the official Maharashtra service system.",
+      "Maharashtra RTS Third Appeal: check the current official rules and portal before displaying a fixed appeal period to the user."
+    ],
+    "hi": [
+      "CPGRAMS: शिकायत निपटाने का बताया गया लक्ष्य 21 दिन है।",
+      "CPGRAMS: अपील की व्यवस्था उपलब्ध है; लागू अपील अवधि वर्तमान पोर्टल की जानकारी से जाँचें।",
+      "महाराष्ट्र की अधिसूचित सेवाएँ: आधिकारिक महाराष्ट्र सेवा प्रणाली में दिखाई गई सेवा-विशिष्ट समय-सीमा देखें।",
+      "महाराष्ट्र RTS तृतीय अपील: उपयोगकर्ता को निश्चित अवधि दिखाने से पहले वर्तमान आधिकारिक नियम और पोर्टल देखें।"
+    ],
+    "hinglish": [
+      "CPGRAMS: stated grievance redressal target 21 days hai.",
+      "CPGRAMS: appeal mechanism available hai; applicable appeal period current portal guidance se check karein.",
+      "Maharashtra notified services: official Maharashtra service system par dikhayi gayi service-specific time limit check karein.",
+      "Maharashtra RTS Third Appeal: user ko fixed appeal period dikhane se pehle current official rules aur portal check karein."
+    ]
+  },
+
+  "commonMistakes": {
+    "en": [
+      "Filing a grievance without the application or acknowledgement number.",
+      "Not keeping proof of the original application.",
+      "Relying only on repeated office visits without written communication.",
+      "Using a random third-party website instead of the official government portal.",
+      "Paying an unofficial agent or officer to speed up a government service.",
+      "Missing an applicable appeal deadline.",
+      "Assuming every government service follows the same time limit."
+    ],
+    "hi": [
+      "आवेदन या पावती संख्या के बिना शिकायत दर्ज करना।",
+      "मूल आवेदन का प्रमाण सुरक्षित न रखना।",
+      "लिखित संपर्क के बिना केवल बार-बार कार्यालय के चक्कर लगाना।",
+      "आधिकारिक सरकारी पोर्टल के बजाय किसी अनजान वेबसाइट का उपयोग करना।",
+      "सरकारी सेवा जल्दी कराने के लिए अनधिकृत एजेंट या अधिकारी को पैसे देना।",
+      "लागू अपील की समय-सीमा चूक जाना।",
+      "यह मान लेना कि हर सरकारी सेवा की एक ही समय-सीमा होती है।"
+    ],
+    "hinglish": [
+      "Application ya acknowledgement number ke bina grievance file karna.",
+      "Original application ka proof safe na rakhna.",
+      "Written communication ke bina sirf baar-baar office ke chakkar lagana.",
+      "Official government portal ke bajay random third-party website use karna.",
+      "Government service jaldi karwane ke liye unofficial agent ya officer ko paise dena.",
+      "Applicable appeal deadline miss karna.",
+      "Yeh assume karna ki har government service ki same time limit hoti hai."
+    ]
+  },
+
+  "complaintTemplates": [
+    {
+      "id": "grievance_letter",
+
+      "subject": {
+        "en": "Grievance regarding Delay / Denial of Government Service",
+        "hi": "सरकारी सेवा में देरी / इनकार की शिकायत",
+        "hinglish": "Government Service mein Delay / Denial ke regarding Grievance"
+      },
+
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": {
+            "en": "Your name",
+            "hi": "आपका नाम",
+            "hinglish": "Aapka naam"
+          }
+        },
+        {
+          "key": "phone",
+          "type": "phone",
+          "label": {
+            "en": "Your phone",
+            "hi": "आपका फोन",
+            "hinglish": "Aapka phone"
+          }
+        },
+        {
+          "key": "department",
+          "type": "text",
+          "label": {
+            "en": "Department / office",
+            "hi": "विभाग / कार्यालय",
+            "hinglish": "Department / office"
+          }
+        },
+        {
+          "key": "serviceName",
+          "type": "text",
+          "label": {
+            "en": "Service / document",
+            "hi": "सेवा / दस्तावेज़",
+            "hinglish": "Service / document"
+          }
+        },
+        {
+          "key": "applicationNumber",
+          "type": "text",
+          "label": {
+            "en": "Application number",
+            "hi": "आवेदन संख्या",
+            "hinglish": "Application number"
+          }
+        },
+        {
+          "key": "applicationDate",
+          "type": "date",
+          "label": {
+            "en": "Application date",
+            "hi": "आवेदन की तारीख",
+            "hinglish": "Application date"
+          }
+        },
+        {
+          "key": "issue",
+          "type": "text",
+          "label": {
+            "en": "Problem",
+            "hi": "समस्या",
+            "hinglish": "Problem"
+          }
+        },
+        {
+          "key": "today",
+          "type": "date",
+          "label": {
+            "en": "Date",
+            "hi": "तारीख",
+            "hinglish": "Date"
+          }
+        }
+      ],
+
+      "body": {
+        "en": "To,\nThe Concerned Officer / Public Grievance Officer\n{{department}}\n\nDate: {{today}}\n\nSubject: Grievance regarding {{serviceName}} — Application No. {{applicationNumber}}\n\nRespected Sir/Madam,\n\nI, {{name}}, applied for {{serviceName}} on {{applicationDate}} under Application No. {{applicationNumber}}.\n\nThe issue I am facing is: {{issue}}\n\nI request you to kindly examine my application, provide the current status and take appropriate action according to the applicable rules.\n\nI have attached the available application records and supporting documents.\n\nYours sincerely,\n{{name}}\n{{phone}}",
+
+        "hi": "सेवा में,\nसंबंधित अधिकारी / लोक शिकायत अधिकारी\n{{department}}\n\nदिनांक: {{today}}\n\nविषय: {{serviceName}} के संबंध में शिकायत — आवेदन संख्या {{applicationNumber}}\n\nमहोदय/महोदया,\n\nमैं, {{name}}, ने {{applicationDate}} को {{serviceName}} के लिए आवेदन किया था। मेरा आवेदन संख्या {{applicationNumber}} है।\n\nमुझे निम्न समस्या का सामना करना पड़ रहा है: {{issue}}\n\nकृपया मेरे आवेदन की जाँच करके वर्तमान स्थिति बताने और लागू नियमों के अनुसार उचित कार्रवाई करने की कृपा करें।\n\nमैं उपलब्ध आवेदन रिकॉर्ड और संबंधित दस्तावेज़ संलग्न कर रहा/रही हूँ।\n\nभवदीय,\n{{name}}\n{{phone}}",
+
+        "hinglish": "To,\nConcerned Officer / Public Grievance Officer\n{{department}}\n\nDate: {{today}}\n\nSubject: {{serviceName}} ke regarding grievance — Application No. {{applicationNumber}}\n\nRespected Sir/Madam,\n\nMain, {{name}}, ne {{applicationDate}} ko {{serviceName}} ke liye application diya tha. Mera Application No. {{applicationNumber}} hai.\n\nMujhe yeh problem face karni pad rahi hai: {{issue}}\n\nMera request hai ki mere application ko check karke current status bataya jaye aur applicable rules ke according appropriate action liya jaye.\n\nMaine available application records aur supporting documents attach kiye hain.\n\nYours sincerely,\n{{name}}\n{{phone}}"
+      }
+    }
+  ],
+
+  "sources": [
+    {
+      "label": "CPGRAMS — Government of India",
+      "url": "https://pgportal.gov.in",
+      "status": "official"
+    },
+    {
+      "label": "Aaple Sarkar — Maharashtra Government",
+      "url": "https://aaplesarkar.mahaonline.gov.in",
+      "status": "official"
+    },
+    {
+      "label": "Maharashtra Government",
+      "url": "https://www.maharashtra.gov.in",
+      "status": "official"
+    },
+    {
+      "label": "RTI Online — Government of India",
+      "url": "https://rtionline.gov.in",
+      "status": "official"
+    },
+    {
+      "label": "National Legal Services Authority",
+      "url": "https://nalsa.gov.in",
+      "status": "official"
+    }
+  ],
+
+  "verifyBeforeDemo": {
+    "en": [
+      "Open pgportal.gov.in and confirm the current grievance and appeal UI before using exact button names in the app.",
+      "Open aaplesarkar.mahaonline.gov.in and confirm the current service, grievance and appeal flow.",
+      "Do not hard-code a service-specific time limit unless the service is identified and its current official time limit is verified.",
+      "For bribery cases, add Maharashtra Anti-Corruption Bureau contact details only after verifying them from the official ACB website.",
+      "For RTI, distinguish central public authorities from Maharashtra state or local authorities.",
+      "Keep government service information separate from legal advice; the app should explain the process and available channels rather than guarantee an outcome.",
+      "Treat authority emails as contact/support information and do not present them as substitutes for the official portal unless the authority explicitly provides email filing."
+    ],
+    "hi": [
+      "pgportal.gov.in खोलकर डेमो से पहले वर्तमान शिकायत और अपील UI की पुष्टि करें।",
+      "aaplesarkar.mahaonline.gov.in खोलकर वर्तमान सेवा, शिकायत और अपील प्रक्रिया की पुष्टि करें।",
+      "जब तक सेवा की पहचान और उसकी वर्तमान आधिकारिक समय-सीमा सत्यापित न हो, सेवा-विशिष्ट समय-सीमा हार्ड-कोड न करें।",
+      "रिश्वत के मामलों में महाराष्ट्र Anti-Corruption Bureau के संपर्क विवरण केवल आधिकारिक ACB वेबसाइट से सत्यापित करने के बाद जोड़ें।",
+      "RTI के लिए केंद्रीय सार्वजनिक प्राधिकरणों और महाराष्ट्र राज्य या स्थानीय प्राधिकरणों के बीच अंतर रखें।",
+      "सरकारी सेवा संबंधी जानकारी को कानूनी सलाह से अलग रखें; ऐप प्रक्रिया और उपलब्ध माध्यम समझाए, परिणाम की गारंटी न दे।",
+      "प्राधिकरण के ईमेल को संपर्क/सहायता जानकारी के रूप में रखें और जब तक संबंधित प्राधिकरण ईमेल से शिकायत स्वीकार करने की पुष्टि न करे, उसे आधिकारिक पोर्टल का विकल्प न बताएं।"
+    ],
+    "hinglish": [
+      "Demo se pehle pgportal.gov.in open karke current grievance aur appeal UI verify karein.",
+      "aaplesarkar.mahaonline.gov.in open karke current service, grievance aur appeal flow verify karein.",
+      "Jab tak service identify aur current official time limit verify na ho, service-specific time limit hard-code na karein.",
+      "Bribery cases mein Maharashtra Anti-Corruption Bureau ke contact details official ACB website se verify karne ke baad hi add karein.",
+      "RTI mein central public authorities aur Maharashtra state/local authorities ko alag rakhein.",
+      "Government-service information ko legal advice se separate rakhein; app process aur available channels explain kare, outcome guarantee na kare.",
+      "Authority emails ko contact/support information ke roop mein rakhein aur jab tak authority email filing explicitly confirm na kare, email ko official portal ka replacement na batayein."
+    ]
+  },
+
+  "fallback": {
+    "en": "I can explain the general grievance process, but I need the service name, department, state and application status before identifying the most appropriate route.",
+    "hi": "मैं सामान्य शिकायत प्रक्रिया समझा सकता/सकती हूँ, लेकिन सही रास्ता बताने के लिए सेवा का नाम, विभाग, राज्य और आवेदन की स्थिति जानना ज़रूरी है।",
+    "hinglish": "Main general grievance process samjha sakta/sakti hoon, lekin sahi route batane ke liye service ka naam, department, state aur application status jaana zaroori hai."
+  },
+
+  "disclaimer": {
+    "en": "This app provides general legal and government-service information, not legal advice. Government procedures, service time limits and appeal routes can depend on the department, service, state and current rules. Verify important details on the relevant official government portal.",
+    "hi": "यह ऐप सामान्य कानूनी और सरकारी सेवा संबंधी जानकारी देता है, कानूनी सलाह नहीं। सरकारी प्रक्रिया, सेवा की समय-सीमा और अपील का रास्ता विभाग, सेवा, राज्य और वर्तमान नियमों पर निर्भर कर सकता है। महत्वपूर्ण जानकारी संबंधित आधिकारिक सरकारी पोर्टल पर सत्यापित करें।",
+    "hinglish": "Yeh app general legal aur government-service information deta hai, legal advice nahi. Government procedures, service time limits aur appeal routes department, service, state aur current rules par depend kar sakte hain. Important details relevant official government portal par verify karein."
+  }
+}

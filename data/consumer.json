@@ -1,0 +1,688 @@
+{
+  "id": "consumer",
+  "version": "1.2",
+  "lastVerified": "2026-10-02",
+  "languages": ["en", "hi", "hinglish"],
+
+  "jurisdiction": {
+    "en": "India (Consumer Protection Act, 2019)",
+    "hi": "भारत (उपभोक्ता संरक्षण अधिनियम, 2019)",
+    "hinglish": "Bharat (Consumer Protection Act, 2019)"
+  },
+
+  "title": {
+    "en": "Consumer Complaint",
+    "hi": "उपभोक्ता शिकायत",
+    "hinglish": "Consumer Complaint"
+  },
+
+  "icon": "shopping-bag",
+
+  "keywords": {
+    "en": [
+      "consumer complaint",
+      "consumer court",
+      "consumer commission",
+      "defective product",
+      "damaged product",
+      "product not delivered",
+      "wrong product",
+      "refund",
+      "replacement",
+      "repair",
+      "warranty",
+      "guarantee",
+      "seller refused",
+      "service problem",
+      "bad service",
+      "overcharged",
+      "incorrect billing",
+      "online shopping",
+      "ecommerce",
+      "consumer rights",
+      "consumer protection",
+      "delivery issue",
+      "product complaint"
+    ],
+    "hi": [
+      "उपभोक्ता शिकायत",
+      "उपभोक्ता अदालत",
+      "उपभोक्ता आयोग",
+      "खराब उत्पाद",
+      "क्षतिग्रस्त उत्पाद",
+      "उत्पाद नहीं मिला",
+      "गलत उत्पाद",
+      "रिफंड",
+      "बदलना",
+      "मरम्मत",
+      "वारंटी",
+      "गारंटी",
+      "विक्रेता ने मना किया",
+      "सेवा की समस्या",
+      "खराब सेवा",
+      "ज्यादा पैसे लिए",
+      "गलत बिल",
+      "ऑनलाइन खरीदारी",
+      "उपभोक्ता अधिकार",
+      "उपभोक्ता संरक्षण",
+      "डिलीवरी की समस्या",
+      "उत्पाद की शिकायत"
+    ],
+    "hinglish": [
+      "consumer complaint",
+      "consumer court",
+      "consumer commission",
+      "consumer complaint karni hai",
+      "consumer case",
+      "product kharab hai",
+      "product damage hai",
+      "product nahi mila",
+      "wrong product mila",
+      "refund nahi mila",
+      "refund chahiye",
+      "replacement chahiye",
+      "repair chahiye",
+      "warranty",
+      "guarantee",
+      "seller ne mana kar diya",
+      "service kharab hai",
+      "bad service",
+      "zyada paise liye",
+      "galat bill",
+      "online shopping",
+      "online order",
+      "consumer rights",
+      "consumer protection",
+      "delivery problem",
+      "product complaint",
+      "company complaint",
+      "customer care ne solve nahi kiya"
+    ]
+  },
+
+  "summary": {
+    "en": "You bought a product or service and it was defective, damaged, not delivered, incorrectly billed, or the seller refused a valid request such as refund, repair or replacement. Start with the seller or service provider, then consider the National Consumer Helpline and, if necessary, the Consumer Commission.",
+    "hi": "आपने कोई उत्पाद या सेवा खरीदी है और वह खराब, क्षतिग्रस्त, डिलीवर नहीं हुई, गलत बिलिंग हुई, या विक्रेता ने रिफंड, मरम्मत या बदलने जैसी उचित मांग को मना कर दिया है। पहले विक्रेता या सेवा प्रदाता से शिकायत करें, फिर आवश्यकता होने पर राष्ट्रीय उपभोक्ता हेल्पलाइन और उपभोक्ता आयोग पर विचार करें।",
+    "hinglish": "Aapne koi product ya service kharidi hai aur woh defective, damaged, deliver nahi hui, galat billing hui, ya seller ne refund, repair ya replacement jaise valid request ko mana kar diya hai. Pehle seller ya service provider se complaint karein, phir zarurat ho to National Consumer Helpline aur uske baad Consumer Commission par consider karein."
+  },
+
+  "urgent": false,
+
+  "extractFields": [
+    {
+      "id": "amount",
+      "label": {
+        "en": "Amount paid",
+        "hi": "भुगतान की गई राशि",
+        "hinglish": "Kitni amount pay ki"
+      },
+      "type": "number"
+    },
+    {
+      "id": "companyName",
+      "label": {
+        "en": "Company / Seller name",
+        "hi": "कंपनी / विक्रेता का नाम",
+        "hinglish": "Company / Seller ka naam"
+      },
+      "type": "text"
+    },
+    {
+      "id": "purchaseDate",
+      "label": {
+        "en": "Purchase date",
+        "hi": "खरीद की तारीख",
+        "hinglish": "Purchase ki date"
+      },
+      "type": "date"
+    },
+    {
+      "id": "issue",
+      "label": {
+        "en": "What went wrong?",
+        "hi": "क्या समस्या हुई?",
+        "hinglish": "Problem kya hui?"
+      },
+      "type": "text"
+    },
+    {
+      "id": "productOrService",
+      "label": {
+        "en": "Product or service",
+        "hi": "उत्पाद या सेवा",
+        "hinglish": "Product ya service"
+      },
+      "type": "text"
+    },
+    {
+      "id": "orderId",
+      "label": {
+        "en": "Order / Booking ID",
+        "hi": "ऑर्डर / बुकिंग आईडी",
+        "hinglish": "Order / Booking ID"
+      },
+      "type": "text"
+    },
+    {
+      "id": "paymentMethod",
+      "label": {
+        "en": "Payment method",
+        "hi": "भुगतान का तरीका",
+        "hinglish": "Payment ka method"
+      },
+      "type": "text"
+    },
+    {
+      "id": "complainedToCompany",
+      "label": {
+        "en": "Have you complained to the company?",
+        "hi": "क्या आपने कंपनी से शिकायत की है?",
+        "hinglish": "Kya aapne company se complaint ki hai?"
+      },
+      "type": "boolean"
+    },
+    {
+      "id": "location",
+      "label": {
+        "en": "Location",
+        "hi": "स्थान",
+        "hinglish": "Location"
+      },
+      "type": "text"
+    }
+  ],
+
+  "followUpQuestions": {
+    "en": [
+      "What product or service did you buy?",
+      "When did you buy it?",
+      "How much did you pay?",
+      "What exactly went wrong?",
+      "Do you have the bill, invoice, order ID or payment proof?",
+      "Have you already contacted the seller or company?",
+      "What resolution do you want: refund, replacement, repair or something else?"
+    ],
+    "hi": [
+      "आपने कौन सा उत्पाद या सेवा खरीदी थी?",
+      "आपने इसे कब खरीदा था?",
+      "आपने कितनी राशि का भुगतान किया?",
+      "असल में क्या समस्या हुई?",
+      "क्या आपके पास बिल, इनवॉइस, ऑर्डर आईडी या भुगतान का प्रमाण है?",
+      "क्या आपने पहले ही विक्रेता या कंपनी से संपर्क किया है?",
+      "आप क्या समाधान चाहते हैं: रिफंड, बदलना, मरम्मत या कुछ और?"
+    ],
+    "hinglish": [
+      "Aapne kaunsa product ya service kharida tha?",
+      "Aapne ise kab kharida tha?",
+      "Aapne kitni amount pay ki?",
+      "Exactly kya problem hui?",
+      "Kya aapke paas bill, invoice, order ID ya payment proof hai?",
+      "Kya aapne pehle seller ya company se contact kiya hai?",
+      "Aap kya solution chahte hain: refund, replacement, repair ya kuch aur?"
+    ]
+  },
+
+  "scenarios": {
+    "online_order": {
+      "label": {
+        "en": "Online order",
+        "hi": "ऑनलाइन ऑर्डर",
+        "hinglish": "Online order"
+      },
+      "when": "online order ecommerce delivery",
+      "advice": {
+        "en": "Keep the order page, invoice, delivery record, payment proof, seller messages and screenshots. Use the seller's grievance/contact channel first.",
+        "hi": "ऑर्डर पेज, इनवॉइस, डिलीवरी रिकॉर्ड, भुगतान प्रमाण, विक्रेता के संदेश और स्क्रीनशॉट सुरक्षित रखें। पहले विक्रेता के शिकायत/संपर्क माध्यम का उपयोग करें।",
+        "hinglish": "Order page, invoice, delivery record, payment proof, seller ke messages aur screenshots save karke rakhein. Pehle seller ke complaint/contact channel ka use karein."
+      }
+    },
+
+    "no_bill": {
+      "label": {
+        "en": "No bill or invoice",
+        "hi": "बिल या इनवॉइस नहीं है",
+        "hinglish": "Bill ya invoice nahi hai"
+      },
+      "when": "no bill invoice receipt",
+      "advice": {
+        "en": "Keep alternative proof such as payment records, order history, messages, emails, warranty records or delivery details.",
+        "hi": "भुगतान रिकॉर्ड, ऑर्डर हिस्ट्री, संदेश, ईमेल, वारंटी रिकॉर्ड या डिलीवरी विवरण जैसे अन्य प्रमाण सुरक्षित रखें।",
+        "hinglish": "Payment records, order history, messages, emails, warranty records ya delivery details jaise alternative proof sambhal kar rakhein."
+      }
+    },
+
+    "no_refund_policy": {
+      "label": {
+        "en": "Seller says there is no refund",
+        "hi": "विक्रेता कहता है कि रिफंड नहीं है",
+        "hinglish": "Seller bol raha hai refund nahi milega"
+      },
+      "when": "no refund refund policy",
+      "advice": {
+        "en": "Keep the advertised terms, return policy, invoice and communications. Whether a refund or other remedy is available depends on the facts and applicable law.",
+        "hi": "विज्ञापित शर्तें, रिटर्न पॉलिसी, इनवॉइस और बातचीत के रिकॉर्ड सुरक्षित रखें। रिफंड या अन्य उपाय उपलब्ध है या नहीं, यह मामले के तथ्यों और लागू कानून पर निर्भर करता है।",
+        "hinglish": "Advertised terms, return policy, invoice aur communication records save rakhein. Refund ya koi aur remedy milegi ya nahi, yeh case ke facts aur applicable law par depend karta hai."
+      }
+    },
+
+    "warranty": {
+      "label": {
+        "en": "Warranty or guarantee issue",
+        "hi": "वारंटी या गारंटी की समस्या",
+        "hinglish": "Warranty ya guarantee ki problem"
+      },
+      "when": "warranty guarantee repair",
+      "advice": {
+        "en": "Keep the warranty card or warranty terms and service-center records. Ask the seller or manufacturer for the applicable remedy.",
+        "hi": "वारंटी कार्ड या वारंटी की शर्तें और सर्विस सेंटर के रिकॉर्ड सुरक्षित रखें। विक्रेता या निर्माता से उपलब्ध उपाय के बारे में पूछें।",
+        "hinglish": "Warranty card ya warranty terms aur service-center records sambhal kar rakhein. Seller ya manufacturer se available remedy ke baare mein poochein."
+      }
+    },
+
+    "service_sector": {
+      "label": {
+        "en": "Service problem",
+        "hi": "सेवा की समस्या",
+        "hinglish": "Service ki problem"
+      },
+      "when": "service complaint bad service",
+      "advice": {
+        "en": "Record what service was promised, what was actually provided, the amount paid and your communications with the provider.",
+        "hi": "कौन सी सेवा देने का वादा किया गया था, वास्तव में क्या दिया गया, कितनी राशि दी गई और सेवा प्रदाता से हुई बातचीत का रिकॉर्ड रखें।",
+        "hinglish": "Konsi service ka promise kiya gaya tha, actually kya mila, kitni amount pay ki aur provider se hui communication ka record rakhein."
+      }
+    },
+
+    "seller_unreachable": {
+      "label": {
+        "en": "Seller is unreachable",
+        "hi": "विक्रेता से संपर्क नहीं हो रहा",
+        "hinglish": "Seller se contact nahi ho raha"
+      },
+      "when": "seller unreachable company not responding",
+      "advice": {
+        "en": "Save attempts to contact the seller and available transaction/order records. You can consider the National Consumer Helpline if the issue remains unresolved.",
+        "hi": "विक्रेता से संपर्क करने के प्रयासों और उपलब्ध लेनदेन/ऑर्डर रिकॉर्ड को सुरक्षित रखें। समस्या हल न होने पर राष्ट्रीय उपभोक्ता हेल्पलाइन पर विचार कर सकते हैं।",
+        "hinglish": "Seller se contact karne ke attempts aur transaction/order records save rakhein. Problem solve na ho to National Consumer Helpline par complaint karne par consider karein."
+      }
+    },
+
+    "commercial_purchase": {
+      "label": {
+        "en": "Purchase for commercial purpose",
+        "hi": "व्यावसायिक उद्देश्य के लिए खरीद",
+        "hinglish": "Business/commercial purpose ke liye purchase"
+      },
+      "when": "commercial purpose business purchase resale",
+      "advice": {
+        "en": "Consumer-law coverage can depend on the purpose of the purchase and the facts. Consider legal review before relying on the consumer-complaint route.",
+        "hi": "उपभोक्ता कानून का लागू होना खरीद के उद्देश्य और मामले के तथ्यों पर निर्भर कर सकता है। उपभोक्ता शिकायत प्रक्रिया पर निर्भर करने से पहले कानूनी समीक्षा पर विचार करें।",
+        "hinglish": "Consumer law apply hoga ya nahi, yeh purchase ke purpose aur case ke facts par depend kar sakta hai. Consumer complaint route use karne se pehle legal review par consider karein."
+      }
+    },
+
+    "late_complaint": {
+      "label": {
+        "en": "Older complaint",
+        "hi": "पुरानी शिकायत",
+        "hinglish": "Purani complaint"
+      },
+      "when": "old complaint delayed complaint late complaint",
+      "advice": {
+        "en": "Check the date when the cause of action arose and preserve documents explaining any delay. Limitation rules may apply.",
+        "hi": "यह देखें कि शिकायत का कारण कब उत्पन्न हुआ था और देरी का कारण बताने वाले दस्तावेज सुरक्षित रखें। समय-सीमा के नियम लागू हो सकते हैं।",
+        "hinglish": "Check karein ki cause of action kab hua tha aur delay ka reason batane wale documents save rakhein. Limitation rules apply ho sakte hain."
+      }
+    },
+
+    "high_value": {
+      "label": {
+        "en": "High-value dispute",
+        "hi": "उच्च-मूल्य विवाद",
+        "hinglish": "High-value dispute"
+      },
+      "when": "high amount expensive product large amount",
+      "advice": {
+        "en": "For higher-value or complicated disputes, keep complete records and consider legal review before filing.",
+        "hi": "उच्च-मूल्य या जटिल विवादों में सभी रिकॉर्ड सुरक्षित रखें और शिकायत दाखिल करने से पहले कानूनी समीक्षा पर विचार करें।",
+        "hinglish": "High-value ya complicated dispute mein complete records sambhal kar rakhein aur filing se pehle legal review par consider karein."
+      }
+    },
+
+    "payment_proof_missing": {
+      "label": {
+        "en": "Payment proof missing",
+        "hi": "भुगतान का प्रमाण नहीं है",
+        "hinglish": "Payment proof nahi hai"
+      },
+      "when": "payment proof missing transaction proof unavailable",
+      "advice": {
+        "en": "Look for bank statements, UPI records, card statements, order history, emails or other transaction records.",
+        "hi": "बैंक स्टेटमेंट, UPI रिकॉर्ड, कार्ड स्टेटमेंट, ऑर्डर हिस्ट्री, ईमेल या अन्य लेनदेन रिकॉर्ड देखें।",
+        "hinglish": "Bank statement, UPI records, card statement, order history, emails ya koi aur transaction record check karein."
+      }
+    }
+  },
+
+  "rights": {
+    "en": [
+      "You may raise a complaint with the seller or service provider and preserve evidence of the complaint.",
+      "You may consider the National Consumer Helpline for grievance assistance and convergence with participating companies.",
+      "Depending on the facts and applicable law, you may have consumer-law remedies relating to defective goods, deficient services, unfair practices or other covered issues.",
+      "If the dispute is not resolved, you may consider the appropriate Consumer Commission route.",
+      "You should keep invoices, payment records, communications and other supporting evidence."
+    ],
+    "hi": [
+      "आप विक्रेता या सेवा प्रदाता के सामने शिकायत कर सकते हैं और शिकायत का प्रमाण सुरक्षित रख सकते हैं।",
+      "शिकायत में सहायता और भाग लेने वाली कंपनियों के साथ समाधान के लिए राष्ट्रीय उपभोक्ता हेल्पलाइन पर विचार कर सकते हैं।",
+      "मामले के तथ्यों और लागू कानून के आधार पर खराब सामान, सेवा में कमी, अनुचित व्यापार प्रथा या अन्य संबंधित मामलों में उपभोक्ता कानून के तहत उपाय उपलब्ध हो सकते हैं।",
+      "यदि विवाद हल नहीं होता है, तो उपयुक्त उपभोक्ता आयोग की प्रक्रिया पर विचार कर सकते हैं।",
+      "इनवॉइस, भुगतान रिकॉर्ड, बातचीत और अन्य सहायक प्रमाण सुरक्षित रखें।"
+    ],
+    "hinglish": [
+      "Aap seller ya service provider ko complaint de sakte hain aur complaint ka proof save kar sakte hain.",
+      "Complaint mein help aur participating companies ke saath resolution ke liye National Consumer Helpline par consider kar sakte hain.",
+      "Case ke facts aur applicable law ke basis par defective goods, deficient services, unfair practices ya covered issues ke liye consumer-law remedies available ho sakti hain.",
+      "Agar dispute solve nahi hota hai, to appropriate Consumer Commission ki process par consider kar sakte hain.",
+      "Invoice, payment records, communication aur doosre supporting proofs sambhal kar rakhein."
+    ]
+  },
+
+  "steps": {
+    "en": [
+      "Collect the invoice, order details, payment proof, warranty information and relevant messages or emails.",
+      "Write a clear complaint to the seller or service provider explaining the problem and the remedy you want.",
+      "Keep proof that you submitted the complaint and any response received.",
+      "If the issue remains unresolved, consider contacting the National Consumer Helpline.",
+      "If necessary, consider the appropriate Consumer Commission process and keep all supporting documents ready.",
+      "For complicated, high-value or unusual disputes, consider legal review."
+    ],
+    "hi": [
+      "इनवॉइस, ऑर्डर विवरण, भुगतान प्रमाण, वारंटी की जानकारी और संबंधित संदेश या ईमेल इकट्ठा करें।",
+      "विक्रेता या सेवा प्रदाता को स्पष्ट शिकायत दें और बताएं कि आप क्या समाधान चाहते हैं।",
+      "शिकायत जमा करने का प्रमाण और मिला हुआ जवाब सुरक्षित रखें।",
+      "समस्या हल न होने पर राष्ट्रीय उपभोक्ता हेल्पलाइन से संपर्क करने पर विचार करें।",
+      "जरूरत होने पर उपयुक्त उपभोक्ता आयोग की प्रक्रिया पर विचार करें और सभी सहायक दस्तावेज तैयार रखें।",
+      "जटिल, उच्च-मूल्य या असामान्य विवादों में कानूनी समीक्षा पर विचार करें।"
+    ],
+    "hinglish": [
+      "Invoice, order details, payment proof, warranty information aur relevant messages ya emails collect karein.",
+      "Seller ya service provider ko clear complaint dein aur batayein ki aap kya solution chahte hain.",
+      "Complaint submit karne ka proof aur jo response mila hai use save rakhein.",
+      "Problem solve na ho to National Consumer Helpline se contact karne par consider karein.",
+      "Zarurat hone par appropriate Consumer Commission ki process par consider karein aur saare supporting documents ready rakhein.",
+      "Complicated, high-value ya unusual dispute mein legal review par consider karein."
+    ]
+  },
+
+  "documents": {
+    "en": [
+      "Invoice, bill or receipt",
+      "Order or booking details",
+      "Payment proof such as bank, UPI or card record",
+      "Warranty or guarantee documents, if applicable",
+      "Photos or videos showing the defect or damage",
+      "Emails, messages and complaint/ticket numbers",
+      "Delivery records or tracking information",
+      "Any response received from the seller or company"
+    ],
+    "hi": [
+      "इनवॉइस, बिल या रसीद",
+      "ऑर्डर या बुकिंग विवरण",
+      "बैंक, UPI या कार्ड रिकॉर्ड जैसे भुगतान प्रमाण",
+      "यदि लागू हो तो वारंटी या गारंटी दस्तावेज",
+      "खराबी या नुकसान दिखाने वाले फोटो या वीडियो",
+      "ईमेल, संदेश और शिकायत/टिकट नंबर",
+      "डिलीवरी रिकॉर्ड या ट्रैकिंग जानकारी",
+      "विक्रेता या कंपनी से मिला कोई भी जवाब"
+    ],
+    "hinglish": [
+      "Invoice, bill ya receipt",
+      "Order ya booking details",
+      "Bank, UPI ya card record jaise payment proof",
+      "Agar applicable ho to warranty ya guarantee documents",
+      "Defect ya damage dikhane wale photos ya videos",
+      "Emails, messages aur complaint/ticket numbers",
+      "Delivery records ya tracking information",
+      "Seller ya company se mila hua response"
+    ]
+  },
+
+  "authorities": [
+    {
+      "name": {
+        "en": "National Consumer Helpline (NCH)",
+        "hi": "राष्ट्रीय उपभोक्ता हेल्पलाइन (NCH)",
+        "hinglish": "National Consumer Helpline (NCH)"
+      },
+      "type": "helpline",
+      "website": "https://consumerhelpline.gov.in",
+      "email": "nch-ca@gov.in",
+      "emailPurpose": {
+        "en": "Official consumer grievance contact email.",
+        "hi": "उपभोक्ता शिकायत के लिए आधिकारिक संपर्क ईमेल।",
+        "hinglish": "Consumer grievance ke liye official contact email."
+      },
+      "contact": [
+        "1915",
+        "1800-11-4000"
+      ],
+      "additionalContact": "WhatsApp/SMS: 8800001915",
+      "hours": "8 AM to 8 PM, daily except national holidays",
+      "purpose": {
+        "en": "Consumer grievance assistance and convergence with participating companies.",
+        "hi": "उपभोक्ता शिकायत में सहायता और भाग लेने वाली कंपनियों के साथ समाधान के लिए समन्वय।",
+        "hinglish": "Consumer complaint mein assistance aur participating companies ke saath resolution ke liye coordination."
+      },
+      "note": {
+        "en": "The NCH Convergence Program states that participating companies are expected to respond within 30 days. This is not a statutory limitation period for filing a consumer complaint.",
+        "hi": "NCH Convergence Program के अनुसार भाग लेने वाली कंपनियों से 30 दिनों के भीतर जवाब की अपेक्षा की जाती है। यह उपभोक्ता शिकायत दाखिल करने की कानूनी समय-सीमा नहीं है।",
+        "hinglish": "NCH Convergence Program ke according participating companies se 30 days ke andar response ki expectation hoti hai. Yeh consumer complaint file karne ki statutory limitation period nahi hai."
+      }
+    },
+
+    {
+      "name": {
+        "en": "e-Jagriti",
+        "hi": "ई-जागृति",
+        "hinglish": "e-Jagriti"
+      },
+      "type": "portal",
+      "website": "https://e-jagriti.gov.in",
+      "purpose": {
+        "en": "Official consumer dispute platform for online consumer complaint-related processes.",
+        "hi": "ऑनलाइन उपभोक्ता शिकायत और उपभोक्ता विवाद से संबंधित प्रक्रियाओं के लिए आधिकारिक प्लेटफॉर्म।",
+        "hinglish": "Online consumer complaint aur consumer dispute related processes ke liye official platform."
+      },
+      "note": {
+        "en": "The official portal states that e-Jagriti subsumed e-Daakhil and related consumer applications and was available from 1 January 2025.",
+        "hi": "आधिकारिक पोर्टल के अनुसार e-Jagriti ने e-Daakhil और संबंधित उपभोक्ता एप्लिकेशन को शामिल किया और 1 जनवरी 2025 से उपलब्ध हुआ।",
+        "hinglish": "Official portal ke according e-Jagriti ne e-Daakhil aur related consumer applications ko subsume kiya aur 1 January 2025 se available hua."
+      }
+    },
+
+    {
+      "name": {
+        "en": "National Legal Services Authority (NALSA)",
+        "hi": "राष्ट्रीय विधिक सेवा प्राधिकरण (NALSA)",
+        "hinglish": "National Legal Services Authority (NALSA)"
+      },
+      "type": "legal_aid",
+      "website": "https://nalsa.gov.in",
+      "email": "nalsa-dla@nic.in",
+      "emailPurpose": {
+        "en": "Official contact email for legal-services information.",
+        "hi": "कानूनी सेवाओं की जानकारी के लिए आधिकारिक संपर्क ईमेल।",
+        "hinglish": "Legal-services information ke liye official contact email."
+      },
+      "contact": [
+        "15100"
+      ],
+      "purpose": {
+        "en": "Legal services and legal-aid information for eligible persons.",
+        "hi": "पात्र व्यक्तियों के लिए कानूनी सेवाएं और कानूनी सहायता की जानकारी।",
+        "hinglish": "Eligible persons ke liye legal services aur legal-aid information."
+      }
+    }
+  ],
+
+  "timeLimits": {
+    "en": [
+      "Under Section 69 of the Consumer Protection Act, 2019, a consumer complaint is generally required to be filed within 2 years from the date on which the cause of action arose.",
+      "A Consumer Commission may entertain a complaint after the limitation period if sufficient cause for delay is shown, subject to the applicable law and procedure.",
+      "The NCH 30-day expected response period is not the statutory limitation period for a consumer complaint.",
+      "Any response period you give the seller in a notice should not be described as a statutory legal deadline unless the applicable law specifically provides one."
+    ],
+    "hi": [
+      "उपभोक्ता संरक्षण अधिनियम, 2019 की धारा 69 के तहत उपभोक्ता शिकायत सामान्यतः उस तारीख से 2 वर्षों के भीतर दाखिल की जानी चाहिए जब शिकायत का कारण उत्पन्न हुआ।",
+      "पर्याप्त कारण दिखाए जाने पर उपभोक्ता आयोग समय-सीमा के बाद की शिकायत पर भी विचार कर सकता है, जो लागू कानून और प्रक्रिया के अधीन है।",
+      "NCH की 30 दिनों की अपेक्षित प्रतिक्रिया अवधि उपभोक्ता शिकायत की कानूनी समय-सीमा नहीं है।",
+      "विक्रेता को नोटिस में दी गई प्रतिक्रिया अवधि को कानूनी समय-सीमा न बताएं, जब तक लागू कानून में ऐसी समय-सीमा स्पष्ट रूप से न दी गई हो।"
+    ],
+    "hinglish": [
+      "Consumer Protection Act, 2019 ki Section 69 ke according consumer complaint generally cause of action arise hone ki date se 2 years ke andar file ki jaani chahiye.",
+      "Agar delay ka sufficient cause dikhaya jaye, to Consumer Commission limitation period ke baad bhi complaint consider kar sakta hai, applicable law aur procedure ke subject mein.",
+      "NCH ki 30-day expected response period consumer complaint ki statutory limitation period nahi hai.",
+      "Seller ko notice mein jo response period diya jaye, use statutory legal deadline na batayein jab tak applicable law mein specifically aisi deadline na ho."
+    ]
+  },
+
+  "commonMistakes": {
+    "en": [
+      "Deleting order, payment or communication records.",
+      "Relying only on phone calls without keeping written proof.",
+      "Not clearly stating the remedy you want.",
+      "Calling the NCH 30-day response expectation a statutory deadline.",
+      "Assuming every purchase automatically qualifies as a consumer dispute.",
+      "Ignoring limitation issues in an old dispute.",
+      "Using an unverified website or unofficial contact number."
+    ],
+    "hi": [
+      "ऑर्डर, भुगतान या बातचीत के रिकॉर्ड डिलीट कर देना।",
+      "लिखित प्रमाण रखे बिना केवल फोन कॉल पर निर्भर रहना।",
+      "आप क्या समाधान चाहते हैं, यह स्पष्ट रूप से न बताना।",
+      "NCH की 30 दिनों की अपेक्षित प्रतिक्रिया को कानूनी समय-सीमा बताना।",
+      "यह मान लेना कि हर खरीद अपने आप उपभोक्ता विवाद के अंतर्गत आती है।",
+      "पुराने विवाद में समय-सीमा की समस्या को नजरअंदाज करना।",
+      "असत्यापित वेबसाइट या अनधिकृत संपर्क नंबर का उपयोग करना।"
+    ],
+    "hinglish": [
+      "Order, payment ya communication records delete kar dena.",
+      "Written proof rakhe bina sirf phone calls par depend karna.",
+      "Aap kya remedy chahte hain, yeh clearly na batana.",
+      "NCH ki 30-day expected response ko statutory legal deadline bolna.",
+      "Yeh assume karna ki har purchase automatically consumer dispute hai.",
+      "Purane dispute mein limitation issue ko ignore karna.",
+      "Unverified website ya unofficial contact number use karna."
+    ]
+  },
+
+  "complaintTemplates": {
+    "consumer_notice": {
+      "title": {
+        "en": "Consumer Complaint / Notice Draft",
+        "hi": "उपभोक्ता शिकायत / नोटिस ड्राफ्ट",
+        "hinglish": "Consumer Complaint / Notice Draft"
+      },
+      "fields": [
+        "name",
+        "phone",
+        "companyName",
+        "productOrService",
+        "purchaseDate",
+        "amount",
+        "orderId",
+        "issue",
+        "remedy",
+        "deadlineDays",
+        "today"
+      ],
+      "body": {
+        "en": "Subject: Complaint regarding {{productOrService}} / Order {{orderId}}\n\nDear {{companyName}},\n\nI purchased/used {{productOrService}} on {{purchaseDate}} and paid approximately ₹{{amount}}. The issue is: {{issue}}.\n\nI request the following resolution: {{remedy}}.\n\nPlease respond to this complaint within {{deadlineDays}} days from {{today}}. This requested response period is not intended to state a statutory legal deadline. If the matter remains unresolved, I may consider approaching the National Consumer Helpline or the appropriate Consumer Commission, as applicable.\n\nName: {{name}}\nPhone: {{phone}}",
+        "hi": "विषय: {{productOrService}} / ऑर्डर {{orderId}} के संबंध में शिकायत\n\nप्रिय {{companyName}},\n\nमैंने {{purchaseDate}} को {{productOrService}} खरीदा/सेवा ली और लगभग ₹{{amount}} का भुगतान किया। समस्या यह है: {{issue}}।\n\nमैं निम्न समाधान चाहता/चाहती हूं: {{remedy}}।\n\nकृपया {{today}} से {{deadlineDays}} दिनों के भीतर इस शिकायत का जवाब दें। यह मांगी गई प्रतिक्रिया अवधि किसी कानूनी वैधानिक समय-सीमा के रूप में नहीं दी जा रही है। यदि समस्या का समाधान नहीं होता है, तो मैं लागू स्थिति के अनुसार राष्ट्रीय उपभोक्ता हेल्पलाइन या उपयुक्त उपभोक्ता आयोग से संपर्क करने पर विचार कर सकता/सकती हूं।\n\nनाम: {{name}}\nफोन: {{phone}}",
+        "hinglish": "Subject: {{productOrService}} / Order {{orderId}} ke regarding complaint\n\nDear {{companyName}},\n\nMaine {{purchaseDate}} ko {{productOrService}} purchase/use kiya tha aur approximately ₹{{amount}} pay kiya. Problem yeh hai: {{issue}}.\n\nMain following resolution chahta/chahti hoon: {{remedy}}.\n\nPlease {{today}} se {{deadlineDays}} days ke andar is complaint ka response dein. Yeh requested response period kisi statutory legal deadline ke roop mein nahi diya ja raha hai. Agar matter resolve nahi hota hai, to applicable situation ke according National Consumer Helpline ya appropriate Consumer Commission se contact karne par consider karunga/karungi.\n\nName: {{name}}\nPhone: {{phone}}"
+      }
+    }
+  },
+
+  "sources": [
+    {
+      "title": {
+        "en": "National Consumer Helpline - Contact",
+        "hi": "राष्ट्रीय उपभोक्ता हेल्पलाइन - संपर्क",
+        "hinglish": "National Consumer Helpline - Contact"
+      },
+      "url": "https://consumerhelpline.gov.in"
+    },
+    {
+      "title": {
+        "en": "National Consumer Helpline - Convergence Program",
+        "hi": "राष्ट्रीय उपभोक्ता हेल्पलाइन - कन्वर्जेंस प्रोग्राम",
+        "hinglish": "National Consumer Helpline - Convergence Program"
+      },
+      "url": "https://consumerhelpline.gov.in/public/"
+    },
+    {
+      "title": {
+        "en": "National Consumer Helpline - Consumer Protection Act Knowledge Base",
+        "hi": "राष्ट्रीय उपभोक्ता हेल्पलाइन - उपभोक्ता संरक्षण अधिनियम जानकारी",
+        "hinglish": "National Consumer Helpline - Consumer Protection Act Knowledge Base"
+      },
+      "url": "https://consumerhelpline.gov.in/public/"
+    },
+    {
+      "title": {
+        "en": "e-Jagriti Official Portal",
+        "hi": "e-Jagriti आधिकारिक पोर्टल",
+        "hinglish": "e-Jagriti Official Portal"
+      },
+      "url": "https://e-jagriti.gov.in"
+    },
+    {
+      "title": {
+        "en": "e-Jagriti Help / User Information",
+        "hi": "e-Jagriti सहायता / उपयोगकर्ता जानकारी",
+        "hinglish": "e-Jagriti Help / User Information"
+      },
+      "url": "https://e-jagriti.gov.in"
+    },
+    {
+      "title": {
+        "en": "Consumer Protection Act, 2019 - India Code",
+        "hi": "उपभोक्ता संरक्षण अधिनियम, 2019 - इंडिया कोड",
+        "hinglish": "Consumer Protection Act, 2019 - India Code"
+      },
+      "url": "https://www.indiacode.nic.in"
+    },
+    {
+      "title": {
+        "en": "National Legal Services Authority",
+        "hi": "राष्ट्रीय विधिक सेवा प्राधिकरण",
+        "hinglish": "National Legal Services Authority"
+      },
+      "url": "https://nalsa.gov.in"
+    }
+  ],
+
+  "fallback": {
+    "en": "I can provide general consumer-information guidance, but I cannot determine the final legal outcome. For complicated or high-value disputes, consider speaking with a qualified legal professional or legal-aid service.",
+    "hi": "मैं सामान्य उपभोक्ता जानकारी दे सकता/सकती हूं, लेकिन अंतिम कानूनी परिणाम तय नहीं कर सकता/सकती। जटिल या उच्च-मूल्य विवाद में योग्य कानूनी पेशेवर या कानूनी सहायता सेवा से बात करने पर विचार करें।",
+    "hinglish": "Main general consumer-information guidance de sakta/sakti hoon, lekin final legal outcome decide nahi kar sakta/sakti. Complicated ya high-value dispute mein qualified legal professional ya legal-aid service se baat karne par consider karein."
+  },
+
+  "disclaimer": {
+    "en": "This information is for general legal information only and is not legal advice. Laws, procedures and official portals can change. Verify important details with the relevant official source or a qualified legal professional.",
+    "hi": "यह जानकारी केवल सामान्य कानूनी जानकारी के लिए है और कानूनी सलाह नहीं है। कानून, प्रक्रियाएं और आधिकारिक पोर्टल बदल सकते हैं। महत्वपूर्ण जानकारी संबंधित आधिकारिक स्रोत या योग्य कानूनी पेशेवर से सत्यापित करें।",
+    "hinglish": "Yeh information sirf general legal information ke liye hai, legal advice nahi hai. Laws, procedures aur official portals change ho sakte hain. Important details ko relevant official source ya qualified legal professional se verify karein."
+  },
+
+  "verifyBeforeDemo": [
+    "Confirm the current e-Jagriti portal and filing instructions before the hackathon demo.",
+    "Confirm current NCH contact numbers, email and operating hours before the demo.",
+    "Do not describe the NCH 30-day expected response as a statutory limitation period.",
+    "Do not describe the response period requested in the complaint template as a legal deadline.",
+    "Commercial-purpose, high-value, unusual or complicated disputes should be routed to a legal-review or low-confidence path.",
+    "Keep the Consumer Protection Act, 2019 and official government sources visible in the app.",
+    "Only keep the lastVerified date if the listed sources were actually checked on that date."
+  ]
+}

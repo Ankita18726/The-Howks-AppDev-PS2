@@ -1,0 +1,394 @@
+{
+  "version": "1.1",
+  "lastVerified": "2026-10-01",
+  "languages": [
+    "en",
+    "hi",
+    "hinglish"
+  ],
+  "defaultLanguage": "en",
+
+  "disclaimer": {
+    "en": "Kayda Sathi gives general legal information, not legal advice. Laws and portals can change. For important decisions, speak to a lawyer or the Legal Services Authority.",
+    "hi": "कायदा साथी सामान्य कानूनी जानकारी देता है, कानूनी सलाह नहीं। कानून और पोर्टल बदल सकते हैं। महत्वपूर्ण निर्णयों के लिए वकील या विधिक सेवा प्राधिकरण से बात करें।",
+    "hinglish": "Kayda Sathi general legal information deta hai, legal advice nahi. Laws aur portals change ho sakte hain. Important decisions ke liye lawyer ya Legal Services Authority se baat karein."
+  },
+
+  "categories": [
+    "rental",
+    "consumer",
+    "cyber_fraud",
+    "salary",
+    "government_grievance"
+  ],
+
+  "matching": {
+    "minConfidenceToAutoSelect": 0.7,
+    "belowThresholdBehaviour": "show_category_picker",
+    "note": "If the AI confidence is below the threshold, or two categories score close together, show the five category chips instead of guessing."
+  },
+
+  "safetyTriggers": [
+    {
+      "id": "immediate_danger",
+
+      "keywords": {
+        "en": [
+          "threatening to kill",
+          "life in danger",
+          "he will hurt me",
+          "beating me",
+          "locked me in",
+          "kidnap"
+        ],
+        "hi": [
+          "जान से मारने की धमकी",
+          "जान को खतरा",
+          "मुझे मार रहा है",
+          "बंधक",
+          "अपहरण"
+        ],
+        "hinglish": [
+          "jaan ka khatra",
+          "maar dalega",
+          "dhamki de raha",
+          "bandhak bana liya",
+          "mujhe maar raha hai",
+          "kidnap kar liya",
+          "jaan se maarne ki dhamki"
+        ]
+      },
+
+      "response": {
+        "en": "If you are in danger right now, call 112 (emergency) or go to the nearest police station. This app cannot handle emergencies.",
+        "hi": "अगर आप अभी खतरे में हैं तो 112 (आपातकालीन) पर कॉल करें या नज़दीकी पुलिस स्टेशन जाएँ। यह ऐप आपात स्थितियों के लिए नहीं है।",
+        "hinglish": "Agar aap abhi danger mein hain, to 112 (emergency) par call karein ya nearest police station jaayein. Yeh app emergency situations handle nahi kar sakta."
+      },
+
+      "emergencyContact": {
+        "number": "112",
+        "label": {
+          "en": "Emergency",
+          "hi": "आपातकालीन सेवा",
+          "hinglish": "Emergency"
+        }
+      },
+
+      "police": {
+        "name": {
+          "en": "Police / Emergency Services",
+          "hi": "पुलिस / आपातकालीन सेवा",
+          "hinglish": "Police / Emergency Services"
+        },
+        "website": "https://112.gov.in/",
+        "contact": "112",
+        "type": "emergency"
+      },
+
+      "priority": 1
+    },
+
+    {
+      "id": "self_harm",
+
+      "keywords": {
+        "en": [
+          "want to die",
+          "end my life",
+          "suicide"
+        ],
+        "hi": [
+          "जान देना चाहता",
+          "आत्महत्या",
+          "मरना चाहता"
+        ],
+        "hinglish": [
+          "marna chahta",
+          "suicide karna",
+          "jaan dena",
+          "apni jaan lena",
+          "khud ko maarna"
+        ]
+      },
+
+      "response": {
+        "en": "You are not alone. Please talk to someone you trust, or call 112 for immediate help.",
+        "hi": "आप अकेले नहीं हैं। कृपया किसी भरोसेमंद व्यक्ति से बात करें, या तुरंत मदद के लिए 112 पर कॉल करें।",
+        "hinglish": "Aap akela nahi hain. Kisi trusted person se baat karein, ya immediate help ke liye 112 par call karein."
+      },
+
+      "emergencyContact": {
+        "number": "112",
+        "label": {
+          "en": "Emergency",
+          "hi": "आपातकालीन सेवा",
+          "hinglish": "Emergency"
+        }
+      },
+
+      "police": {
+        "name": {
+          "en": "Police / Emergency Services",
+          "hi": "पुलिस / आपातकालीन सेवा",
+          "hinglish": "Police / Emergency Services"
+        },
+        "website": "https://112.gov.in/",
+        "contact": "112",
+        "type": "emergency"
+      },
+
+      "priority": 1
+    }
+  ],
+
+  "outOfScope": {
+    "message": {
+      "en": "Kayda Sathi covers five common problems for now: rental deposit, consumer complaints, cyber fraud, unpaid salary, and government service grievances. Your issue looks different.",
+      "hi": "कायदा साथी अभी पाँच आम समस्याओं को कवर करता है: किराया डिपॉज़िट, उपभोक्ता शिकायत, साइबर धोखाधड़ी, बकाया वेतन और सरकारी सेवा शिकायत। आपकी समस्या अलग लगती है।",
+      "hinglish": "Kayda Sathi filhaal paanch common problems cover karta hai: rental deposit, consumer complaints, cyber fraud, unpaid salary aur government service grievances. Aapki problem inmein se alag lag rahi hai."
+    },
+
+    "examples": {
+      "en": "Criminal cases, divorce or family disputes, property or land disputes, tax matters, medical negligence.",
+      "hi": "आपराधिक मामले, तलाक या पारिवारिक विवाद, संपत्ति या ज़मीन के विवाद, कर संबंधी मामले, चिकित्सा में लापरवाही।",
+      "hinglish": "Criminal cases, divorce ya family disputes, property ya land disputes, tax matters, medical negligence."
+    },
+
+    "fallbackAuthority": {
+      "name": {
+        "en": "National Legal Services Authority (NALSA)",
+        "hi": "राष्ट्रीय विधिक सेवा प्राधिकरण (NALSA)",
+        "hinglish": "National Legal Services Authority (NALSA)"
+      },
+      "website": "https://nalsa.gov.in",
+      "email": "nalsa-dla@nic.in",
+      "emailPurpose": {
+        "en": "Official contact email for legal-services information.",
+        "hi": "कानूनी सेवाओं की जानकारी के लिए आधिकारिक संपर्क ईमेल।",
+        "hinglish": "Legal-services information ke liye official contact email."
+      },
+      "contact": {
+        "en": "Toll-free: 15100",
+        "hi": "टोल-फ्री: 15100",
+        "hinglish": "Toll-free: 15100"
+      },
+      "note": {
+        "en": "Free legal aid and advice for eligible persons. You can also contact your District Legal Services Authority.",
+        "hi": "पात्र व्यक्तियों के लिए मुफ़्त कानूनी सहायता और सलाह। आप अपने ज़िला विधिक सेवा प्राधिकरण से भी संपर्क कर सकते हैं।",
+        "hinglish": "Eligible persons ke liye free legal aid aur advice available ho sakti hai. Aap apne District Legal Services Authority se bhi contact kar sakte hain."
+      }
+    }
+  },
+
+  "errorStates": {
+    "emptyInput": {
+      "en": "Please describe your problem in a few words.",
+      "hi": "कृपया अपनी समस्या कुछ शब्दों में बताएँ।",
+      "hinglish": "Please apni problem kuch words mein describe karein."
+    },
+
+    "noInternet": {
+      "en": "No internet. You can still pick a category below and read the guidance.",
+      "hi": "इंटरनेट नहीं है। आप नीचे श्रेणी चुनकर मार्गदर्शन पढ़ सकते हैं।",
+      "hinglish": "Internet nahi hai. Aap phir bhi neeche category choose karke guidance padh sakte hain."
+    },
+
+    "notUnderstood": {
+      "en": "We could not understand that. Please pick the closest category.",
+      "hi": "हम समझ नहीं पाए। कृपया सबसे नज़दीकी श्रेणी चुनें।",
+      "hinglish": "Hum ise samajh nahi paaye. Please sabse close category choose karein."
+    },
+
+    "aiFailed": {
+      "en": "Something went wrong. Please choose a category manually.",
+      "hi": "कुछ गड़बड़ हुई। कृपया श्रेणी खुद चुनें।",
+      "hinglish": "Kuch problem ho gayi. Please category manually choose karein."
+    },
+
+    "voiceFailed": {
+      "en": "Voice input did not work. Please type your problem.",
+      "hi": "आवाज़ से इनपुट नहीं हुआ। कृपया अपनी समस्या टाइप करें।",
+      "hinglish": "Voice input kaam nahi kiya. Please apni problem type karein."
+    }
+  },
+
+  "demoExamples": [
+    {
+      "en": "My landlord has not returned my Rs. 30,000 deposit even though I moved out two months ago.",
+      "hi": "मैंने दो महीने पहले घर खाली किया पर मकान मालिक ने मेरा 30,000 रुपये का डिपॉज़िट वापस नहीं किया।",
+      "hinglish": "Maine do mahine pehle ghar khaali kiya, lekin landlord ne mera Rs. 30,000 deposit wapas nahi kiya."
+    },
+    {
+      "en": "Someone called pretending to be from my bank and Rs. 15,000 was debited through UPI.",
+      "hi": "किसी ने बैंक वाला बनकर कॉल किया और UPI से मेरे 15,000 रुपये कट गए।",
+      "hinglish": "Kisi ne bank wala bankar call kiya aur UPI se mere Rs. 15,000 cut gaye."
+    },
+    {
+      "en": "My company has not paid my salary for the last two months.",
+      "hi": "मेरी कंपनी ने पिछले दो महीने से मेरी सैलरी नहीं दी।",
+      "hinglish": "Meri company ne pichhle do mahine se meri salary nahi di."
+    },
+    {
+      "en": "The phone I ordered online was defective and they are refusing a refund.",
+      "hi": "मैंने ऑनलाइन जो फोन मँगाया वह खराब निकला और वे रिफंड देने से मना कर रहे हैं।",
+      "hinglish": "Maine online jo phone order kiya tha woh defective nikla aur company refund dene se mana kar rahi hai."
+    },
+    {
+      "en": "My caste certificate application has been pending for a month.",
+      "hi": "मेरा जाति प्रमाणपत्र का आवेदन एक महीने से लंबित है।",
+      "hinglish": "Mera caste certificate application ek mahine se pending hai."
+    }
+  ],
+
+  "ui": {
+    "appName": {
+      "en": "Kayda Sathi",
+      "hi": "कायदा साथी",
+      "hinglish": "Kayda Sathi"
+    },
+
+    "tagline": {
+      "en": "Tell us your problem. We'll tell you what to do.",
+      "hi": "अपनी समस्या बताइए। हम बताएँगे क्या करना है।",
+      "hinglish": "Apni problem bataiye. Hum batayenge kya karna hai."
+    },
+
+    "inputPlaceholder": {
+      "en": "Describe your problem in simple words...",
+      "hi": "अपनी समस्या आसान शब्दों में लिखिए...",
+      "hinglish": "Apni problem simple words mein likhiye..."
+    },
+
+    "holdToSpeak": {
+      "en": "Hold to speak",
+      "hi": "बोलने के लिए दबाए रखें",
+      "hinglish": "Bolne ke liye daba kar rakhein"
+    },
+
+    "understanding": {
+      "en": "Understanding your problem...",
+      "hi": "आपकी समस्या समझ रहे हैं...",
+      "hinglish": "Aapki problem samajh rahe hain..."
+    },
+
+    "notRightChange": {
+      "en": "Not right? Change category",
+      "hi": "सही नहीं? श्रेणी बदलें",
+      "hinglish": "Sahi nahi? Category change karein"
+    },
+
+    "yourRights": {
+      "en": "Your possible rights",
+      "hi": "आपके संभावित अधिकार",
+      "hinglish": "Aapke possible rights"
+    },
+
+    "nextSteps": {
+      "en": "What you can do next",
+      "hi": "आगे आप क्या कर सकते हैं",
+      "hinglish": "Aage aap kya kar sakte hain"
+    },
+
+    "documentsNeeded": {
+      "en": "Documents you need",
+      "hi": "आपको ये दस्तावेज़ चाहिए",
+      "hinglish": "Aapko ye documents chahiye"
+    },
+
+    "whereToGo": {
+      "en": "Where to go",
+      "hi": "कहाँ जाएँ",
+      "hinglish": "Kahan jaana hai"
+    },
+
+    "commonMistakes": {
+      "en": "Mistakes to avoid",
+      "hi": "इन गलतियों से बचें",
+      "hinglish": "In mistakes se bachein"
+    },
+
+    "timeLimits": {
+      "en": "Time limits",
+      "hi": "समय-सीमा",
+      "hinglish": "Time limits"
+    },
+
+    "specialCases": {
+      "en": "If this sounds like you",
+      "hi": "अगर आपकी स्थिति ऐसी है",
+      "hinglish": "Agar aapki situation aisi hai"
+    },
+
+    "generateDraft": {
+      "en": "Generate complaint draft",
+      "hi": "शिकायत ड्राफ्ट बनाएँ",
+      "hinglish": "Complaint draft banayein"
+    },
+
+    "edit": {
+      "en": "Edit",
+      "hi": "बदलें",
+      "hinglish": "Edit karein"
+    },
+
+    "copy": {
+      "en": "Copy",
+      "hi": "कॉपी करें",
+      "hinglish": "Copy karein"
+    },
+
+    "share": {
+      "en": "Share",
+      "hi": "शेयर करें",
+      "hinglish": "Share karein"
+    },
+
+    "call": {
+      "en": "Call",
+      "hi": "कॉल करें",
+      "hinglish": "Call karein"
+    },
+
+    "email": {
+      "en": "Email",
+      "hi": "ईमेल करें",
+      "hinglish": "Email karein"
+    },
+
+    "visitWebsite": {
+      "en": "Visit website",
+      "hi": "वेबसाइट खोलें",
+      "hinglish": "Website kholein"
+    },
+
+    "officialSource": {
+      "en": "Official source",
+      "hi": "आधिकारिक स्रोत",
+      "hinglish": "Official source"
+    },
+
+    "language": {
+      "en": "Language",
+      "hi": "भाषा",
+      "hinglish": "Language"
+    },
+
+    "english": {
+      "en": "English",
+      "hi": "English",
+      "hinglish": "English"
+    },
+
+    "hindi": {
+      "en": "हिन्दी",
+      "hi": "हिन्दी",
+      "hinglish": "Hindi"
+    },
+
+    "hinglish": {
+      "en": "Hinglish",
+      "hi": "हिंग्लिश",
+      "hinglish": "Hinglish"
+    }
+  }
+}

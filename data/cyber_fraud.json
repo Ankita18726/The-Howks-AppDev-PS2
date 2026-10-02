@@ -1,0 +1,988 @@
+{
+  "id": "cyber_fraud",
+  "version": "1.3",
+  "lastVerified": "2026-10-01",
+
+  "languages": [
+    "en",
+    "hi",
+    "hinglish"
+  ],
+
+  "jurisdiction": {
+    "en": "India",
+    "hi": "भारत",
+    "hinglish": "India"
+  },
+
+  "title": {
+    "en": "Cyber Fraud / Online Scam",
+    "hi": "साइबर फ्रॉड / ऑनलाइन धोखाधड़ी",
+    "hinglish": "Cyber Fraud / Online Scam"
+  },
+
+  "icon": "shield-alert",
+
+  "keywords": {
+    "en": [
+      "cyber fraud",
+      "cybercrime",
+      "online fraud",
+      "online scam",
+      "scam",
+      "fraud",
+      "money stolen",
+      "money lost",
+      "money deducted",
+      "unauthorized transaction",
+      "unauthorized payment",
+      "UPI fraud",
+      "UPI scam",
+      "bank fraud",
+      "card fraud",
+      "credit card fraud",
+      "debit card fraud",
+      "OTP fraud",
+      "OTP scam",
+      "phishing",
+      "fake link",
+      "fake website",
+      "fake app",
+      "social media scam",
+      "investment scam",
+      "job scam",
+      "loan scam",
+      "KYC scam",
+      "parcel scam",
+      "delivery scam",
+      "remote access scam",
+      "WhatsApp scam",
+      "Instagram scam",
+      "account hacked",
+      "wallet fraud",
+      "digital payment fraud"
+    ],
+    "hi": [
+      "साइबर फ्रॉड",
+      "साइबर अपराध",
+      "ऑनलाइन धोखाधड़ी",
+      "ऑनलाइन ठगी",
+      "धोखाधड़ी",
+      "पैसे चोरी",
+      "पैसे चले गए",
+      "पैसे कट गए",
+      "अनधिकृत लेनदेन",
+      "अनधिकृत भुगतान",
+      "यूपीआई फ्रॉड",
+      "यूपीआई ठगी",
+      "बैंक फ्रॉड",
+      "कार्ड फ्रॉड",
+      "ओटीपी फ्रॉड",
+      "फिशिंग",
+      "फर्जी लिंक",
+      "फर्जी वेबसाइट",
+      "फर्जी ऐप",
+      "निवेश धोखाधड़ी",
+      "नौकरी के नाम पर ठगी",
+      "लोन फ्रॉड",
+      "केवाईसी फ्रॉड",
+      "पार्सल फ्रॉड",
+      "सोशल मीडिया ठगी",
+      "खाता हैक",
+      "ऑनलाइन भुगतान धोखाधड़ी"
+    ],
+    "hinglish": [
+      "cyber fraud",
+      "cyber crime",
+      "online fraud",
+      "online scam",
+      "online thagi",
+      "online dhokha",
+      "mere paise chale gaye",
+      "mere paise kat gaye",
+      "paise chori ho gaye",
+      "paise nikal gaye",
+      "account se paise nikal gaye",
+      "bank se paise kat gaye",
+      "upi se paise chale gaye",
+      "upi fraud",
+      "upi scam",
+      "upi thagi",
+      "upi payment fraud",
+      "galat payment ho gaya",
+      "unknown payment ho gaya",
+      "unauthorized payment",
+      "card se paise kat gaye",
+      "credit card fraud",
+      "debit card fraud",
+      "otp bata diya",
+      "otp scam",
+      "otp fraud",
+      "fake link",
+      "link par click kar diya",
+      "fake website",
+      "fake app",
+      "phishing link",
+      "kyc ke naam par fraud",
+      "kyc update scam",
+      "bank wale banke call",
+      "police banke call",
+      "courier wale banke call",
+      "parcel ke naam par fraud",
+      "job ke naam par fraud",
+      "job scam",
+      "loan ke naam par fraud",
+      "investment scam",
+      "crypto scam",
+      "instagram scam",
+      "whatsapp scam",
+      "facebook scam",
+      "social media scam",
+      "account hack ho gaya",
+      "phone hack ho gaya",
+      "wallet se paise chale gaye",
+      "digital payment fraud",
+      "online shopping scam",
+      "refund ke naam par fraud",
+      "customer care scam",
+      "fake customer care",
+      "remote access app",
+      "screen share kar diya",
+      "teamviewer scam",
+      "anydesk scam",
+      "scammer ne paise le liye",
+      "thag ne paise le liye",
+      "fraud ho gaya",
+      "mere saath fraud hua",
+      "mere sath thagi hui",
+      "mere paise fraud mein chale gaye",
+      "1930 par call karna hai",
+      "1930 pe call",
+      "cyber police complaint"
+    ]
+  },
+
+  "summary": {
+    "en": "If money has been lost or an unauthorized digital transaction has happened because of an online scam, report it immediately through 1930 and the National Cyber Crime Reporting Portal. Also contact your bank or payment provider using its official channel.",
+    "hi": "अगर ऑनलाइन ठगी या अनधिकृत डिजिटल लेनदेन के कारण पैसे चले गए हैं, तो तुरंत 1930 और राष्ट्रीय साइबर क्राइम रिपोर्टिंग पोर्टल पर शिकायत करें। अपने बैंक या पेमेंट प्रदाता के आधिकारिक माध्यम से भी तुरंत संपर्क करें।",
+    "hinglish": "Agar online scam ya unauthorized digital transaction ki wajah se paise chale gaye hain, to turant 1930 par report karein aur National Cyber Crime Reporting Portal par complaint karein. Apne bank ya payment provider se bhi unke official channel ke through contact karein."
+  },
+
+  "urgent": true,
+
+  "extractFields": [
+    "amount",
+    "transactionDate",
+    "transactionTime",
+    "paymentMethod",
+    "transactionId",
+    "utr",
+    "scamType",
+    "scammerDetails",
+    "phoneNumber",
+    "upiId",
+    "alreadyCalled1930",
+    "bankContacted"
+  ],
+
+  "followUpQuestions": [
+    {
+      "key": "amount",
+      "type": "number",
+      "required": false,
+      "question": {
+        "en": "How much money was lost or transferred?",
+        "hi": "कितने पैसे चले गए या ट्रांसफर हुए?",
+        "hinglish": "Kitne paise chale gaye ya transfer hue?"
+      }
+    },
+    {
+      "key": "transactionDate",
+      "type": "date",
+      "required": true,
+      "question": {
+        "en": "When did the transaction or fraud happen?",
+        "hi": "लेनदेन या फ्रॉड कब हुआ?",
+        "hinglish": "Transaction ya fraud kab hua?"
+      }
+    },
+    {
+      "key": "transactionTime",
+      "type": "text",
+      "required": false,
+      "question": {
+        "en": "Approximately what time did it happen?",
+        "hi": "लगभग किस समय हुआ?",
+        "hinglish": "Lagbhag kis time hua?"
+      }
+    },
+    {
+      "key": "paymentMethod",
+      "type": "choice",
+      "required": false,
+      "options": [
+        "UPI",
+        "debit_card",
+        "credit_card",
+        "net_banking",
+        "bank_transfer",
+        "wallet",
+        "other"
+      ],
+      "question": {
+        "en": "How was the money sent or taken?",
+        "hi": "पैसे कैसे भेजे गए या निकाले गए?",
+        "hinglish": "Paise kaise bheje gaye ya nikale gaye?"
+      }
+    },
+    {
+      "key": "transactionId",
+      "type": "text",
+      "required": false,
+      "question": {
+        "en": "Do you have the transaction or reference number?",
+        "hi": "क्या आपके पास ट्रांज़ैक्शन या रेफरेंस नंबर है?",
+        "hinglish": "Kya aapke paas transaction ya reference number hai?"
+      }
+    },
+    {
+      "key": "utr",
+      "type": "text",
+      "required": false,
+      "question": {
+        "en": "Do you have the UTR number?",
+        "hi": "क्या आपके पास UTR नंबर है?",
+        "hinglish": "Kya aapke paas UTR number hai?"
+      }
+    },
+    {
+      "key": "scamType",
+      "type": "choice",
+      "required": false,
+      "options": [
+        "UPI",
+        "card",
+        "phishing",
+        "fake_customer_care",
+        "KYC",
+        "job",
+        "investment",
+        "loan",
+        "parcel",
+        "social_media",
+        "remote_access",
+        "other"
+      ],
+      "question": {
+        "en": "What type of scam was it?",
+        "hi": "यह किस प्रकार का फ्रॉड था?",
+        "hinglish": "Ye kis type ka fraud tha?"
+      }
+    },
+    {
+      "key": "scammerDetails",
+      "type": "text",
+      "required": false,
+      "question": {
+        "en": "What details do you have about the scammer?",
+        "hi": "ठग के बारे में आपके पास क्या जानकारी है?",
+        "hinglish": "Scammer ke baare mein aapke paas kya information hai?"
+      }
+    },
+    {
+      "key": "alreadyCalled1930",
+      "type": "yesno",
+      "required": false,
+      "question": {
+        "en": "Have you already called 1930?",
+        "hi": "क्या आपने 1930 पर पहले ही कॉल किया है?",
+        "hinglish": "Kya aapne 1930 par pehle hi call kiya hai?"
+      }
+    },
+    {
+      "key": "bankContacted",
+      "type": "yesno",
+      "required": false,
+      "question": {
+        "en": "Have you contacted your bank or payment provider?",
+        "hi": "क्या आपने अपने बैंक या पेमेंट प्रदाता से संपर्क किया है?",
+        "hinglish": "Kya aapne apne bank ya payment provider se contact kiya hai?"
+      }
+    }
+  ],
+
+  "scenarios": [
+    {
+      "id": "just_happened",
+      "whenUserSays": {
+        "en": "The fraud just happened",
+        "hi": "फ्रॉड अभी-अभी हुआ है",
+        "hinglish": "Fraud abhi abhi hua hai"
+      },
+      "title": {
+        "en": "Fraud just happened",
+        "hi": "अभी-अभी फ्रॉड हुआ है",
+        "hinglish": "Abhi abhi fraud hua hai"
+      },
+      "extraGuidance": {
+        "en": [
+          "Call 1930 immediately.",
+          "Also report the financial cyber fraud through the National Cyber Crime Reporting Portal.",
+          "Contact your bank or payment provider through its official app, website or phone number.",
+          "Keep the transaction ID, UTR, amount, date, time, phone number, UPI ID and screenshots ready.",
+          "Do not delete messages, chats, emails or transaction records."
+        ],
+        "hi": [
+          "तुरंत 1930 पर कॉल करें।",
+          "राष्ट्रीय साइबर क्राइम रिपोर्टिंग पोर्टल पर भी वित्तीय साइबर फ्रॉड की रिपोर्ट करें।",
+          "अपने बैंक या पेमेंट प्रदाता से उसके आधिकारिक ऐप, वेबसाइट या फोन नंबर से संपर्क करें।",
+          "ट्रांज़ैक्शन आईडी, UTR, रकम, तारीख, समय, फोन नंबर, UPI ID और स्क्रीनशॉट तैयार रखें।",
+          "मैसेज, चैट, ईमेल या ट्रांज़ैक्शन रिकॉर्ड डिलीट न करें।"
+        ],
+        "hinglish": [
+          "Turant 1930 par call karein.",
+          "National Cyber Crime Reporting Portal par bhi financial cyber fraud ki report karein.",
+          "Apne bank ya payment provider se unke official app, website ya phone number ke through contact karein.",
+          "Transaction ID, UTR, amount, date, time, phone number, UPI ID aur screenshots ready rakhein.",
+          "Messages, chats, emails ya transaction records delete na karein."
+        ]
+      }
+    },
+    {
+      "id": "upi_fraud",
+      "whenUserSays": {
+        "en": "Money was lost through UPI",
+        "hi": "UPI से पैसे चले गए",
+        "hinglish": "UPI se paise chale gaye"
+      },
+      "title": {
+        "en": "UPI fraud",
+        "hi": "UPI फ्रॉड",
+        "hinglish": "UPI fraud"
+      },
+      "extraGuidance": {
+        "en": [
+          "Call 1930 immediately.",
+          "Inform the bank linked to the UPI account.",
+          "Keep the UPI transaction ID, UTR, recipient UPI ID and screenshots.",
+          "Do not send additional money to someone claiming they can recover the money."
+        ],
+        "hi": [
+          "तुरंत 1930 पर कॉल करें।",
+          "UPI से जुड़े बैंक को सूचित करें।",
+          "UPI ट्रांज़ैक्शन आईडी, UTR, प्राप्तकर्ता की UPI ID और स्क्रीनशॉट रखें।",
+          "जो व्यक्ति पैसे वापस दिलाने के नाम पर और पैसे मांगे, उसे पैसे न भेजें।"
+        ],
+        "hinglish": [
+          "Turant 1930 par call karein.",
+          "UPI se linked bank ko inform karein.",
+          "UPI transaction ID, UTR, recipient ki UPI ID aur screenshots sambhal kar rakhein.",
+          "Jo person paise recover karne ke naam par aur paise maange, use paise na bhejein."
+        ]
+      }
+    },
+    {
+      "id": "card_fraud",
+      "whenUserSays": {
+        "en": "There is an unauthorized card transaction",
+        "hi": "कार्ड से अनधिकृत लेनदेन हुआ है",
+        "hinglish": "Card se unauthorized transaction hua hai"
+      },
+      "title": {
+        "en": "Card fraud",
+        "hi": "कार्ड फ्रॉड",
+        "hinglish": "Card fraud"
+      },
+      "extraGuidance": {
+        "en": [
+          "Contact the card issuer through its official channel immediately.",
+          "Block or temporarily disable the affected card if appropriate.",
+          "Report the unauthorized transaction and keep the complaint/reference number.",
+          "Also report the cyber fraud through 1930 and the National Cyber Crime Reporting Portal where applicable."
+        ],
+        "hi": [
+          "तुरंत कार्ड जारी करने वाले बैंक या संस्था के आधिकारिक माध्यम से संपर्क करें।",
+          "जरूरत होने पर प्रभावित कार्ड को ब्लॉक या अस्थायी रूप से बंद करें।",
+          "अनधिकृत लेनदेन की शिकायत करें और शिकायत/रेफरेंस नंबर रखें।",
+          "जहां लागू हो, 1930 और राष्ट्रीय साइबर क्राइम रिपोर्टिंग पोर्टल पर भी रिपोर्ट करें।"
+        ],
+        "hinglish": [
+          "Turant card issue karne wale bank ya institution ke official channel se contact karein.",
+          "Zarurat ho to affected card ko block ya temporarily disable karein.",
+          "Unauthorized transaction ki complaint karein aur complaint/reference number sambhal kar rakhein.",
+          "Jahan applicable ho, 1930 aur National Cyber Crime Reporting Portal par bhi report karein."
+        ]
+      }
+    },
+    {
+      "id": "phishing",
+      "whenUserSays": {
+        "en": "I clicked a suspicious link or entered details on a fake website",
+        "hi": "मैंने फर्जी लिंक खोला या नकली वेबसाइट पर जानकारी डाल दी",
+        "hinglish": "Maine fake link khola ya fake website par details daal di"
+      },
+      "title": {
+        "en": "Phishing / fake link",
+        "hi": "फिशिंग / फर्जी लिंक",
+        "hinglish": "Phishing / fake link"
+      },
+      "extraGuidance": {
+        "en": [
+          "If money has already been lost, report the financial fraud immediately through 1930.",
+          "Contact the relevant bank or service provider through its official channel.",
+          "Change compromised passwords using the official website or app.",
+          "Do not use contact details supplied by the suspected scammer."
+        ],
+        "hi": [
+          "अगर पैसे जा चुके हैं तो तुरंत 1930 पर वित्तीय फ्रॉड की रिपोर्ट करें।",
+          "संबंधित बैंक या सेवा प्रदाता से उसके आधिकारिक माध्यम से संपर्क करें।",
+          "अगर पासवर्ड से समझौता हुआ है तो आधिकारिक वेबसाइट या ऐप से पासवर्ड बदलें।",
+          "संदिग्ध व्यक्ति द्वारा दिए गए संपर्क नंबर या लिंक का इस्तेमाल न करें।"
+        ],
+        "hinglish": [
+          "Agar paise ja chuke hain to turant 1930 par financial fraud report karein.",
+          "Relevant bank ya service provider se unke official channel ke through contact karein.",
+          "Agar password compromise hua hai to official website ya app se password change karein.",
+          "Suspected scammer ke diye hue contact number ya link ka use na karein."
+        ]
+      }
+    },
+    {
+      "id": "fake_customer_care",
+      "whenUserSays": {
+        "en": "Someone pretending to be customer care scammed me",
+        "hi": "कस्टमर केयर बनकर किसी ने मुझे ठगा",
+        "hinglish": "Customer care banke kisi ne mujhe thaga"
+      },
+      "title": {
+        "en": "Fake customer-care scam",
+        "hi": "फर्जी कस्टमर-केयर फ्रॉड",
+        "hinglish": "Fake customer-care scam"
+      },
+      "extraGuidance": {
+        "en": [
+          "Stop communicating with the suspected scammer.",
+          "Do not install remote-access applications or share OTP, PIN or passwords.",
+          "Call 1930 if money was lost.",
+          "Save the phone number, chat, payment details and screenshots."
+        ],
+        "hi": [
+          "संदिग्ध ठग से बातचीत बंद करें।",
+          "रिमोट-एक्सेस ऐप इंस्टॉल न करें और OTP, PIN या पासवर्ड साझा न करें।",
+          "पैसे गए हैं तो 1930 पर कॉल करें।",
+          "फोन नंबर, चैट, भुगतान विवरण और स्क्रीनशॉट सुरक्षित रखें।"
+        ],
+        "hinglish": [
+          "Suspected scammer se baat karna band karein.",
+          "Remote-access apps install na karein aur OTP, PIN ya password share na karein.",
+          "Paise gaye hain to 1930 par call karein.",
+          "Phone number, chat, payment details aur screenshots save karke rakhein."
+        ]
+      }
+    },
+    {
+      "id": "job_scam",
+      "whenUserSays": {
+        "en": "I was scammed through a fake job offer",
+        "hi": "नकली नौकरी के ऑफर से मेरे साथ ठगी हुई",
+        "hinglish": "Fake job offer ke through mere saath fraud hua"
+      },
+      "title": {
+        "en": "Job scam",
+        "hi": "जॉब फ्रॉड",
+        "hinglish": "Job scam"
+      },
+      "extraGuidance": {
+        "en": [
+          "Save the job advertisement, emails, WhatsApp chats, phone numbers and payment records.",
+          "If money was transferred, report the financial fraud through 1930 immediately.",
+          "Do not pay further 'verification', 'release', 'registration' or 'refund' charges."
+        ],
+        "hi": [
+          "जॉब विज्ञापन, ईमेल, WhatsApp चैट, फोन नंबर और भुगतान रिकॉर्ड सुरक्षित रखें।",
+          "पैसे ट्रांसफर हुए हैं तो तुरंत 1930 पर वित्तीय फ्रॉड की रिपोर्ट करें।",
+          "आगे 'verification', 'release', 'registration' या 'refund' के नाम पर पैसे न दें।"
+        ],
+        "hinglish": [
+          "Job advertisement, emails, WhatsApp chats, phone numbers aur payment records save karein.",
+          "Agar paise transfer hue hain to turant 1930 par financial fraud report karein.",
+          "Aage 'verification', 'release', 'registration' ya 'refund' ke naam par paise na dein."
+        ]
+      }
+    },
+    {
+      "id": "investment_scam",
+      "whenUserSays": {
+        "en": "I lost money in an online investment scam",
+        "hi": "ऑनलाइन निवेश फ्रॉड में मेरे पैसे चले गए",
+        "hinglish": "Online investment scam mein mere paise chale gaye"
+      },
+      "title": {
+        "en": "Investment scam",
+        "hi": "निवेश फ्रॉड",
+        "hinglish": "Investment scam"
+      },
+      "extraGuidance": {
+        "en": [
+          "Stop sending additional money.",
+          "Save account statements, screenshots, chats, websites, phone numbers and transaction records.",
+          "Call 1930 immediately if money was transferred through a digital payment channel.",
+          "Do not trust people who promise guaranteed recovery for an upfront fee."
+        ],
+        "hi": [
+          "आगे कोई पैसा न भेजें।",
+          "बैंक स्टेटमेंट, स्क्रीनशॉट, चैट, वेबसाइट, फोन नंबर और ट्रांज़ैक्शन रिकॉर्ड सुरक्षित रखें।",
+          "डिजिटल भुगतान से पैसे गए हैं तो तुरंत 1930 पर कॉल करें।",
+          "जो व्यक्ति पहले फीस लेकर पैसे वापस दिलाने की गारंटी दे, उस पर भरोसा न करें।"
+        ],
+        "hinglish": [
+          "Aage koi paisa na bhejein.",
+          "Bank statement, screenshots, chats, websites, phone numbers aur transaction records save karein.",
+          "Digital payment se paise gaye hain to turant 1930 par call karein.",
+          "Jo person upfront fee lekar paise recover karne ki guarantee de, us par bharosa na karein."
+        ]
+      }
+    },
+    {
+      "id": "remote_access",
+      "whenUserSays": {
+        "en": "I installed a remote-access app or shared my screen",
+        "hi": "मैंने रिमोट-एक्सेस ऐप इंस्टॉल किया या स्क्रीन शेयर की",
+        "hinglish": "Maine remote-access app install kiya ya screen share ki"
+      },
+      "title": {
+        "en": "Remote-access scam",
+        "hi": "रिमोट-एक्सेस फ्रॉड",
+        "hinglish": "Remote-access scam"
+      },
+      "extraGuidance": {
+        "en": [
+          "Disconnect from the scammer and uninstall the suspicious remote-access application if safe to do so.",
+          "Contact your bank through its official channel if banking information may have been exposed.",
+          "Change important passwords from a trusted device.",
+          "If money was lost, call 1930 immediately."
+        ],
+        "hi": [
+          "ठग से संपर्क बंद करें और यदि सुरक्षित हो तो संदिग्ध रिमोट-एक्सेस ऐप हटाएं।",
+          "अगर बैंकिंग जानकारी उजागर हुई हो तो आधिकारिक बैंक माध्यम से संपर्क करें।",
+          "किसी भरोसेमंद डिवाइस से महत्वपूर्ण पासवर्ड बदलें।",
+          "पैसे गए हैं तो तुरंत 1930 पर कॉल करें।"
+        ],
+        "hinglish": [
+          "Scammer se contact band karein aur agar safe ho to suspicious remote-access app uninstall karein.",
+          "Agar banking information expose hui ho to bank ke official channel se contact karein.",
+          "Trusted device se important passwords change karein.",
+          "Agar paise gaye hain to turant 1930 par call karein."
+        ]
+      }
+    },
+    {
+      "id": "no_transaction_id",
+      "whenUserSays": {
+        "en": "I cannot find the transaction or UTR number",
+        "hi": "मुझे ट्रांज़ैक्शन या UTR नंबर नहीं मिल रहा",
+        "hinglish": "Mujhe transaction ya UTR number nahi mil raha"
+      },
+      "title": {
+        "en": "Transaction number missing",
+        "hi": "ट्रांज़ैक्शन नंबर नहीं मिला",
+        "hinglish": "Transaction number nahi mila"
+      },
+      "extraGuidance": {
+        "en": [
+          "Check your bank statement or UPI/payment-app history.",
+          "If you still cannot find it, report the incident with the date, approximate time, amount and other available details.",
+          "Do not delay reporting only because the UTR is unavailable."
+        ],
+        "hi": [
+          "अपना बैंक स्टेटमेंट या UPI/पेमेंट ऐप की हिस्ट्री देखें।",
+          "फिर भी नंबर न मिले तो तारीख, लगभग समय, रकम और उपलब्ध अन्य जानकारी के साथ रिपोर्ट करें।",
+          "सिर्फ UTR न मिलने के कारण शिकायत करने में देरी न करें।"
+        ],
+        "hinglish": [
+          "Apna bank statement ya UPI/payment app ki history check karein.",
+          "Phir bhi number na mile to date, approximate time, amount aur available details ke saath report karein.",
+          "Sirf UTR na milne ki wajah se report karne mein delay na karein."
+        ]
+      }
+    },
+    {
+      "id": "recovery_scam",
+      "whenUserSays": {
+        "en": "Someone is asking for money to recover my stolen money",
+        "hi": "पैसे वापस दिलाने के लिए कोई मुझसे पैसे मांग रहा है",
+        "hinglish": "Paise wapas dilane ke liye koi mujhse paise maang raha hai"
+      },
+      "title": {
+        "en": "Recovery scam",
+        "hi": "रिकवरी फ्रॉड",
+        "hinglish": "Recovery scam"
+      },
+      "extraGuidance": {
+        "en": [
+          "Do not send more money.",
+          "Do not share OTP, PIN, passwords or remote access.",
+          "Use only official government, bank or payment-provider contact channels.",
+          "Keep the new scammer's details as evidence."
+        ],
+        "hi": [
+          "और पैसे न भेजें।",
+          "OTP, PIN, पासवर्ड या रिमोट एक्सेस साझा न करें।",
+          "केवल सरकारी, बैंक या पेमेंट प्रदाता के आधिकारिक संपर्क माध्यम का इस्तेमाल करें।",
+          "नए ठग की जानकारी को सबूत के रूप में सुरक्षित रखें।"
+        ],
+        "hinglish": [
+          "Aur paise na bhejein.",
+          "OTP, PIN, password ya remote access share na karein.",
+          "Sirf government, bank ya payment provider ke official contact channels ka use karein.",
+          "Naye scammer ki details ko evidence ke roop mein save karein."
+        ]
+      }
+    }
+  ],
+
+  "rights": {
+    "en": [
+      "You can report financial cyber fraud through the national helpline 1930 and the National Cyber Crime Reporting Portal.",
+      "You should also contact your bank or payment provider through its official channel.",
+      "You can report the incident to the police or cyber-crime unit.",
+      "Quick reporting can help authorities and financial institutions attempt to stop or trace the flow of funds, but recovery is not guaranteed."
+    ],
+    "hi": [
+      "वित्तीय साइबर फ्रॉड की रिपोर्ट राष्ट्रीय हेल्पलाइन 1930 और राष्ट्रीय साइबर क्राइम रिपोर्टिंग पोर्टल पर की जा सकती है।",
+      "अपने बैंक या पेमेंट प्रदाता से उसके आधिकारिक माध्यम से भी संपर्क करें।",
+      "घटना की रिपोर्ट पुलिस या साइबर क्राइम यूनिट को भी की जा सकती है।",
+      "जल्दी रिपोर्ट करने से पैसे रोकने या ट्रेस करने की कोशिश में मदद मिल सकती है, लेकिन पैसे वापस मिलने की गारंटी नहीं है।"
+    ],
+    "hinglish": [
+      "Financial cyber fraud ki report national helpline 1930 aur National Cyber Crime Reporting Portal par ki ja sakti hai.",
+      "Apne bank ya payment provider se unke official channel ke through bhi contact karein.",
+      "Incident ki report police ya cyber-crime unit ko bhi ki ja sakti hai.",
+      "Jaldi report karne se authorities aur financial institutions ko funds ko rokne ya trace karne ki koshish mein madad mil sakti hai, lekin recovery ki guarantee nahi hai."
+    ]
+  },
+
+  "steps": {
+    "en": [
+      "Call 1930 immediately if money has been lost through financial cyber fraud.",
+      "Report the incident on the National Cyber Crime Reporting Portal.",
+      "Contact your bank or payment provider using its official contact details.",
+      "Block or secure affected cards, accounts or payment instruments where appropriate.",
+      "Save the transaction ID/UTR, amount, date, time, phone numbers, UPI IDs, links, chats and screenshots.",
+      "Keep the acknowledgement or complaint number.",
+      "If needed, approach the nearest police station or cyber-crime unit."
+    ],
+    "hi": [
+      "वित्तीय साइबर फ्रॉड में पैसे गए हैं तो तुरंत 1930 पर कॉल करें।",
+      "राष्ट्रीय साइबर क्राइम रिपोर्टिंग पोर्टल पर घटना की रिपोर्ट करें।",
+      "अपने बैंक या पेमेंट प्रदाता से उसके आधिकारिक संपर्क माध्यम से संपर्क करें।",
+      "जरूरत होने पर प्रभावित कार्ड, अकाउंट या भुगतान साधन को सुरक्षित/ब्लॉक करें।",
+      "ट्रांज़ैक्शन आईडी/UTR, रकम, तारीख, समय, फोन नंबर, UPI ID, लिंक, चैट और स्क्रीनशॉट सुरक्षित रखें।",
+      "पावती या शिकायत नंबर संभालकर रखें।",
+      "जरूरत होने पर नजदीकी पुलिस स्टेशन या साइबर क्राइम यूनिट से संपर्क करें।"
+    ],
+    "hinglish": [
+      "Agar financial cyber fraud mein paise gaye hain to turant 1930 par call karein.",
+      "National Cyber Crime Reporting Portal par incident report karein.",
+      "Apne bank ya payment provider se unke official contact details ke through contact karein.",
+      "Zarurat hone par affected cards, accounts ya payment instruments ko secure ya block karein.",
+      "Transaction ID/UTR, amount, date, time, phone numbers, UPI IDs, links, chats aur screenshots save karein.",
+      "Acknowledgement ya complaint number sambhal kar rakhein.",
+      "Zarurat hone par nearest police station ya cyber-crime unit se contact karein."
+    ]
+  },
+
+  "documents": {
+    "en": [
+      "Bank or payment statement",
+      "Transaction ID / UTR",
+      "Screenshots of the transaction",
+      "Phone number or email used by the scammer",
+      "UPI ID or bank account details of the recipient, if available",
+      "Chats, SMS and emails",
+      "Suspicious website or link",
+      "Screenshots of social-media profiles or advertisements",
+      "Cybercrime acknowledgement number, if already reported",
+      "Bank complaint/reference number"
+    ],
+    "hi": [
+      "बैंक या पेमेंट स्टेटमेंट",
+      "ट्रांज़ैक्शन आईडी / UTR",
+      "ट्रांज़ैक्शन के स्क्रीनशॉट",
+      "ठग का फोन नंबर या ईमेल",
+      "प्राप्तकर्ता की UPI ID या बैंक अकाउंट की जानकारी, यदि उपलब्ध हो",
+      "चैट, SMS और ईमेल",
+      "संदिग्ध वेबसाइट या लिंक",
+      "सोशल मीडिया प्रोफाइल या विज्ञापन के स्क्रीनशॉट",
+      "यदि रिपोर्ट की है तो साइबर क्राइम पावती संख्या",
+      "बैंक शिकायत/रेफरेंस नंबर"
+    ],
+    "hinglish": [
+      "Bank ya payment statement",
+      "Transaction ID / UTR",
+      "Transaction ke screenshots",
+      "Scammer ka phone number ya email",
+      "Recipient ki UPI ID ya bank account details, agar available ho",
+      "Chats, SMS aur emails",
+      "Suspicious website ya link",
+      "Social-media profile ya advertisement ke screenshots",
+      "Agar report ki hai to cybercrime acknowledgement number",
+      "Bank complaint/reference number"
+    ]
+  },
+
+  "authorities": [
+    {
+      "id": "cyber1930",
+      "name": {
+        "en": "National Cyber Crime Helpline",
+        "hi": "राष्ट्रीय साइबर क्राइम हेल्पलाइन",
+        "hinglish": "National Cyber Crime Helpline"
+      },
+      "type": "helpline",
+      "website": "https://cybercrime.gov.in",
+      "contact": {
+        "en": "1930",
+        "hi": "1930",
+        "hinglish": "1930"
+      },
+      "note": {
+        "en": "Use 1930 for reporting financial cyber fraud. Report through the official National Cyber Crime Reporting Portal as well.",
+        "hi": "वित्तीय साइबर फ्रॉड की रिपोर्ट के लिए 1930 का उपयोग करें। आधिकारिक राष्ट्रीय साइबर क्राइम रिपोर्टिंग पोर्टल पर भी रिपोर्ट करें।",
+        "hinglish": "Financial cyber fraud report karne ke liye 1930 ka use karein. Official National Cyber Crime Reporting Portal par bhi report karein."
+      },
+      "sourceStatus": "official"
+    },
+    {
+      "id": "cyber_portal",
+      "name": {
+        "en": "National Cyber Crime Reporting Portal",
+        "hi": "राष्ट्रीय साइबर क्राइम रिपोर्टिंग पोर्टल",
+        "hinglish": "National Cyber Crime Reporting Portal"
+      },
+      "type": "portal",
+      "website": "https://cybercrime.gov.in",
+      "contact": {
+        "en": "Online reporting of cybercrime.",
+        "hi": "साइबर अपराध की ऑनलाइन रिपोर्टिंग।",
+        "hinglish": "Cybercrime ki online reporting."
+      },
+      "sourceStatus": "official"
+    },
+    {
+      "id": "police",
+      "name": {
+        "en": "Police / Cyber Crime Unit",
+        "hi": "पुलिस / साइबर क्राइम यूनिट",
+        "hinglish": "Police / Cyber Crime Unit"
+      },
+      "type": "authority",
+      "contact": {
+        "en": "Nearest police station or cyber-crime unit.",
+        "hi": "नजदीकी पुलिस स्टेशन या साइबर क्राइम यूनिट।",
+        "hinglish": "Nearest police station ya cyber-crime unit."
+      },
+      "sourceStatus": "general"
+    }
+  ],
+
+  "timeLimits": {
+    "en": [
+      "Report financial cyber fraud immediately. Do not wait to collect every document before making the initial report.",
+      "The app should not promise that reporting within a particular number of minutes guarantees recovery."
+    ],
+    "hi": [
+      "वित्तीय साइबर फ्रॉड की तुरंत रिपोर्ट करें। शुरुआती रिपोर्ट करने से पहले हर दस्तावेज़ इकट्ठा होने का इंतजार न करें।",
+      "ऐप को यह वादा नहीं करना चाहिए कि किसी निश्चित मिनट के अंदर रिपोर्ट करने से पैसे वापस मिलना तय है।"
+    ],
+    "hinglish": [
+      "Financial cyber fraud ki turant report karein. Initial report karne se pehle har document collect hone ka wait na karein.",
+      "App ko ye promise nahi karna chahiye ki kisi fixed number of minutes ke andar report karne se paise wapas milna guaranteed hai."
+    ]
+  },
+
+  "commonMistakes": {
+    "en": [
+      "Waiting before calling 1930.",
+      "Using a phone number or link provided by the suspected scammer.",
+      "Deleting chats, SMS, emails or transaction records.",
+      "Sending more money to recover the first loss.",
+      "Sharing OTP, PIN, password or remote access.",
+      "Not informing the bank or payment provider.",
+      "Assuming that reporting automatically guarantees recovery."
+    ],
+    "hi": [
+      "1930 पर कॉल करने में देरी करना।",
+      "ठग द्वारा दिए गए फोन नंबर या लिंक का इस्तेमाल करना।",
+      "चैट, SMS, ईमेल या ट्रांज़ैक्शन रिकॉर्ड डिलीट करना।",
+      "पहले नुकसान के पैसे वापस पाने के लिए और पैसे भेजना।",
+      "OTP, PIN, पासवर्ड या रिमोट एक्सेस साझा करना।",
+      "बैंक या पेमेंट प्रदाता को सूचित न करना।",
+      "यह मान लेना कि शिकायत करने से पैसे वापस मिलना तय है।"
+    ],
+    "hinglish": [
+      "1930 par call karne mein delay karna.",
+      "Suspected scammer ke diye hue phone number ya link ka use karna.",
+      "Chats, SMS, emails ya transaction records delete karna.",
+      "Pehle loss ke paise recover karne ke liye aur paise bhejna.",
+      "OTP, PIN, password ya remote access share karna.",
+      "Bank ya payment provider ko inform na karna.",
+      "Ye maan lena ki complaint karne se recovery automatically guaranteed hai."
+    ]
+  },
+
+  "complaintTemplates": [
+    {
+      "id": "cyber_financial_fraud",
+      "subject": {
+        "en": "Complaint Regarding Online Financial Fraud",
+        "hi": "ऑनलाइन वित्तीय धोखाधड़ी की शिकायत",
+        "hinglish": "Online Financial Fraud ke Regarding Complaint"
+      },
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": {
+            "en": "Your name",
+            "hi": "आपका नाम",
+            "hinglish": "Aapka naam"
+          }
+        },
+        {
+          "key": "phone",
+          "type": "phone",
+          "label": {
+            "en": "Your phone",
+            "hi": "आपका फोन",
+            "hinglish": "Aapka phone"
+          }
+        },
+        {
+          "key": "address",
+          "type": "text",
+          "label": {
+            "en": "Your address",
+            "hi": "आपका पता",
+            "hinglish": "Aapka address"
+          }
+        },
+        {
+          "key": "amount",
+          "type": "number",
+          "label": {
+            "en": "Amount lost",
+            "hi": "नुकसान की रकम",
+            "hinglish": "Nuksaan ki amount"
+          }
+        },
+        {
+          "key": "transactionDate",
+          "type": "datetime",
+          "label": {
+            "en": "Date and time",
+            "hi": "तारीख और समय",
+            "hinglish": "Date aur time"
+          }
+        },
+        {
+          "key": "paymentMethod",
+          "type": "text",
+          "label": {
+            "en": "Payment method",
+            "hi": "भुगतान का माध्यम",
+            "hinglish": "Payment method"
+          }
+        },
+        {
+          "key": "transactionId",
+          "type": "text",
+          "label": {
+            "en": "Transaction ID / UTR",
+            "hi": "ट्रांज़ैक्शन आईडी / UTR",
+            "hinglish": "Transaction ID / UTR"
+          }
+        },
+        {
+          "key": "scamType",
+          "type": "text",
+          "label": {
+            "en": "Type of scam",
+            "hi": "फ्रॉड का प्रकार",
+            "hinglish": "Fraud ka type"
+          }
+        },
+        {
+          "key": "scammerDetails",
+          "type": "text",
+          "label": {
+            "en": "Scammer details",
+            "hi": "ठग की जानकारी",
+            "hinglish": "Scammer ki details"
+          }
+        },
+        {
+          "key": "ackNumber",
+          "type": "text",
+          "label": {
+            "en": "1930 / portal acknowledgement number",
+            "hi": "1930 / पोर्टल पावती संख्या",
+            "hinglish": "1930 / portal acknowledgement number"
+          }
+        },
+        {
+          "key": "today",
+          "type": "date",
+          "label": {
+            "en": "Date",
+            "hi": "तारीख",
+            "hinglish": "Date"
+          }
+        }
+      ],
+      "body": {
+        "en": "To,\nThe Concerned Cyber Crime Authority / Police Station\n\nDate: {{today}}\n\nSubject: Complaint Regarding Online Financial Fraud\n\nSir/Madam,\n\nI, {{name}}, resident of {{address}}, wish to report an online financial fraud.\n\nOn {{transactionDate}}, I lost Rs. {{amount}} through {{paymentMethod}}. The incident involved {{scamType}}.\n\nTransaction ID / UTR: {{transactionId}}\n\nDetails available about the suspected scammer: {{scammerDetails}}\n\nI have reported / am reporting the matter through 1930 and/or the National Cyber Crime Reporting Portal. Reference/Acknowledgement No.: {{ackNumber}}\n\nI request that my complaint be registered and appropriate action be taken. I am providing the available transaction records and other evidence.\n\nYours sincerely,\n{{name}}\n{{phone}}",
+        "hi": "सेवा में,\nसंबंधित साइबर क्राइम अधिकारी / पुलिस स्टेशन\n\nदिनांक: {{today}}\n\nविषय: ऑनलाइन वित्तीय धोखाधड़ी की शिकायत\n\nमहोदय/महोदया,\n\nमैं, {{name}}, निवासी {{address}}, ऑनलाइन वित्तीय धोखाधड़ी की शिकायत दर्ज कराना चाहता/चाहती हूँ।\n\n{{transactionDate}} को {{paymentMethod}} के माध्यम से मेरे रु. {{amount}} का नुकसान हुआ। यह घटना {{scamType}} से संबंधित है।\n\nट्रांज़ैक्शन आईडी / UTR: {{transactionId}}\n\nसंदिग्ध ठग के बारे में उपलब्ध जानकारी: {{scammerDetails}}\n\nमैंने 1930 और/या राष्ट्रीय साइबर क्राइम रिपोर्टिंग पोर्टल पर इसकी रिपोर्ट की है / कर रहा/रही हूं। पावती/रेफरेंस नंबर: {{ackNumber}}\n\nकृपया मेरी शिकायत दर्ज करके उचित कार्रवाई करें। मैं उपलब्ध ट्रांज़ैक्शन रिकॉर्ड और अन्य सबूत प्रस्तुत कर रहा/रही हूं।\n\nभवदीय,\n{{name}}\n{{phone}}",
+        "hinglish": "To,\nConcerned Cyber Crime Authority / Police Station\n\nDate: {{today}}\n\nSubject: Online Financial Fraud ke Regarding Complaint\n\nSir/Madam,\n\nMain, {{name}}, resident of {{address}}, online financial fraud ki complaint report karna chahta/chahti hoon.\n\n{{transactionDate}} ko {{paymentMethod}} ke through mere Rs. {{amount}} ka loss hua. Incident {{scamType}} se related hai.\n\nTransaction ID / UTR: {{transactionId}}\n\nSuspected scammer ke baare mein available details: {{scammerDetails}}\n\nMaine 1930 aur/or National Cyber Crime Reporting Portal ke through matter report kiya hai / kar raha/rahi hoon. Reference/Acknowledgement No.: {{ackNumber}}\n\nKripya meri complaint register karke appropriate action lein. Main available transaction records aur other evidence provide kar raha/rahi hoon.\n\nYours sincerely,\n{{name}}\n{{phone}}"
+      }
+    }
+  ],
+
+  "sources": [
+    {
+      "label": "National Cyber Crime Reporting Portal",
+      "url": "https://cybercrime.gov.in",
+      "status": "official"
+    },
+    {
+      "label": "Ministry of Home Affairs - Cyber Crime / 1930 information",
+      "url": "https://www.mha.gov.in",
+      "status": "official"
+    },
+    {
+      "label": "Indian Cyber Crime Coordination Centre (I4C)",
+      "url": "https://i4c.mha.gov.in",
+      "status": "official"
+    }
+  ],
+
+  "fallback": {
+    "en": "This appears to involve cyber fraud. If money has been lost, contact 1930 immediately and report through the official cybercrime portal. Do not share OTPs, PINs, passwords or remote access.",
+    "hi": "यह साइबर फ्रॉड का मामला लग रहा है। अगर पैसे चले गए हैं तो तुरंत 1930 पर संपर्क करें और आधिकारिक साइबर क्राइम पोर्टल पर रिपोर्ट करें। OTP, PIN, पासवर्ड या रिमोट एक्सेस साझा न करें।",
+    "hinglish": "Ye cyber fraud ka matter lag raha hai. Agar paise chale gaye hain to turant 1930 par contact karein aur official cybercrime portal par report karein. OTP, PIN, password ya remote access share na karein."
+  },
+
+  "disclaimer": {
+    "en": "This information is for general awareness and does not replace instructions from police, banks, payment providers or qualified legal professionals.",
+    "hi": "यह जानकारी सामान्य जागरूकता के लिए है और पुलिस, बैंक, पेमेंट प्रदाता या योग्य कानूनी विशेषज्ञ की सलाह का विकल्प नहीं है।",
+    "hinglish": "Ye information general awareness ke liye hai aur police, bank, payment provider ya qualified legal professional ki instructions/advice ka replacement nahi hai."
+  },
+
+  "verifyBeforeDemo": [
+    "Confirm that cybercrime.gov.in is reachable before the demo.",
+    "Confirm that 1930 is displayed as the financial cyber fraud reporting helpline.",
+    "Keep the emergency action card visible when the user reports recent financial loss.",
+    "Do not promise that reporting guarantees recovery of money.",
+    "Do not ask the user to share OTP, PIN, password or full card details with the app."
+  ]
+}
