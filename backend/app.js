@@ -1,7 +1,9 @@
 const express = require('express');
 
+const { createConfigRouter } = require('./routes/config');
 const { createLegalRouter, legalErrorHandler } = require('./routes/legal');
 const { createSpeechRouter } = require('./routes/speech');
+const { isFirebaseConfigured } = require('./services/firebaseConfigService');
 
 function createApp(dependencies) {
   const app = express();
@@ -9,7 +11,7 @@ function createApp(dependencies) {
   app.disable('x-powered-by');
   app.use((request, response, next) => {
     response.setHeader('Access-Control-Allow-Origin', '*');
-    response.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+    response.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
     response.setHeader('Access-Control-Allow-Methods', 'GET,POST,OPTIONS');
     if (request.method === 'OPTIONS') return response.sendStatus(204);
     return next();
@@ -20,7 +22,9 @@ function createApp(dependencies) {
     status: 'ok',
     mode: 'gemini-with-curated-knowledge',
     aiConfigured: Boolean(process.env.GEMINI_API_KEY),
+    firebaseConfigured: isFirebaseConfigured(),
   }));
+  app.use('/api/config', createConfigRouter());
   app.use('/api/speech', createSpeechRouter(dependencies));
   app.use('/api/legal', createLegalRouter(dependencies));
   app.use((request, response) => response.status(404).json({

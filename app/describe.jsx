@@ -6,12 +6,15 @@ import Button from '../components/Button';
 import Screen from '../components/Screen';
 import TextInput from '../components/TextInput';
 import { colors, spacing, typography } from '../constants/theme';
+import { useAuth } from '../context/AuthContext';
 import { useLegalCase } from '../context/LegalCaseContext';
+import { saveQueryHistory } from '../services/history';
 import { analyzeProblem } from '../services/legal';
 import { SPEECH_ERROR_CODES, useSpeechService } from '../services/speechService';
 import { getErrorMessage } from '../utils/getErrorMessage';
 
 export default function DescribeScreen() {
+  const { user } = useAuth();
   const legalCase = useLegalCase();
   const [text, setText] = useState(legalCase.problem);
   const [error, setError] = useState('');
@@ -88,8 +91,14 @@ export default function DescribeScreen() {
     setLoading(true);
     try {
       const result = await analyzeProblem(problem, { signal: controllerRef.current.signal, timeout: 40000 });
+      let historySaved = true;
+      try {
+        await saveQueryHistory(user, problem, result);
+      } catch {
+        historySaved = false;
+      }
       legalCase.setProblem(problem);
-      legalCase.setAnalysis(result);
+      legalCase.setAnalysis({ ...result, historySaved });
       router.push('/results');
     } catch (requestError) {
       if (requestError.code !== 'CANCELLED') setError(getErrorMessage(requestError, 'The analysis could not be completed. Please try again.'));

@@ -17,9 +17,12 @@ Expo microphone -> services/speechService.js -> POST /api/speech/transcribe
                                                   |
                                                   +-- server-side Groq or OpenAI transcription
                                                   +-- text returns to the existing problem field
+
+Expo app -> Firebase Authentication (email/password)
+         -> Firestore users/{uid}/queries (per-user saved history)
 ```
 
-The API is stateless and does not persist problem descriptions. The starter's Firebase Auth/Firestore code had no environment configuration and was not required by this MVP, so it was removed instead of adding unnecessary authentication or a database.
+The legal and speech APIs remain stateless. After a signed-in user receives guidance, the Expo app saves that problem and structured result to the user's protected Firestore history. No audio recording is stored in Firebase.
 
 ## Setup
 
@@ -28,6 +31,7 @@ Node.js 22.13 or newer is recommended.
 ```bash
 npm install
 copy .env.example .env
+copy backend\.env.example backend\.env
 ```
 
 Add the Gemini key to the project-root `.env` file (the same folder as `package.json`):
@@ -39,6 +43,16 @@ GEMINI_MODEL=gemini-3.8-flash
 ```
 
 Do not use an `EXPO_PUBLIC_` prefix. Expo never calls Gemini directly, and `.env` is ignored by Git.
+
+Add the Firebase Web App values to `backend/.env`. The backend exposes only these public client identifiers to the Expo app through `/api/config/firebase`; it never exposes Gemini or speech-provider secrets. For compatibility, the start script also loads an existing `backend/.env.txt`, though `backend/.env` is preferred.
+
+Before using authentication and history:
+
+1. In Firebase Console, enable **Authentication → Sign-in method → Email/Password**.
+2. Create a Cloud Firestore database.
+3. Deploy the included `firestore.rules`, either from Firebase Console or with `npx firebase-tools deploy --only firestore:rules` after selecting the project.
+
+The rules allow a signed-in user to access only `users/{theirUid}/queries/*` and deny every other Firestore path.
 
 Start the backend in one terminal:
 
@@ -109,6 +123,8 @@ Restart `npm run backend` after changing the key. Without a configured key the e
 - The backend handles audio in memory and does not write it to disk or a database.
 - Audio is sent to the configured Groq or OpenAI transcription service only for speech-to-text.
 - Only the returned text enters `POST /api/legal/analyze`.
+- The final typed/transcribed problem and structured guidance are saved to Firestore only after authentication, because query history is an enabled product feature.
+- Firestore rules isolate history by Firebase user UID.
 - Consult the chosen provider's privacy and retention terms before production use.
 
 ### Web
