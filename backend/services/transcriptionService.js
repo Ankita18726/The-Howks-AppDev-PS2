@@ -64,13 +64,50 @@ async function transcribe({ audio, mimeType, filename, fetchImpl = fetch }) {
     });
 
     if (!response.ok) {
-      console.error(`Speech provider ${config.provider} returned HTTP ${response.status}.`);
-      throw new TranscriptionError(
-        'The speech provider could not transcribe this recording. Please try again.',
-        'PROVIDER_ERROR',
-        502,
-      );
-    }
+  let providerMessage = '';
+
+  try {
+    const errorBody = await response.text();
+    providerMessage = errorBody.slice(0, 500);
+  } catch {
+    // Ignore response parsing errors
+  }
+
+  console.error(
+    `Speech provider ${config.provider} returned HTTP ${response.status}:`,
+    providerMessage
+  );
+
+  if (response.status === 401) {
+    throw new TranscriptionError(
+      'The speech provider API key is invalid or missing.',
+      'INVALID_PROVIDER_KEY',
+      502,
+    );
+  }
+
+  if (response.status === 429) {
+    throw new TranscriptionError(
+      'The speech transcription service is temporarily rate limited.',
+      'PROVIDER_RATE_LIMIT',
+      429,
+    );
+  }
+
+  if (response.status >= 500) {
+    throw new TranscriptionError(
+      'The speech provider is temporarily unavailable.',
+      'PROVIDER_ERROR',
+      502,
+    );
+  }
+
+  throw new TranscriptionError(
+    'The speech provider rejected this recording.',
+    'PROVIDER_BAD_REQUEST',
+    400,
+  );
+}
 
     let result;
     try {
