@@ -4,8 +4,11 @@ import { useEffect, useRef, useState } from 'react';
 import { Share, StyleSheet, Text, View } from 'react-native';
 
 import Button from '../components/Button';
+import Card from '../components/Card';
 import ErrorState from '../components/ErrorState';
+import PageHeader from '../components/PageHeader';
 import Screen from '../components/Screen';
+import StatusBanner from '../components/StatusBanner';
 import TextInput from '../components/TextInput';
 import { colors, spacing, typography } from '../constants/theme';
 import { useLegalCase } from '../context/LegalCaseContext';
@@ -70,34 +73,37 @@ export default function ComplaintScreen() {
 
   return (
     <Screen>
-      <View style={styles.notice}>
-        <Text style={styles.noticeTitle}>Review before using</Text>
-        <Text style={styles.noticeText}>This editable draft uses the verified knowledge-base template. Complete every placeholder and verify all personal details.</Text>
-      </View>
-      <TextInput
-        label="Editable complaint" multiline textAlignVertical="top" value={draft}
-        onChangeText={(value) => { setDraft(value); setFeedback(''); }}
-        placeholder="Generate a draft to begin." editable={!loading} style={styles.editor}
-      />
-      {error ? <Text accessibilityRole="alert" style={styles.error}>{error}</Text> : null}
-      {feedback ? <Text accessibilityLiveRegion="polite" style={styles.feedback}>{feedback}</Text> : null}
-      <Button label={draft ? 'Regenerate draft' : 'Generate draft'} onPress={regenerate} loading={loading} />
+      <PageHeader eyebrow="Ready to personalize" title="Your complaint draft" description="Edit the wording and replace every placeholder before you send or submit this draft." />
+      <StatusBanner title="Review before using" message="This draft uses the verified knowledge-base template. Check names, dates, amounts, and requested action carefully." tone="warning" />
+      <Card style={styles.editorCard}>
+        <View style={styles.editorHeading}><Text style={styles.editorTitle}>Editable complaint</Text><View style={styles.editBadge}><Text style={styles.editBadgeText}>EDITABLE</Text></View></View>
+        <TextInput
+          multiline textAlignVertical="top" value={draft}
+          onChangeText={(value) => { setDraft(value); setFeedback(''); }}
+          placeholder="Generate a draft to begin." editable={!loading} style={styles.editor}
+        />
+      </Card>
+      {error ? <StatusBanner title="Draft action failed" message={error} tone="error" /> : null}
+      {feedback ? <StatusBanner title="Done" message={feedback} tone="success" /> : null}
+      <Button label={draft ? 'Regenerate draft' : 'Generate draft'} icon="↻" variant="secondary" onPress={regenerate} loading={loading} />
       <View style={styles.actions}>
-        <Button label="Copy" variant="secondary" onPress={copyDraft} disabled={!draft.trim() || loading} style={styles.action} />
-        <Button label="Share" variant="secondary" onPress={shareDraft} disabled={!draft.trim() || loading} style={styles.action} />
+        <Button label="Copy" icon="□" onPress={copyDraft} disabled={!draft.trim() || loading} style={styles.action} />
+        <Button label="Share" icon="↗" onPress={shareDraft} disabled={!draft.trim() || loading} style={styles.action} />
       </View>
+      <Text style={styles.disclaimer}>General legal information, not legal advice. Verify important details before use.</Text>
     </Screen>
   );
 }
 
 const styles = StyleSheet.create({
   center: { justifyContent: 'center' },
-  notice: { backgroundColor: '#FFF4E5', borderRadius: 12, gap: spacing.xs, padding: spacing.md },
-  noticeTitle: { color: '#8A4B08', fontSize: typography.body, fontWeight: '800' },
-  noticeText: { color: '#6B3D0B', fontSize: typography.small, lineHeight: 19 },
-  editor: { minHeight: 360, paddingTop: spacing.md },
-  error: { color: colors.error, fontSize: typography.small, lineHeight: 19 },
-  feedback: { color: '#26734D', fontSize: typography.small, fontWeight: '600' },
+  editorCard: { padding: spacing.md },
+  editorHeading: { alignItems: 'center', flexDirection: 'row', justifyContent: 'space-between' },
+  editorTitle: { color: colors.text, fontSize: typography.body, fontWeight: '800' },
+  editBadge: { backgroundColor: colors.accentSoft, borderRadius: 99, paddingHorizontal: 9, paddingVertical: 5 },
+  editBadgeText: { color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 0.7 },
+  editor: { minHeight: 380, paddingTop: spacing.md },
   actions: { flexDirection: 'row', gap: spacing.md },
   action: { flex: 1 },
+  disclaimer: { color: colors.textMuted, fontSize: typography.small, lineHeight: 19, textAlign: 'center' },
 });

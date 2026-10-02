@@ -1,9 +1,12 @@
 import { router } from 'expo-router';
 import { useEffect, useRef, useState } from 'react';
-import { StyleSheet, Text } from 'react-native';
+import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
 
 import Button from '../components/Button';
+import Card from '../components/Card';
+import PageHeader from '../components/PageHeader';
 import Screen from '../components/Screen';
+import StatusBanner from '../components/StatusBanner';
 import TextInput from '../components/TextInput';
 import { colors, spacing, typography } from '../constants/theme';
 import { useAuth } from '../context/AuthContext';
@@ -111,35 +114,37 @@ export default function DescribeScreen() {
 
   return (
     <Screen contentStyle={styles.container}>
-      <Text style={styles.title}>What happened?</Text>
-      <Text style={styles.description}>
-        Use your own words. Include useful facts such as what happened, approximate dates, and amounts. Avoid sharing passwords or one-time codes.
-      </Text>
-      <TextInput
-        label="Problem description" accessibilityLabel="Problem description" multiline numberOfLines={8}
-        maxLength={4000} textAlignVertical="top"
-        placeholder="Example: My landlord has not returned my security deposit..."
-        value={text} onChangeText={(value) => { setText(value); if (error) setError(''); }}
-        error={error} helperText={`${text.length}/4000 characters`} editable={!loading && !voiceBusy} style={styles.input}
-      />
+      <PageHeader eyebrow="Tell us what happened" title="Describe your problem" description="Use everyday language. Helpful details include approximate dates, amounts, and what response you have already received." />
+      <Card style={styles.inputCard}>
+        <TextInput
+          label="Problem description" accessibilityLabel="Problem description" multiline numberOfLines={8}
+          maxLength={4000} textAlignVertical="top"
+          placeholder="Example: My landlord has not returned my security deposit."
+          value={text} onChangeText={(value) => { setText(value); if (error) setError(''); }}
+          error={error} helperText={`${text.length}/4000 characters`} editable={!loading && !voiceBusy} style={styles.input}
+        />
+        <View style={styles.tip}><Text style={styles.tipIcon}>i</Text><Text style={styles.tipText}>Do not share passwords, PINs, OTPs, or full bank details.</Text></View>
+      </Card>
       {speechState === 'listening' ? (
         <>
           <Button
-            label="■ Stop listening"
+            label="Stop listening"
+            icon="■"
             onPress={stopVoice}
             accessibilityLabel="Stop voice input"
             accessibilityHint="Stops listening and converts your speech to text"
           />
-          <Button label="Cancel voice input" variant="secondary" onPress={cancelVoice} />
+          <Button label="Cancel voice input" variant="ghost" onPress={cancelVoice} />
         </>
       ) : speechState === 'processing' ? (
         <>
           <Button label="Converting speech…" disabled loading accessibilityLabel="Converting speech to text" />
-          <Button label="Cancel transcription" variant="secondary" onPress={cancelVoice} />
+          <Button label="Cancel transcription" variant="ghost" onPress={cancelVoice} />
         </>
       ) : (
         <Button
-          label={speechState === 'starting' ? 'Starting microphone…' : '🎙 Describe by voice'}
+          label={speechState === 'starting' ? 'Starting microphone…' : 'Describe by voice'}
+          icon="●"
           variant="secondary"
           onPress={startVoice}
           disabled={loading || speechState === 'starting'}
@@ -148,22 +153,31 @@ export default function DescribeScreen() {
           accessibilityHint="Starts speech recognition on supported devices"
         />
       )}
-      {speechState === 'listening' ? <Text accessibilityLiveRegion="polite" style={styles.listening}>🔴 Listening… Speak clearly, then tap Stop.</Text> : null}
-      {speechState === 'processing' ? <Text accessibilityLiveRegion="polite" style={styles.listening}>Converting speech…</Text> : null}
-      {speechMessage ? <Text accessibilityRole={speechState === 'error' ? 'alert' : undefined} style={speechState === 'error' ? styles.speechError : styles.speechStatus}>{speechMessage}</Text> : null}
-      <Button label="Analyze problem" onPress={submit} loading={loading} disabled={!text.trim() || voiceBusy} />
-      <Text style={styles.voiceNote}>Voice is recorded temporarily, sent to the configured transcription provider, then deleted. It is never sent to the legal analysis endpoint.</Text>
+      {speechState === 'listening' ? <StatusBanner title="Listening…" message="Speak clearly, then tap Stop listening." tone="error" icon="●" /> : null}
+      {speechState === 'processing' ? <StatusBanner title="Converting your speech…" message="Your transcription will appear in the editable box above." /> : null}
+      {speechMessage ? <StatusBanner title={speechState === 'error' ? 'Voice input needs attention' : 'Voice input ready'} message={speechMessage} tone={speechState === 'error' ? 'error' : 'success'} /> : null}
+      {loading ? (
+        <Card style={styles.analysisCard} accessibilityLiveRegion="polite">
+          <ActivityIndicator color={colors.primary} size="large" />
+          <Text style={styles.analysisTitle}>Understanding your problem…</Text>
+          <Text style={styles.analysisText}>Identifying the issue • Finding relevant information • Preparing your next steps</Text>
+        </Card>
+      ) : null}
+      <Button label="Analyze problem" icon="→" onPress={submit} loading={loading} disabled={!text.trim() || voiceBusy} />
+      <Text style={styles.voiceNote}>Voice recordings are sent temporarily for transcription and are not stored by Kayda Sathi.</Text>
     </Screen>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { paddingTop: spacing.xl },
-  title: { color: colors.text, fontSize: typography.title, fontWeight: '800' },
-  description: { color: colors.textMuted, fontSize: typography.body, lineHeight: 24 },
-  input: { minHeight: 180, paddingTop: spacing.md },
-  voiceNote: { color: colors.textMuted, fontSize: typography.small, textAlign: 'center' },
-  listening: { color: colors.primary, fontSize: typography.body, fontWeight: '700', textAlign: 'center' },
-  speechStatus: { color: '#26734D', fontSize: typography.small, lineHeight: 19 },
-  speechError: { color: colors.error, fontSize: typography.small, lineHeight: 19 },
+  container: { paddingTop: spacing.md },
+  inputCard: { padding: spacing.md },
+  input: { minHeight: 190, paddingTop: spacing.md },
+  tip: { alignItems: 'flex-start', flexDirection: 'row', gap: spacing.sm },
+  tipIcon: { backgroundColor: colors.primarySoft, borderRadius: 10, color: colors.primary, fontSize: typography.small, fontWeight: '900', height: 20, lineHeight: 20, textAlign: 'center', width: 20 },
+  tipText: { color: colors.textMuted, flex: 1, fontSize: typography.small, lineHeight: 19 },
+  analysisCard: { alignItems: 'center', backgroundColor: colors.primarySoft, borderColor: '#C9D5F2' },
+  analysisTitle: { color: colors.text, fontSize: typography.heading, fontWeight: '800', textAlign: 'center' },
+  analysisText: { color: colors.textMuted, fontSize: typography.small, lineHeight: 20, textAlign: 'center' },
+  voiceNote: { color: colors.textMuted, fontSize: typography.small, lineHeight: 19, textAlign: 'center' },
 });
