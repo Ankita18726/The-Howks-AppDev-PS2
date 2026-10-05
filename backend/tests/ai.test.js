@@ -51,9 +51,19 @@ test('unexpected Gemini category is rejected cleanly', () => {
 });
 
 test('missing GEMINI_API_KEY returns a controlled configuration error', async () => {
-  const aiService = createAiService({ apiKey: '', maxRetries: 0, getCatalog: async () => catalog });
+  const aiService = createAiService({ apiKey: '', openRouterApiKey: '', maxRetries: 0, getCatalog: async () => catalog });
   await assert.rejects(
     () => aiService.analyzeProblem('My landlord kept my deposit.'),
     (error) => error.code === 'MISSING_GEMINI_API_KEY' && error.status === 503,
   );
 });
+
+test('markdown-wrapped JSON response from OpenRouter/LLM is parsed cleanly', () => {
+  const markdownText = '```json\n{"category":"consumer_complaint","problem_type":"defective_product","confidence":0.95,"language":"en","entities":{"product":"phone"}}\n```';
+  const result = parseGeminiResult(markdownText);
+  assert.equal(result.category, 'consumer');
+  assert.equal(result.problemType, 'defective_product');
+  assert.equal(result.confidence, 0.95);
+  assert.equal(result.language, 'en');
+});
+

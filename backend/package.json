@@ -1,0 +1,9 @@
+{
+  "name": "kayda-sathi-backend",
+  "version": "1.0.0",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env.txt --env-file-if-exists=.env --env-file-if-exists=../.env server.js"
+  }
+}

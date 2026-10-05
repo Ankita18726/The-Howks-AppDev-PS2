@@ -17,7 +17,8 @@ if (require.main === module) {
 
   app.listen(port, '0.0.0.0', () => {
     console.log(`Kayda Sathi API listening on http://0.0.0.0:${port}`);
-    console.log('Legal analysis mode: Gemini classification with curated JSON knowledge.');
+    const mode = process.env.OPENROUTER_API_KEY ? 'OpenRouter' : 'Gemini';
+    console.log(`Legal analysis mode: ${mode} classification with curated JSON knowledge.`);
   });
 }
 

@@ -20,8 +20,9 @@ function createApp(dependencies) {
 
   app.get('/api/health', (request, response) => response.json({
     status: 'ok',
-    mode: 'gemini-with-curated-knowledge',
-    aiConfigured: Boolean(process.env.GEMINI_API_KEY),
+    mode: process.env.OPENROUTER_API_KEY ? 'openrouter-with-curated-knowledge' : 'gemini-with-curated-knowledge',
+    provider: process.env.OPENROUTER_API_KEY ? 'openrouter' : 'gemini',
+    aiConfigured: Boolean(process.env.OPENROUTER_API_KEY || process.env.GEMINI_API_KEY),
     firebaseConfigured: isFirebaseConfigured(),
   }));
   app.use('/api/config', createConfigRouter());
